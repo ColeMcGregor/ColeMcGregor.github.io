@@ -1,1 +1,127 @@
-"hello world" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cole McGregor · Software Developer</title>
+  <meta name="description" content="Portfolio of Cole McGregor - software developer with experience in service-oriented architectures, game development, and systems design." />
+  <link rel="canonical" href="https://ColeMcGregor.github.io/" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <strong>Cole McGregor</strong>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero / Summary -->
+    <section class="hero">
+      <h1>Software Developer</h1>
+      <p class="summary">
+        I’m a software developer with experience in service-oriented architectures, game development, and systems design. 
+        My projects range from Kotlin/Android games to C++ ECS simulations, all reflecting my focus on clean abstractions and scalable design. 
+        I’m passionate about learning, notably high-level concepts. From design patterns to Data-Oriented Design, 
+        I take in concepts and enjoy applying them to create systems and games that are both elegant and impactful.
+      </p>
+      <a class="btn" href="resume.pdf" target="_blank">Download Resume (PDF)</a>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Selected Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Healthcare Scheduler</h3>
+          <p class="meta">Python (FastAPI/Flask) · SOA · Docker</p>
+          <p>Service-oriented scheduling system with IAM adapters, event-driven bus, and logging services, designed for modularity and compliance.</p>
+          <p>This project was done for Software Engineering I & II at Siena College, and I cannot allow access to it.</p>
+        </article>
+
+        <article class="card">
+            <h3>Skydiver - Android Arcade Game</h3>
+            <p class="meta">Kotlin · Android · Collision Systems</p>
+            <p>Arcade-style descent game featuring obstacles, collectibles, and dynamic difficulty scaling, with clean entity/component separation.</p>
+            <a href="https://github.com/ColeMcGregor/Skydiver" target="_blank">View Code</a>
+          </article>
+
+        <article class="card">
+            <h3>Minotaur - Ongoing</h3>
+            <p class="meta">C++ · Grid/FOV · Systems Design</p>
+            <p>
+            Top-down maze project exploring robust grid representation, vision mechanics, and fog-of-war with an emphasis on clean, testable APIs and data-oriented iteration. 
+            Current focus: reliable visibility rules and performant map queries; next steps: turn flow, actions, and lightweight AI behaviors.
+            </p>
+            <a href="https://github.com/ColeMcGregor/Minotaur" target="_blank">Repo</a>
+        </article>
+
+        <article class="card">
+            <h3>WarSim - Ongoing</h3>
+            <p class="meta">C++ · Large-Scale Simulation · Data-Oriented</p>
+            <p>
+              Battlefield simulator targeting hundreds–thousands of units with terrain effects and morale/integrity dynamics. 
+              Current focus: scalable update loop and cache-friendly data layouts; next steps: formation tactics, LOS/cover modeling, and profiling-driven optimization.
+            </p>
+            <a href="https://github.com/ColeMcGregor/War-Simulator" target="_blank">Repo</a>
+          </article>
+
+          <article class="card">
+            <h3>Arith-Matic - Ongoing</h3>
+            <p class="meta">Kotlin · Learning Tools · Clean Architecture</p>
+            <p>
+              Modular math trainer emphasizing clear abstractions for question generation and settings, with an eye toward consistent UX and measurable progress. 
+              Current focus: generator parity and validation; next steps: results tracking, local persistence, and UI polish.
+            </p>
+            <a href="https://github.com/ColeMcGregor/Arith-Matic" target="_blank">Repo</a>
+          </article>
+  
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="chip">Kotlin / Android / React Native</span>
+        <span class="chip">Java, C#</span>
+        <span class="chip">Unity, Unreal</span>
+        <span class="chip">SQL, NoSQL</span>
+        <span class="chip">C++ (ECS, Data-Oriented Design)</span>
+        <span class="chip">Python (FastAPI / Flask / REST)</span>
+        <span class="chip">SOA / <strong>Systems Design</strong></span>
+        <span class="chip">Docker, Containerization</span>
+        <span class="chip">PostgreSQL / SQLite</span>
+        <span class="chip">Git / GitHub</span>
+      </div>
+      <p class="meta">B.S. Software Development - Siena College · A.S. Computer Science - Hudson Valley CC</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:garrettcolemcgregor@gmail.com">garrettcolemcgregor@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/ColeMcGregor" target="_blank">GitHub</a> · 
+        <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Cole McGregor · Built with GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
