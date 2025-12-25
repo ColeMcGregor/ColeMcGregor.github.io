@@ -2,24 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="author" content="Cole McGregor">
+  <meta name="author" content="Cole McGregor" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cole McGregor · Software Developer</title>
-  <meta name="description" content="Portfolio of Cole McGregor - software developer with experience in service-oriented architectures, game development, and systems design." />
+
+  <title>Cole McGregor · McGregor Systems LLC</title>
+  <meta
+    name="description"
+    content="Cole McGregor: software systems engineer. Founder of McGregor Systems LLC. Systems design, software repair, and scalable architecture across services, tools, and simulations."
+  />
+
   <link rel="canonical" href="https://ColeMcGregor.github.io/" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="wrap">
-    <!-- Header -->
-    <header>
-      <strong>Cole McGregor</strong>
-      <nav>
-        <a href="#about">About</a>
+
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+  
+          <a class="llc-badge" href="#llc" aria-label="McGregor Systems LLC">
+            <img
+              src="assets/LogoMcGregorSystemsSmall.png"
+              alt="McGregor Systems LLC"
+              class="llc-logo"
+            />
+            <span class="llc-name">McGregor Systems LLC</span>
+          </a>
+          <strong><span class="name"></span>Cole McGregor</span></strong>
+        </div>
+      </div>
+    
+      <nav class="header-nav">
+        <a href="#llc">LLC</a>
+        <a href="#about-me">About</a>
+        <a href="#services">Services</a>
+        <a href="#rates">Rates</a>
+        <a href="#contracts">Prior Contracts</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#other-experience">Other Experience</a>
         <a href="#skills">Skills</a>
-        <a href="assets\Cole_McGregor_Resume.pdf" target="_blank">Resume</a>
+        <a href="#certifications">Professional Development</a>
+        <a href="assets/Cole_McGregor_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -33,128 +58,348 @@
           class="hero-photo"
         />
       </div>
+
       <div class="hero-text">
-        <h1>Software Developer</h1>
+        <h1>Software Systems Engineer</h1>
+
         <p class="summary">
-          First and foremost, I am a father and a veteran. My daughter is my entire world, and together her and I work on little games and projects.
-          Additionally, I am a software developer with experience in service-oriented architectures, game development, and systems design. 
-          Games are my passion, and I enjoy learning and applying high-level concepts to create systems and games that are both elegant and impactful.
-          My projects range from Kotlin/Android games to C++ ECS simulations, all reflecting my focus on clean abstractions and scalable design. 
-          I’m passionate about learning, notably high-level concepts. From design patterns to Data-Oriented Design, 
-          I take in concepts and enjoy applying them to create new and interesting projects that stimulate my love of learning and creation.
+          I’m a software developer who focuses on making systems easier to understand, safer to change, and more reliable in practice.
+          I work across backend services, tools, and system-heavy applications, applying proven design principles without over-engineering.
+          <br /><br />
+          Through <strong>McGregor Systems LLC</strong>, I provide contract engineering support for teams that need practical improvements, or small businesses that have no need for a team or long term Engineer. 
         </p>
-        <a class="btn" href="assets\Cole_McGregor_Resume.pdf" target="_blank">Download Resume (PDF)</a>
+        
       </div>
     </section>
 
-    <!-- About Me -->
-    <section id="about">
+        <!-- LLC -->
+        <section id="llc">
+          <h2>McGregor Systems LLC</h2>
+          <p class="meta">
+            Contract software engineering · Systems design · Software repair & modernization
+          </p>
+        
+          <div class="card">
+            <h3>Engagement Focus</h3>
+            <p>
+              McGregor Systems LLC is the umbrella for my contract software engineering work. I take on engagements where a team needs someone who can
+              understand an existing system quickly, make meaningful improvements, and leave it more maintainable than they found it. This typically
+              involves stepping into live systems, diagnosing issues in place, and making targeted changes without disrupting ongoing operations.
+            </p>
+        
+            <h3>Delivery Approach</h3>
+            <p>
+              I work by clarifying workflows and constraints, identifying failure points, and making incremental, well-scoped changes. Fixes are applied
+              close to the source of the problem, with structure and documentation added where they reduce ambiguity and future friction.
+            </p>
+          </div>
+        </section>
+        
+
+    <!-- About Me-->
+    <section id="about-me">
       <h2>About Me</h2>
       <p>
-        I’m a developer who values both clean engineering and creative expression. My background includes service in the U.S. Air Force, where I learned discipline and teamwork, 
-        and academic study of software development at Siena College. I enjoy applying high-level concepts such as design patterns and Data-Oriented Design to practical projects — 
-        from scalable service-oriented architectures to immersive games and simulations.
+        I’m a systems-focused developer with experience spanning service-oriented architectures, application development, and performance-conscious simulation work.
+        I care about code that stays understandable over time, has clear interfaces, contains intentional tradeoffs, and is constructed with design patterns and principles that don’t collapse under change.
+        <br /><br />
+        My background includes U.S. Air Force service and formal software-development training. I tend to be most valuable where a project needs structure:
+        establishing architecture, untangling complexity, improving reliability, and leaving behind systems other engineers can work with confidently.
       </p>
     </section>
 
+    <!-- Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+    
+        <article class="card">
+          <h3>Software Repair & Stabilization</h3>
+          <p class="meta">Fixing broken systems · Reducing outages · Restoring confidence</p>
+          <p>
+            I step into existing systems that are unreliable or hard to change and make them stable again.
+            This includes identifying root causes, fixing defects, and cleaning up fragile areas without
+            disrupting day-to-day operations.
+          </p>
+        </article>
+    
+        <article class="card">
+          <h3>Systems Design & Architecture</h3>
+          <p class="meta">Clear system boundaries · Scalable design · Fewer surprises</p>
+          <p>
+            I design and adjust system structure so teams can add features, integrate tools,
+            and scale operations without constantly breaking existing behavior.
+          </p>
+        </article>
+    
+        <article class="card">
+          <h3>Tooling & Automation</h3>
+          <p class="meta">Internal tools · Reduced manual work · Faster turnaround</p>
+          <p>
+            I build internal tools and automation that remove repetitive manual steps,
+            improve data quality, and help teams move faster with fewer errors.
+          </p>
+        </article>
+    
+        <article class="card">
+          <h3>Platform Integration & Extension</h3>
+          <p class="meta">Working within existing platforms · Fewer vendor lock-ins</p>
+          <p>
+            I extend and connect platforms you already use, such as low-code tools and third-party services,
+            without forcing expensive rewrites or disrupting established workflows.
+          </p>
+        </article>
+    
+        <article class="card">
+          <h3>Workflow & Process Engineering</h3>
+          <p class="meta">Clear ownership · Predictable outcomes · Less confusion</p>
+          <p>
+            I turn unclear or inconsistent processes into reliable technical workflows,
+            so teams know who owns what and systems behave the same way every time.
+          </p>
+        </article>
+    
+        <article class="card">
+          <h3>Reporting & Document Systems</h3>
+          <p class="meta">Operational reports · Client-ready documents · Compliance-friendly</p>
+          <p>
+            I design and stabilize reporting and document generation systems so reports are accurate,
+            readable, and suitable for long-term reference, audits, and client delivery.
+          </p>
+        </article>
+    
+      </div>
+    </section>
+
+    <section id="rates">
+      <h2>Rates & Engagement Models</h2>
+    
+      <div class="card">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Engagement Type</th>
+              <th>Structure</th>
+              <th>Rate / Terms</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+    
+            <tr>
+              <td><strong>Discovery</strong></td>
+              <td>Time-based <br>(Project-Familiarization)</td>
+              <td>$40 / hour</td>
+              <td>
+                Initial system spin-up focused on understanding how components connect.
+                Includes code reading, environment familiarization, workflow mapping,
+                and diagramming. Discovery ends immediately when implementation or fixes begin.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Advisory / Review</strong></td>
+              <td>Time-based <br>(non-implementation)</td>
+              <td>$50 / hour</td>
+              <td>
+                Architectural review, second opinions, design validation, or written
+                recommendations without direct implementation. May include meetings,
+                diagrams, or documentation deliverables.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Hourly</strong></td>
+              <td>Time-based</td>
+              <td>$50 / hour</td>
+              <td>
+                Used once active changes begin. Best for bug fixing, improvements,
+                and work with evolving or unclear scope. Billed in minimum increments
+                as specified in contract.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Retainer</strong></td>
+              <td>Prepaid block of hours</td>
+              <td>10% discount <br>on hourly rate</td>
+              <td>
+                Hours are billed against the retainer at a discounted rate.
+                Suitable for ongoing support, maintenance, or recurring work.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Flat Rate</strong></td>
+              <td>Fixed scope</td>
+              <td>Quoted per project</td>
+              <td>
+                Defined deliverables with agreed scope.
+                Changes in requirements, unexpected technical issues, or external
+                constraints may require time and cost adjustments.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Priority / Expedited</strong></td>
+              <td>Time-based <br>(schedule override)</td>
+              <td>+25–50% hourly rate<br>(based on complexity<br> and scheduling impact)</td>
+              </td>
+              <td>
+                Applies to work requested on short notice, outside normal scheduling,
+                or requiring interruption of planned work. Includes evenings, weekends,
+                or delivery tied to fixed external deadlines.
+              </td>
+            </tr>
+    
+            <tr>
+              <td><strong>Communication</strong></td>
+              <td>Conditional</td>
+              <td>$10 per instance<br>or $40 / hour<br>(whichever is lower)</td>
+              <td>
+                (DOES NOT APPLY TO INITIAL COMMUNICATION)<br>Applies to project-related communication that is not directly adjacent to active technical work.
+                Includes client and stakeholder correspondence. Billed only when such communication cannot be
+                reasonably grouped with other billable work and is assessed at the end of the engagement. 
+              </td>
+            </tr>
+    
+          </tbody>
+        </table>
+        <p class="meta">
+          All engagements are governed by a written agreement outlining scope,
+          billing increments, payment terms, and change-handling procedures.
+        </p>
+      </div>
+    </section>
+    
+   
+    
+    <!-- Prior Contracts -->
+    <section id="contracts">
+      <h2>Prior Contracts</h2>
+      <p class="meta">
+        Work performed through McGregor Systems LLC
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>RAS Systems</h3>
+          <p class="meta">Role: Contract Software Engineer · Dates: 2024–Present</p>
+      
+          <p><strong>Problem:</strong> Internal tooling and reporting workflows spanned multiple systems (Bubble and JSReport) and had accumulated access issues, brittle logic, and undocumented behavior that made both administration and report generation difficult to maintain.</p>
+      
+          <p><strong>Work:</strong></p>
+      
+          <p><strong>Bubble Platform — Admin Tooling & Workflow Repair</strong></p>
+          <ul>
+            <li>Implemented an admin-only dropdown allowing authorized users to view and switch between work orders across all technicians.</li>
+            <li>Organized and normalized existing Bubble workflows related to work order selection and permissions.</li>
+            <li>Documented legacy logic and data flow to improve maintainability and onboarding.</li>
+            <li>Fixed access-control, state, and data-binding bugs tied to cross-user work order visibility.</li>
+          </ul>
+      
+          <p><strong>Reporting & Media Pipeline — JSReport</strong></p>
+          <ul>
+            <li>Stabilized multi-page PDF report generation, including text splitting, section continuation handling, and layout normalization.</li>
+            <li>Designed flexible image layout rules supporting portrait and landscape orientations, mixed image counts, and edge cases.</li>
+            <li>Refactored brittle CSS and template logic, removing redundant selectors and fixing formatting bugs.</li>
+            <li>Worked with stakeholders to clarify approval flow, formatting constraints, and future media requirements.</li>
+          </ul>
+      
+          <p class="meta"><strong>Stack:</strong> Bubble, JavaScript, JSReport, HTML/CSS, SharePoint, Salesforce</p>
+        </article>
+      </div>
+      
+      
+    </section>
+    
     <!-- Projects -->
     <section id="projects">
       <h2>Projects, Past and Present</h2>
+
       <div class="grid">
         <article class="card">
           <h3>Healthcare Scheduler</h3>
           <p class="meta">Python (FastAPI/Flask) · SOA · Docker</p>
-          <p>Service-oriented scheduling system with IAM adapters, event-driven bus, and logging services, designed for modularity and compliance.</p>
-          <p>This project was done for Software Engineering I & II at Siena College, and I cannot allow access to it.</p>
+          <p>
+            Service-oriented scheduling system with modular services, adapters, and logging patterns.
+            Built with an emphasis on maintainability and boundary clarity.
+          </p>
+          <p class="meta">
+            Note: academic project; repository is not public.
+          </p>
         </article>
 
         <article class="card">
-          <h3>TowneCodex - D&D Item Manager</h3>
-          <p class="meta">Python · Tkinter · Web Scraping</p>
+          <h3>TowneCodex - D&amp;D Item Manager</h3>
+          <p class="meta">Python · Desktop UI · Web Scraping · Export Pipelines</p>
           <p>
-            Desktop application for managing a growing database of D&D 5e items. 
-            Includes integration with scrapers to pull in information from sources like Reddit, and even DndBeyond. 
-            Generates webpages that can be used or printed for use in games.
+            Desktop application for managing a growing database of D&amp;D 5e items.
+            Supports ingestion from multiple sources and exports into printable / usable formats for tables.
           </p>
-          <a href="https://github.com/ColeMcGregor/Magic-Item-Database" target="_blank">View Code</a>
+          <a href="https://github.com/ColeMcGregor/Magic-Item-Database" target="_blank" rel="noopener">View Code</a>
         </article>
-        
 
         <article class="card">
           <h3>Skydiver - Android Arcade Game</h3>
           <p class="meta">Kotlin · Android · Collision Systems</p>
-          <p>Arcade-style descent game featuring obstacles, collectibles, and dynamic difficulty scaling, with clean entity/component separation. Expandable to include more features and levels.</p>
-          <a href="https://github.com/ColeMcGregor/Skydiver" target="_blank">View Code</a>
+          <p>
+            Arcade-style descent game with obstacles, collectibles, and dynamic difficulty scaling.
+            Built with clean separation between game objects and systems for expandability.
+          </p>
+          <a href="https://github.com/ColeMcGregor/Skydiver" target="_blank" rel="noopener">View Code</a>
         </article>
 
         <article class="card">
           <h3>Minotaur - Ongoing</h3>
           <p class="meta">C++ · Grid/FOV · Systems Design</p>
           <p>
-            Top-down maze project exploring robust grid representation, vision mechanics, and fog-of-war with an emphasis on clean, testable APIs and data-oriented iteration. 
-            Current focus: reliable visibility rules and performant map queries; next steps: turn flow, actions, and lightweight AI behaviors.
+            Maze project exploring robust grid representation, visibility rules, and fog-of-war with an emphasis on clean, testable APIs.
+            Current focus: reliable visibility and performant map queries.
           </p>
-          <a href="https://github.com/ColeMcGregor/Minotaur" target="_blank">View Code</a>
-        </article>
-
-        <article class="card">
-          <h3>WarSim - Ongoing</h3>
-          <p class="meta">C++ · Large-Scale Simulation · Data-Oriented</p>
-          <p>
-            Battlefield simulator targeting hundreds–thousands of units with terrain effects and morale/integrity dynamics. 
-            Current focus: scalable update loop and cache-friendly data layouts; next steps: formation tactics, LOS/cover modeling, and profiling-driven optimization.
-          </p>
-          <a href="https://github.com/ColeMcGregor/War-Simulator" target="_blank">View Code</a>
+          <a href="https://github.com/ColeMcGregor/Minotaur" target="_blank" rel="noopener">View Code</a>
         </article>
 
         <article class="card">
           <h3>Arith-Matic - Ongoing</h3>
           <p class="meta">Kotlin · Learning Tools · Clean Architecture</p>
           <p>
-            Modular math trainer emphasizing clear abstractions for question generation and settings, with an eye toward consistent UX and measurable progress. 
-            Current focus: generator parity and validation; next steps: results tracking, local persistence, and UI polish.
+            Modular math trainer emphasizing clear abstractions for question generation and settings,
+            designed for consistent UX and measurable progress.
           </p>
-          <a href="https://github.com/ColeMcGregor/Arith-Matic" target="_blank">View Code</a>
+          <a href="https://github.com/ColeMcGregor/Arith-Matic" target="_blank" rel="noopener">View Code</a>
         </article>
 
         <article class="card">
-          <h3>Tidepool - Ongoing</h3>
-          <p class="meta">Kotlin · Tile-Based · Turn-Based · Systems Design</p>
-          <p>
-            Explore a receding shoreline to uncover tidepools packed with shells and sea life. 
-            Walk sand, skirt boulders, and collect from pools while the tide ebbs and floods in turns—get caught and lose two-thirds of your haul at random. 
-            Farther, riskier pools yield rarer, more valuable finds.
-          </p>
-          <p>Code is private for now</p>
-        </article>
-
-        <article class="card">
-          <h3>Fox & Rabbit</h3>
+          <h3>Fox &amp; Rabbit</h3>
           <p class="meta">Java · Data Structures · Turn Engine</p>
           <p>
-            Original version of the chase game on a 6×6 ring board, Advanced Programming Class Project.
-            The Rabbit starts in the center and runs for rim carrots; the Fox starts on the outer ring, moves 3 steps, and hunts by scent. 
-            The Rabbit moves 2 steps (or 3 after a failed Fox pounce). 
-            Carrots appear on the rim, and when one is taken its two neighbors are locked out.
+            Original chase game on a 6×6 ring board with distinct movement rules, scent detection, and constrained resource spawning.
           </p>
-          <p>This project was completed for an Advanced Programming course; code access is not public.</p>
+          <p class="meta">Academic project; code access is not public.</p>
         </article>
-        
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience">
-      <h2>Experience</h2>
+    <!-- Other Experience -->
+    <section id="other-experience">
+      <h2>Other Experience</h2>
+
       <div class="card">
         <h3>Armament Systems Specialist · United States Air Force</h3>
         <p class="meta">2016–2019</p>
-        <p>Maintained and tested complex weapons systems on the F-15E, ensuring mission readiness through rigorous attention to detail and safety standards.</p>
+        <p>
+          Maintained and tested complex weapons systems on the F-15E. Developed a disciplined approach to safety, procedure,
+          documentation, and team execution under high accountability.
+        </p>
       </div>
+
       <div class="card">
         <h3>Software Engineering Projects · Siena College</h3>
         <p class="meta">2023–2024</p>
-        <p>Developed a healthcare scheduling system (SOA) and multiple team-based applications, practicing Agile methods, documentation, and stakeholder communication.</p>
+        <p>
+          Built service-oriented systems and team-based applications using Agile methods, documentation, and stakeholder-style communication.
+        </p>
       </div>
     </section>
 
@@ -166,54 +411,47 @@
         <span class="chip">Java, C#, C++</span>
         <span class="chip">Python, JavaScript</span>
         <span class="chip">SQL, NoSQL</span>
-        <span class="chip">Unity, Unreal</span>
-        <span class="chip">SOA / <strong>Systems Design</strong></span>
-        <span class="chip">Agile / Scrum Methodologies</span>
-        <span class="chip">Scrum Product Owner</span>
+        <span class="chip">SOA / Systems Design</span>
+        <span class="chip">Architecture &amp; Refactoring</span>
         <span class="chip">Design Patterns</span>
-        <span class="chip">Game Development/Design</span>
-        <span class="chip">Game Engine Development</span>
-        <span class="chip">High Performance Computing</span>
-        <span class="chip">Parallel Processing and MPI</span>
         <span class="chip">Clean Architecture</span>
-        <span class="chip">Test-Driven Development</span>
+        <span class="chip">Testing / TDD</span>
         <span class="chip">Performance Optimization</span>
-        <span class="chip">Cloud Computing</span>
-        <span class="chip">Microservices</span>
-        <span class="chip">RESTful APIs</span>
-        <span class="chip">API Design</span>
-        <span class="chip">Docker, Containerization</span>
+        <span class="chip">Docker / Containerization</span>
         <span class="chip">PostgreSQL / SQLite</span>
         <span class="chip">Git / GitHub</span>
       </div>
-      <p class="meta">B.S. Software Development - Siena College · A.S. Computer Science - Hudson Valley CC</p>
+
+      <p class="meta">
+        B.S. Software Development (Cum Laude) - Siena College · A.S. Computer Science - Hudson Valley CC
+      </p>
     </section>
 
-    <!-- Certifications -->
+    <!-- Professional Development -->
     <section id="certifications">
       <h2>Professional Development</h2>
       <ul>
-        <li>Extensive study of <em>Design Patterns: Elements of Reusable Object-Oriented Software (Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides)</em></li>
-        <li>Study of <em>Clean Architecture (Robert C. Martin)</em> for high level understanding of software design</li>
-        <li>In depth study of <em>Game Programming Patterns (Robert Nystrom)</em></li>
-        <li>Parallel & High-Performance Computing coursework with TACC</li>
-        <li>In depth study of <em>The Art of Game Design (Jesse Schell) 4th Edition</em></li>
+        <li>Extensive study of <em>Design Patterns: Elements of Reusable Object-Oriented Software</em> (GoF)</li>
+        <li>Study of <em>Clean Architecture</em> (Robert C. Martin)</li>
+        <li>In-depth study of <em>Game Programming Patterns</em> (Robert Nystrom)</li>
+        <li>Parallel &amp; High-Performance Computing coursework with TACC</li>
+        <li>In-depth study of <em>The Art of Game Design</em> (Jesse Schell), 4th Edition</li>
       </ul>
     </section>
 
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:garrettcolemcgregor@gmail.com">garrettcolemcgregor@gmail.com</a></p>
+      <p>Email: <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
       <p>
-        <a href="https://github.com/ColeMcGregor" target="_blank">GitHub</a> · 
-        <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </section>
 
-   <!-- Footer -->
+    <!-- Footer -->
     <footer>
-      <p>© <span id="year"></span> Cole McGregor · Built with GitHub Pages</p>
+      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
     </footer>
   </div>
 
