@@ -160,7 +160,7 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 /* ===== Hero with Photo ==================================================== */
 .hero {
   display: grid;
-  grid-template-columns: 180px 1fr; /* photo | text */
+  grid-template-columns: 180px 1fr;
   gap: 20px;
   align-items: center;
   background: var(--card);
@@ -177,16 +177,15 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 .hero-photo {
   width: 180px;
   height: 180px;
-  border-radius: 9999px; /* circle */
+  border-radius: 9999px;
   object-fit: cover;
   border: 2px solid var(--border);
-  background: #0e1324; /* fallback while loading */
+  background: #0e1324;
   box-shadow: 0 6px 18px rgba(0,0,0,.35);
 }
 .hero-text { min-width: 0; }
 .summary { margin-top: 10px; color: var(--muted); }
 
-/* Small screens: stack photo above text */
 @media (max-width: 640px) {
   .hero { grid-template-columns: 1fr; }
   .hero-media { justify-self: start; }
@@ -250,12 +249,10 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 #certifications {
   margin-top: 50px;
 }
-
 #certifications h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
 #certifications ul {
   list-style: none;
   padding: 0;
@@ -268,13 +265,7 @@ h2 { font-size: 22px; margin: 0 0 14px; }
 }
 
 /* ===== Contact / Footer =================================================== */
-#contact {
-  margin-top: 50px;
-  color: var(--muted);
-  font-size: 14px;
-  text-align: center;
-}
-
+#contact,
 footer {
   margin-top: 50px;
   color: var(--muted);
@@ -335,53 +326,64 @@ footer {
   border-bottom: none;
 }
 
-/* Engagement type emphasis */
 .pricing-table td:first-child {
   font-weight: 600;
   color: #ffffff;
   white-space: nowrap;
 }
 
-/* Structure column */
 .pricing-table td:nth-child(2) {
   color: #cfd6e4;
   white-space: nowrap;
 }
 
-/* Rate column */
 .pricing-table td:nth-child(3) {
   font-weight: 600;
   color: #ffffff;
   white-space: nowrap;
 }
 
-/* Notes column */
 .pricing-table td:nth-child(4) {
   color: #d3d8e3;
   max-width: 600px;
 }
 
-/* Card wrapper refinement */
 #pricing .card {
   padding: 1rem 1.25rem;
 }
 
-/* Meta text under table */
 #pricing .meta {
   margin-top: 1.25rem;
   font-size: 0.85rem;
   color: #9aa4b2;
 }
 
-/* Responsive handling */
-@media (max-width: 900px) {
-  .pricing-table {
-    font-size: 1rem;
-  }
+/* ========================================================================
+   PHONE-ONLY ADDITIONS (no desktop behavior changed)
+   ======================================================================== */
 
-  .pricing-table thead {
-    display: none;
+/* --- Nav: horizontal swipe on phones --- */
+@media (max-width: 640px) {
+  .header-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
   }
+  .header-nav::-webkit-scrollbar { height: 0; }
+
+  .header-nav a {
+    flex: 0 0 auto;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    background: #141a2a;
+  }
+}
+
+/* --- Pricing table: stacked cards on phones --- */
+@media (max-width: 900px) {
+  .pricing-table thead { display: none; }
 
   .pricing-table tbody tr {
     display: block;
@@ -392,6 +394,9 @@ footer {
     display: block;
     padding: 0.5rem 0;
     border: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .pricing-table tbody td::before {
@@ -403,5 +408,18 @@ footer {
     color: #9aa4b2;
     margin-bottom: 0.25rem;
   }
+
+  .pricing-table td:first-child,
+  .pricing-table td:nth-child(2),
+  .pricing-table td:nth-child(3) {
+    white-space: normal;
+  }
 }
 
+/* --- Extreme small screens safety net --- */
+@media (max-width: 420px) {
+  #pricing .card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
