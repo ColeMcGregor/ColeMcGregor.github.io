@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfolio · McGregor Systems LLC</title>
+  <meta
+    name="description"
+    content="Portfolio, prior contracts, and projects for McGregor Systems LLC."
+  />
+
+  <link rel="canonical" href="https://ColeMcGregor.github.io/portfolio.html" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
+            <img src="assets/LogoMcGregorSystemsSmall.png" alt="McGregor Systems LLC" class="llc-logo" />
+            <span class="llc-name">McGregor Systems LLC</span>
+          </a>
+          <strong class="brand-person">Cole McGregor</strong>
+        </div>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="business.html">Services & Rates</a>
+          <a class="btn" href="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)">Contact</a>
+        </div>
+      </div>
+
+      <nav class="header-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="business.html">Business</a>
+        <a class="nav-link" href="aboutme.html">About</a>
+        <a class="nav-link is-active" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="assets/Cole_McGregor_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <h1>Portfolio</h1>
+      <p class="summary">
+        A mix of contract work and ongoing projects. I prefer showing outcomes: what was failing, what changed, and what became reliable afterward.
+      </p>
+    </section>
+
+    <section>
+      <h2>Prior contract work</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>RAS Systems</h3>
+          <p class="meta">Contract Software Engineer · 2024–Present</p>
+
+          <div class="portfolio-block">
+            <p><strong>Problem</strong></p>
+            <p>
+              Internal tooling and reporting workflows spanned multiple systems and had accumulated access issues,
+              brittle logic, and undocumented behavior — making administration and report generation hard to maintain.
+            </p>
+
+            <p><strong>Work</strong></p>
+            <ul>
+              <li>Implemented admin-only work order switching to support cross-technician visibility.</li>
+              <li>Normalized and repaired workflows tied to permissions, state, and data binding.</li>
+              <li>Stabilized multi-page PDF generation (text splitting, continuation, layout normalization).</li>
+              <li>Designed flexible image layout rules for portrait/landscape, mixed counts, and edge cases.</li>
+              <li>Refactored brittle template/CSS logic and removed redundant selectors.</li>
+              <li>Documented system behavior for maintainability and onboarding.</li>
+            </ul>
+
+            <p class="meta"><strong>Stack:</strong> Bubble · JavaScript · JSReport · HTML/CSS · SharePoint · Salesforce</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects (past and present)</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Healthcare Scheduler</h3>
+          <p class="meta">Python (FastAPI/Flask) · SOA · Docker</p>
+          <p>
+            Service-oriented scheduling system with modular services, adapters, and logging patterns.
+            Built for maintainability and boundary clarity.
+          </p>
+          <p class="meta">Academic project; repository is not public.</p>
+        </article>
+
+        <article class="card">
+          <h3>TowneCodex — D&amp;D Item Manager</h3>
+          <p class="meta">Python · Desktop UI · Web scraping · Export pipelines</p>
+          <p>
+            Desktop app for managing a growing D&amp;D 5e item database.
+            Supports ingestion from multiple sources and exports into usable printable formats.
+          </p>
+          <a href="https://github.com/ColeMcGregor/Magic-Item-Database" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>Skydiver — Android Arcade Game</h3>
+          <p class="meta">Kotlin · Android · Collision systems</p>
+          <p>
+            Arcade-style descent game with obstacles, collectibles, and dynamic difficulty scaling.
+            Built with clean separation between game objects and systems.
+          </p>
+          <a href="https://github.com/ColeMcGregor/Skydiver" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>Minotaur</h3>
+          <p class="meta">C++ · Grid/FOV · Systems design</p>
+          <p>
+            Maze project exploring robust grid representation, visibility rules, and fog-of-war with an emphasis on clean, testable APIs.
+          </p>
+          <a href="https://github.com/ColeMcGregor/Minotaur" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>Arith-Matic</h3>
+          <p class="meta">Kotlin · Learning tools · Clean architecture</p>
+          <p>
+            Modular math trainer emphasizing clear abstractions for question generation and settings,
+            designed for consistent UX and measurable progress.
+          </p>
+          <a href="https://github.com/ColeMcGregor/Arith-Matic" target="_blank" rel="noopener">View Code</a>
+        </article>
+
+        <article class="card">
+          <h3>Fox &amp; Rabbit</h3>
+          <p class="meta">Java · Data structures · Turn engine</p>
+          <p>
+            Original chase game on a 6×6 ring board with distinct movement rules, scent detection, and constrained resource spawning.
+          </p>
+          <p class="meta">Academic project; code access is not public.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

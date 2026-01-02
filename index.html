@@ -5,14 +5,14 @@
   <meta name="author" content="Cole McGregor" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Cole McGregor · McGregor Systems LLC</title>
+  <title>McGregor Systems LLC · Software Repair & Workflow Automation</title>
   <meta
     name="description"
-    content="Cole McGregor: software systems engineer. Founder of McGregor Systems LLC. Systems design, software repair, and scalable architecture across services, tools, and simulations."
+    content="McGregor Systems LLC — practical software help for small businesses and teams: fixing broken systems, stabilizing tools, automating workflows, and improving reliability."
   />
 
   <link rel="canonical" href="https://ColeMcGregor.github.io/" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
@@ -21,8 +21,7 @@
     <header class="site-header">
       <div class="header-top">
         <div class="brand">
-  
-          <a class="llc-badge" href="#llc" aria-label="McGregor Systems LLC">
+          <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
             <img
               src="assets/LogoMcGregorSystemsSmall.png"
               alt="McGregor Systems LLC"
@@ -30,22 +29,21 @@
             />
             <span class="llc-name">McGregor Systems LLC</span>
           </a>
-          <strong><span class="name"></span>Cole McGregor</span></strong>
+          <strong class="brand-person">Cole McGregor</strong>
+        </div>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="portfolio.html">See Work</a>
+          <a class="btn" href="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)">Contact</a>
         </div>
       </div>
-    
-      <nav class="header-nav">
-        <a href="#llc">LLC</a>
-        <a href="#about-me">About</a>
-        <a href="#services">Services</a>
-        <a href="#rates">Rates</a>
-        <a href="#contracts">Prior<br>Contracts</a>
-        <a href="#projects">Projects</a>
-        <a href="#other-experience">Other<br>Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Professional<br>Development</a>
-        <a href="assets/Cole_McGregor_Resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <a href="#contact">Contact</a>
+
+      <nav class="header-nav" aria-label="Primary">
+        <a class="nav-link is-active" href="index.html">Home</a>
+        <a class="nav-link" href="business.html">Business</a>
+        <a class="nav-link" href="aboutme.html">About</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="assets/Cole_McGregor_Resume.pdf" target="_blank" rel="noopener">Resume</a>
       </nav>
     </header>
 
@@ -60,396 +58,115 @@
       </div>
 
       <div class="hero-text">
-        <h1>Software Systems Engineer</h1>
-
+        <h1>I fix broken software and messy workflows.</h1>
         <p class="summary">
-          I’m a software developer who focuses on making systems easier to understand, safer to change, and more reliable in practice.
-          I work across backend services, tools, and system-heavy applications, applying proven design principles without over-engineering.
+          If your tools feel fragile, your process relies on “that one spreadsheet,” or you’re stuck babysitting reports and systems
+          that keep breaking — I can step in, diagnose what’s happening, and make it reliable again.
           <br /><br />
-          Through <strong>McGregor Systems LLC</strong>, I provide contract engineering support for teams that need practical improvements, or small businesses that have no need for a team or long term engineer. 
+          I work with small businesses and teams that don’t have time to untangle technical problems — but still need things to run clean.
         </p>
-        
-      </div>
-    </section>
 
-        <!-- LLC -->
-        <section id="llc">
-          <h2>McGregor Systems LLC</h2>
-          <p class="meta">
-            Contract software engineering · Systems design · Software repair & modernization
-          </p>
-        
-          <div class="card">
-            <h3>Engagement Focus</h3>
-            <p>
-              McGregor Systems LLC is the umbrella for my contract software engineering work. I take on engagements where a team needs someone who can
-              understand an existing system quickly, make meaningful improvements, and leave it more maintainable than they found it. This typically
-              involves stepping into live systems, diagnosing issues in place, and making targeted changes without disrupting ongoing operations.
-            </p>
-        
-            <h3>Delivery Approach</h3>
-            <p>
-              I work by clarifying workflows and constraints, identifying failure points, and making incremental, well-scoped changes. Fixes are applied
-              close to the source of the problem, with structure and documentation added where they reduce ambiguity and future friction.
-            </p>
-          </div>
-        </section>
-        
+        <div class="hero-actions">
+          <a class="btn" href="business.html">How I Help</a>
+          <a class="btn btn-ghost" href="portfolio.html">Proof & Examples</a>
+        </div>
 
-    <!-- About Me-->
-    <section id="about-me">
-      <h2>About Me</h2>
-      <p>
-        I’m a systems-focused developer with experience spanning service-oriented architectures, application development, and performance-conscious simulation work.
-        I care about code that stays understandable over time, has clear interfaces, contains intentional tradeoffs, and is constructed with design patterns and principles that don’t collapse under change.
-        <br /><br />
-        My background includes U.S. Air Force service and formal software-development training. I tend to be most valuable where a project needs structure:
-        establishing architecture, untangling complexity, improving reliability, and leaving behind systems other engineers can work with confidently.
-      </p>
-    </section>
-
-    <!-- Services -->
-    <section id="services">
-      <h2>Services</h2>
-      <div class="grid">
-    
-        <article class="card">
-          <h3>Software Repair & Stabilization</h3>
-          <p class="meta">Fixing broken systems · Reducing outages · Restoring confidence</p>
-          <p>
-            I step into existing systems that are unreliable or hard to change and make them stable again.
-            This includes identifying root causes, fixing defects, and cleaning up fragile areas without
-            disrupting day-to-day operations.
-          </p>
-        </article>
-    
-        <article class="card">
-          <h3>Systems Design & Architecture</h3>
-          <p class="meta">Clear system boundaries · Scalable design · Fewer surprises</p>
-          <p>
-            I design and adjust system structure so teams can add features, integrate tools,
-            and scale operations without constantly breaking existing behavior.
-          </p>
-        </article>
-    
-        <article class="card">
-          <h3>Tooling & Automation</h3>
-          <p class="meta">Internal tools · Reduced manual work · Faster turnaround</p>
-          <p>
-            I build internal tools and automation that remove repetitive manual steps,
-            improve data quality, and help teams move faster with fewer errors.
-          </p>
-        </article>
-    
-        <article class="card">
-          <h3>Platform Integration & Extension</h3>
-          <p class="meta">Working within existing platforms · Fewer vendor lock-ins</p>
-          <p>
-            I extend and connect platforms you already use, such as low-code tools and third-party services,
-            without forcing expensive rewrites or disrupting established workflows.
-          </p>
-        </article>
-    
-        <article class="card">
-          <h3>Workflow & Process Engineering</h3>
-          <p class="meta">Clear ownership · Predictable outcomes · Less confusion</p>
-          <p>
-            I turn unclear or inconsistent processes into reliable technical workflows,
-            so teams know who owns what and systems behave the same way every time.
-          </p>
-        </article>
-    
-        <article class="card">
-          <h3>Reporting & Document Systems</h3>
-          <p class="meta">Operational reports · Client-ready documents · Compliance-friendly</p>
-          <p>
-            I design and stabilize reporting and document generation systems so reports are accurate,
-            readable, and suitable for long-term reference, audits, and client delivery.
-          </p>
-        </article>
-    
-      </div>
-    </section>
-
-    <section id="rates">
-      <h2>Rates & Engagement Models</h2>
-    
-      <div class="card">
-        <table class="pricing-table">
-          <thead>
-            <tr>
-              <th>Engagement Type</th>
-              <th>Structure</th>
-              <th>Rate / Terms</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-    
-            <tr>
-              <td><strong>Discovery</strong></td>
-              <td>Time-based <br>(Project-Familiarization)</td>
-              <td>$40 / hour</td>
-              <td>
-                Initial system spin-up focused on understanding how components connect.
-                Includes code reading, environment familiarization, workflow mapping,
-                and diagramming. Discovery ends immediately when implementation or fixes begin.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Advisory / Review</strong></td>
-              <td>Time-based <br>(non-implementation)</td>
-              <td>$50 / hour</td>
-              <td>
-                Architectural review, second opinions, design validation, or written
-                recommendations without direct implementation. May include meetings,
-                diagrams, or documentation deliverables.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Hourly</strong></td>
-              <td>Time-based</td>
-              <td>$50 / hour</td>
-              <td>
-                Used once active changes begin. Best for bug fixing, improvements,
-                and work with evolving or unclear scope. Billed in minimum increments
-                as specified in contract.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Retainer</strong></td>
-              <td>Prepaid block of hours</td>
-              <td>10% discount <br>on hourly rate</td>
-              <td>
-                Hours are billed against the retainer at a discounted rate.
-                Suitable for ongoing support, maintenance, or recurring work.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Flat Rate</strong></td>
-              <td>Fixed scope</td>
-              <td>Quoted per project</td>
-              <td>
-                Defined deliverables with agreed scope.
-                Changes in requirements, unexpected technical issues, or external
-                constraints may require time and cost adjustments.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Priority / Expedited</strong></td>
-              <td>Time-based <br>(schedule override)</td>
-              <td>+25–50% hourly rate<br>(based on complexity<br> and scheduling impact)</td>
-              </td>
-              <td>
-                Applies to work requested on short notice, outside normal scheduling,
-                or requiring interruption of planned work. Includes evenings, weekends,
-                or delivery tied to fixed external deadlines.
-              </td>
-            </tr>
-    
-            <tr>
-              <td><strong>Communication</strong></td>
-              <td>Conditional</td>
-              <td>$10 per instance<br>or $40 / hour<br>(whichever is lower)</td>
-              <td>
-                (DOES NOT APPLY TO INITIAL COMMUNICATION)<br>Applies to project-related communication that is not directly adjacent to active technical work.
-                Includes client and stakeholder correspondence. Billed only when such communication cannot be
-                reasonably grouped with other billable work and is assessed at the end of the engagement. 
-              </td>
-            </tr>
-    
-          </tbody>
-        </table>
         <p class="meta">
-          All engagements are governed by a written agreement outlining scope,
-          billing increments, payment terms, and change-handling procedures.
-        </p>
-      </div>
-    </section>
-    
-   
-    
-    <!-- Prior Contracts -->
-    <section id="contracts">
-      <h2>Prior Contracts</h2>
-      <p class="meta">
-        Work performed through McGregor Systems LLC
-      </p>
-
-      <div class="grid">
-        <article class="card">
-          <h3>RAS Systems</h3>
-          <p class="meta">Role: Contract Software Engineer · Dates: 2024–Present</p>
-      
-          <p><strong>Problem:</strong> Internal tooling and reporting workflows spanned multiple systems (Bubble and JSReport) and had accumulated access issues, brittle logic, and undocumented behavior that made both administration and report generation difficult to maintain.</p>
-      
-          <p><strong>Work:</strong></p>
-      
-          <p><strong>Bubble Platform — Admin Tooling & Workflow Repair</strong></p>
-          <ul>
-            <li>Implemented an admin-only dropdown allowing authorized users to view and switch between work orders across all technicians.</li>
-            <li>Organized and normalized existing Bubble workflows related to work order selection and permissions.</li>
-            <li>Documented legacy logic and data flow to improve maintainability and onboarding.</li>
-            <li>Fixed access-control, state, and data-binding bugs tied to cross-user work order visibility.</li>
-          </ul>
-      
-          <p><strong>Reporting & Media Pipeline — JSReport</strong></p>
-          <ul>
-            <li>Stabilized multi-page PDF report generation, including text splitting, section continuation handling, and layout normalization.</li>
-            <li>Designed flexible image layout rules supporting portrait and landscape orientations, mixed image counts, and edge cases.</li>
-            <li>Refactored brittle CSS and template logic, removing redundant selectors and fixing formatting bugs.</li>
-            <li>Worked with stakeholders to clarify approval flow, formatting constraints, and future media requirements.</li>
-          </ul>
-      
-          <p class="meta"><strong>Stack:</strong> Bubble, JavaScript, JSReport, HTML/CSS, SharePoint, Salesforce</p>
-        </article>
-      </div>
-      
-      
-    </section>
-    
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects, Past and Present</h2>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Healthcare Scheduler</h3>
-          <p class="meta">Python (FastAPI/Flask) · SOA · Docker</p>
-          <p>
-            Service-oriented scheduling system with modular services, adapters, and logging patterns.
-            Built with an emphasis on maintainability and boundary clarity.
-          </p>
-          <p class="meta">
-            Note: academic project; repository is not public.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>TowneCodex - D&amp;D Item Manager</h3>
-          <p class="meta">Python · Desktop UI · Web Scraping · Export Pipelines</p>
-          <p>
-            Desktop application for managing a growing database of D&amp;D 5e items.
-            Supports ingestion from multiple sources and exports into printable / usable formats for tables.
-          </p>
-          <a href="https://github.com/ColeMcGregor/Magic-Item-Database" target="_blank" rel="noopener">View Code</a>
-        </article>
-
-        <article class="card">
-          <h3>Skydiver - Android Arcade Game</h3>
-          <p class="meta">Kotlin · Android · Collision Systems</p>
-          <p>
-            Arcade-style descent game with obstacles, collectibles, and dynamic difficulty scaling.
-            Built with clean separation between game objects and systems for expandability.
-          </p>
-          <a href="https://github.com/ColeMcGregor/Skydiver" target="_blank" rel="noopener">View Code</a>
-        </article>
-
-        <article class="card">
-          <h3>Minotaur - Ongoing</h3>
-          <p class="meta">C++ · Grid/FOV · Systems Design</p>
-          <p>
-            Maze project exploring robust grid representation, visibility rules, and fog-of-war with an emphasis on clean, testable APIs.
-            Current focus: reliable visibility and performant map queries.
-          </p>
-          <a href="https://github.com/ColeMcGregor/Minotaur" target="_blank" rel="noopener">View Code</a>
-        </article>
-
-        <article class="card">
-          <h3>Arith-Matic - Ongoing</h3>
-          <p class="meta">Kotlin · Learning Tools · Clean Architecture</p>
-          <p>
-            Modular math trainer emphasizing clear abstractions for question generation and settings,
-            designed for consistent UX and measurable progress.
-          </p>
-          <a href="https://github.com/ColeMcGregor/Arith-Matic" target="_blank" rel="noopener">View Code</a>
-        </article>
-
-        <article class="card">
-          <h3>Fox &amp; Rabbit</h3>
-          <p class="meta">Java · Data Structures · Turn Engine</p>
-          <p>
-            Original chase game on a 6×6 ring board with distinct movement rules, scent detection, and constrained resource spawning.
-          </p>
-          <p class="meta">Academic project; code access is not public.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Other Experience -->
-    <section id="other-experience">
-      <h2>Other Experience</h2>
-
-      <div class="card">
-        <h3>Armament Systems Specialist · United States Air Force</h3>
-        <p class="meta">2016–2019</p>
-        <p>
-          Maintained and tested complex weapons systems on the F-15E. Developed a disciplined approach to safety, procedure,
-          documentation, and team execution under high accountability.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Software Engineering Projects · Siena College</h3>
-        <p class="meta">2023–2024</p>
-        <p>
-          Built service-oriented systems and team-based applications using Agile methods, documentation, and stakeholder-style communication.
+          Based in upstate NY · Remote-friendly · Contract work through McGregor Systems LLC
         </p>
       </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span class="chip">Kotlin / Android / React Native</span>
-        <span class="chip">Java, C#, C++</span>
-        <span class="chip">Python, JavaScript</span>
-        <span class="chip">SQL, NoSQL</span>
-        <span class="chip">SOA / Systems Design</span>
-        <span class="chip">Architecture &amp; Refactoring</span>
-        <span class="chip">Design Patterns</span>
-        <span class="chip">Clean Architecture</span>
-        <span class="chip">Testing / TDD</span>
-        <span class="chip">Performance Optimization</span>
-        <span class="chip">Docker / Containerization</span>
-        <span class="chip">PostgreSQL / SQLite</span>
-        <span class="chip">Git / GitHub</span>
-      </div>
+    <!-- Recognition / pain points -->
+    <section>
+      <h2>Common situations I help with</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>“It works… until it doesn’t.”</h3>
+          <p class="meta">Recurring bugs · brittle logic · surprise breakage</p>
+          <p>
+            Things break when one small change happens, and nobody is confident touching it.
+            I stabilize the system, reduce failure points, and leave it easier to maintain.
+          </p>
+        </article>
 
-      <p class="meta">
-        B.S. Software Development (Cum Laude) - Siena College · A.S. Computer Science - Hudson Valley CC
-      </p>
+        <article class="card">
+          <h3>Manual work that shouldn’t be manual</h3>
+          <p class="meta">Copy/paste workflows · spreadsheets as glue · preventable mistakes</p>
+          <p>
+            If the business runs on repetitive steps and “tribal knowledge,” I can automate the right parts,
+            add guardrails, and make outcomes predictable.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Reports, PDFs, and client documents that keep breaking</h3>
+          <p class="meta">Layout issues · missing images · pagination bugs · data inconsistencies</p>
+          <p>
+            I design and repair document/report generation so your outputs are consistent, readable,
+            and safe to rely on long-term.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Systems that don’t talk to each other</h3>
+          <p class="meta">Disconnected tools · duplicate entry · inconsistent records</p>
+          <p>
+            I connect what you already use, reduce double-entry, and help you move data safely between systems.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <!-- Professional Development -->
-    <section id="certifications">
-      <h2>Professional Development</h2>
-      <ul>
-        <li>Extensive study of <em>Design Patterns: Elements of Reusable Object-Oriented Software</em> (GoF)</li>
-        <li>Study of <em>Clean Architecture</em> (Robert C. Martin)</li>
-        <li>In-depth study of <em>Game Programming Patterns</em> (Robert Nystrom)</li>
-        <li>Parallel &amp; High-Performance Computing coursework with TACC</li>
-        <li>In-depth study of <em>The Art of Game Design</em> (Jesse Schell), 4th Edition</li>
-      </ul>
+    <!-- How it works -->
+    <section>
+      <h2>How it works</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>1) Quick call</h3>
+          <p class="meta">15 minutes</p>
+          <p>
+            You tell me what’s going wrong and what “done” looks like. If it’s not a fit, I’ll say so.
+          </p>
+        </article>
+        <article class="card">
+          <h3>2) Discovery</h3>
+          <p class="meta">1–3 hours (usually)</p>
+          <p>
+            I trace the issue, map the moving parts, and propose a plan. This is the moment uncertainty turns into clarity.
+          </p>
+        </article>
+        <article class="card">
+          <h3>3) Fix + handoff</h3>
+          <p class="meta">Targeted changes</p>
+          <p>
+            I implement repairs/improvements, add guardrails where needed, and leave behind notes/documentation so you’re not stuck later.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Want the full details?</strong>
+        <span>See services, rates, and engagement models on the Business page.</span>
+        <a class="btn btn-ghost" href="business.html">Business Details</a>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section class="contact-card">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
+      <p>
+        Email: <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a>
+      </p>
+      <p class="meta">
+        Helpful details to include: what’s broken, where it lives (tool/site/app), who uses it, and what outcome you need.
+      </p>
       <p>
         <a href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a> ·
         <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
       </p>
     </section>
 
-    <!-- Footer -->
     <footer>
       <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
     </footer>

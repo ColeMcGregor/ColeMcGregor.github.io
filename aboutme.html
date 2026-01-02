@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About · Cole McGregor</title>
+  <meta
+    name="description"
+    content="About Cole McGregor — background, approach, and working style."
+  />
+
+  <link rel="canonical" href="https://ColeMcGregor.github.io/aboutme.html" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
+            <img src="assets/LogoMcGregorSystemsSmall.png" alt="McGregor Systems LLC" class="llc-logo" />
+            <span class="llc-name">McGregor Systems LLC</span>
+          </a>
+          <strong class="brand-person">Cole McGregor</strong>
+        </div>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="portfolio.html">See Work</a>
+          <a class="btn" href="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)">Contact</a>
+        </div>
+      </div>
+
+      <nav class="header-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="business.html">Business</a>
+        <a class="nav-link is-active" href="aboutme.html">About</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="assets/Cole_McGregor_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <h1>About me</h1>
+      <p class="summary">
+        I’m a systems-focused developer. I do best when a project needs structure: untangling complexity,
+        improving reliability, and leaving behind something other people can work with confidently.
+      </p>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="card">
+        <h2>Working style</h2>
+        <p>
+          I aim for practical changes with clear impact. I like small steps that move a system from “fragile” to “predictable”:
+          better boundaries, fewer hidden dependencies, clearer ownership, and less surprise breakage.
+        </p>
+        <p class="meta">
+          Translation: I’m not here to rewrite your world — I’m here to make it work.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Background</h2>
+        <p>
+          My background includes U.S. Air Force service and formal software development training.
+          I’ve worked across backend services, desktop tooling, and system-heavy application work — including reporting pipelines and automation.
+        </p>
+        <p class="meta">
+          B.S. Software Development (Cum Laude) — Siena College · A.S. Computer Science — HVCC
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Principles I bring to projects</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Clarity over cleverness</h3>
+          <p>Readable code, obvious data flow, and fewer “mystery behaviors.”</p>
+        </article>
+        <article class="card">
+          <h3>Fix near the source</h3>
+          <p>Patch symptoms only when necessary; otherwise remove the real cause of failure.</p>
+        </article>
+        <article class="card">
+          <h3>Leave things better</h3>
+          <p>Documentation and structure where it meaningfully reduces future confusion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills (high-level)</h2>
+      <div class="skills">
+        <span class="chip">Kotlin / Android</span>
+        <span class="chip">Java · C# · C++</span>
+        <span class="chip">Python · JavaScript</span>
+        <span class="chip">SQL · Data modeling</span>
+        <span class="chip">Tooling · Automation</span>
+        <span class="chip">Refactoring · Reliability</span>
+        <span class="chip">HTML/CSS · Document pipelines</span>
+        <span class="chip">Git · Docker</span>
+      </div>
+      <p class="meta">
+        If you want the deeper technical detail, it’s available in my resume and portfolio writeups.
+      </p>
+    </section>
+
+    <section>
+      <h2>Professional development</h2>
+      <div class="card">
+        <ul class="clean-list">
+          <li>Design Patterns (GoF)</li>
+          <li>Clean Architecture (Robert C. Martin)</li>
+          <li>Game Programming Patterns (Robert Nystrom)</li>
+          <li>Parallel &amp; High-Performance Computing coursework (TACC)</li>
+          <li>The Art of Game Design (Jesse Schell)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
