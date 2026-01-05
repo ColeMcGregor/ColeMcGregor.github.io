@@ -152,7 +152,7 @@
             <tr>
               <th>Engagement Type</th>
               <th>Structure</th>
-              <th>Rate / Terms</th>
+              <th>Rate / Terms <rate-tooltip></rate-tooltip></th>
               <th>Notes</th>
             </tr>
           </thead>
@@ -181,7 +181,10 @@
             <tr>
               <td data-label="Engagement Type"><strong>Hourly</strong></td>
               <td data-label="Structure">Time-based</td>
-              <td data-label="Rate / Terms">$50 / hour</td>
+              <td data-label="Rate / Terms">
+                $50 / hour
+              </td>
+              
               <td data-label="Notes">
                 Used once active changes begin. Best for bug fixing, improvements, and work with evolving or unclear scope.
               </td>
@@ -190,7 +193,8 @@
             <tr>
               <td data-label="Engagement Type"><strong>Retainer</strong></td>
               <td data-label="Structure">Prepaid block</td>
-              <td data-label="Rate / Terms">10% discount<br>on hourly</td>
+              <td data-label="Rate / Terms">10% discount<br>on hourly
+              </td>
               <td data-label="Notes">
                 Hours are billed against the retainer at a discounted rate. Suitable for ongoing support, maintenance, or recurring work.
               </td>
@@ -244,8 +248,140 @@
     </footer>
   </div>
 
+  <template id="rate-tooltip-template">
+    <strong>Market context</strong><br>
+    According to the U.S. Bureau of Labor Statistics, median U.S. software developer
+    compensation corresponds to approximately $55–$75/hour when converted from
+    annual W-2 wages.<br><br>
+    Independent contractors typically bill higher hourly rates to account for taxes,
+    overhead, and non-billable time.<br><br>
+    <span class="source">
+      Source:
+      <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm?"
+         target="_blank" rel="noopener">
+        U.S. Bureau of Labor Statistics (OEWS)
+      </a>
+    </span>
+  </template>
+
+  <script>
+    class RateTooltip extends HTMLElement {
+      connectedCallback() {
+        if (this.shadowRoot) return;
+  
+        const template = document.getElementById("rate-tooltip-template");
+        if (!template) return;
+  
+        const shadow = this.attachShadow({ mode: "open" });
+  
+        shadow.innerHTML = `
+          <style>
+            :host {
+              position: relative;
+              display: inline-block;
+              margin-left: 6px;
+            }
+  
+            .icon {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 16px;
+              height: 16px;
+              font-size: 11px;
+              font-weight: 700;
+              color: var(--muted);
+              border: 1px solid var(--ink);
+              border-radius: 50%;
+              user-select: none;
+              cursor: default;
+            }
+  
+            :host(:hover) .icon,
+            :host(:focus-within) .icon {
+              color: var(--ink);
+              border-color: var(--accent);
+            }
+  
+            .popup {
+              position: absolute;
+              bottom: calc(100% + 0px);
+              text-wrap: wrap;
+              right: 0;
+              z-index: 1000;
+              width: 280px;
+              padding: 12px 14px;
+              background: var(--surface);
+              color: var(--ink);
+              border: 1px solid var(--border);
+              border-radius: 10px;
+              box-shadow: 0 10px 24px rgba(0,0,0,.4);
+              font-size: 13px;
+              line-height: 1.5;
+  
+              opacity: 0;
+              visibility: hidden;
+              pointer-events: none;
+              transform: translateY(6px);
+              transition: opacity 120ms ease, transform 120ms ease;
+            }
+  
+            :host(:hover) .popup,
+            :host(:focus-within) .popup {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+              transform: translateY(0);
+            }
+  
+            .source {
+              font-size: 12px;
+              color: var(--muted);
+            }
+  
+            .source a {
+              color: var(--accent);
+              text-decoration: none;
+            }
+  
+            .source a:hover {
+              text-decoration: underline;
+            }
+  
+            @media (max-width: 640px) {
+              .popup {
+                right: auto;
+                left: 50%;
+                width: min(92vw, 320px);
+                transform: translate(-50%, 0px);
+              }
+  
+              :host(:hover) .popup,
+              :host(:focus-within) .popup {
+                transform: translate(-50%, 0);
+              }
+            }
+          </style>
+  
+          <span class="icon" tabindex="0">!</span>
+          <div class="popup"></div>
+        `;
+  
+        shadow.querySelector(".popup").appendChild(
+          template.content.cloneNode(true)
+        );
+      }
+    }
+  
+    customElements.define("rate-tooltip", RateTooltip);
+  </script>
+  
+  
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  
 </body>
 </html>

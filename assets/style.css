@@ -493,3 +493,96 @@ footer {
     white-space: normal;
   }
 }
+
+/* ===============================
+   Clickable Hover Tooltip
+   =============================== */
+
+   .rate-tip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+  }
+  
+  .rate-tip-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    user-select: none;
+    cursor: default;
+  }
+  
+  .rate-tip:hover .rate-tip-icon {
+    color: var(--ink);
+    border-color: var(--accent);
+  }
+  
+  .rate-tip-pop {
+    position: absolute;
+    text-wrap: wrap;
+    bottom: calc(100% + 10px);
+    right: 0;
+    z-index: 1000;
+    width: 280px;
+    padding: 12px 14px;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.4);
+    font-size: 13px;
+    line-height: 1.5;
+  
+    /* hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(6px);
+    transition: opacity 120ms ease, transform 120ms ease, visibility 0ms linear 120ms;
+  }
+  
+  /* IMPORTANT: show on hover of the WRAPPER, not just the icon */
+  .rate-tip:hover .rate-tip-pop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; /* allows clicking links */
+    transform: translateY(0);
+    transition: opacity 120ms ease, transform 120ms ease, visibility 0ms;
+  }
+  
+  .rate-tip-source {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  
+  .rate-tip-source a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .rate-tip-source a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Phone positioning */
+  @media (max-width: 640px) {
+    .rate-tip-pop {
+      right: auto;
+      left: 50%;
+      width: min(92vw, 320px);
+      transform: translate(-50%, 6px);
+    }
+  
+    .rate-tip:hover .rate-tip-pop {
+      transform: translate(-50%, 0);
+    }
+  }
+  
