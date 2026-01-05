@@ -344,7 +344,7 @@ h3 { margin: 0; font-size: 18px; letter-spacing: .2px; }
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 footer {
@@ -466,6 +466,7 @@ footer {
     padding: 12px 0;
     border-bottom: 1px solid var(--border);
   }
+  
 
   .pricing-table tbody td {
     display: block;
