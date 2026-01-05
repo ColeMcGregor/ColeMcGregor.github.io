@@ -263,7 +263,7 @@
       </a>
     </span>
   </template>
-
+  
   <script>
     class RateTooltip extends HTMLElement {
       connectedCallback() {
@@ -282,7 +282,9 @@
               margin-left: 6px;
             }
   
+            /* Focusable icon for mobile + accessibility */
             .icon {
+              all: unset; /* important: avoid mobile button defaults */
               display: inline-flex;
               align-items: center;
               justify-content: center;
@@ -294,7 +296,7 @@
               border: 1px solid var(--ink);
               border-radius: 50%;
               user-select: none;
-              cursor: default;
+              cursor: pointer;
             }
   
             :host(:hover) .icon,
@@ -305,24 +307,32 @@
   
             .popup {
               position: absolute;
-              bottom: calc(100% + 0px);
-              text-wrap: wrap;
+              bottom: calc(100% + 0px); /* intentionally tight */
               right: 0;
               z-index: 1000;
+  
               width: 280px;
               padding: 12px 14px;
+  
               background: var(--surface);
               color: var(--ink);
               border: 1px solid var(--border);
               border-radius: 10px;
               box-shadow: 0 10px 24px rgba(0,0,0,.4);
+  
               font-size: 13px;
               line-height: 1.5;
+  
+              /* 👇 YOU ASKED TO KEEP THIS */
+              text-wrap: wrap;
+  
+              /* extra safety for long URLs / words */
+              overflow-wrap: anywhere;
   
               opacity: 0;
               visibility: hidden;
               pointer-events: none;
-              transform: translateY(6px);
+              transform: translateY(4px);
               transition: opacity 120ms ease, transform 120ms ease;
             }
   
@@ -348,12 +358,13 @@
               text-decoration: underline;
             }
   
+            /* Mobile: center and keep fully on-screen */
             @media (max-width: 640px) {
               .popup {
                 right: auto;
                 left: 50%;
                 width: min(92vw, 320px);
-                transform: translate(-50%, 0px);
+                transform: translate(-50%, 0);
               }
   
               :host(:hover) .popup,
@@ -363,7 +374,12 @@
             }
           </style>
   
-          <span class="icon" tabindex="0">!</span>
+          <button
+            class="icon"
+            type="button"
+            aria-label="Show rate context"
+          >!</button>
+  
           <div class="popup"></div>
         `;
   
@@ -375,6 +391,7 @@
   
     customElements.define("rate-tooltip", RateTooltip);
   </script>
+  
   
   
 
