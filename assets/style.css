@@ -585,4 +585,32 @@ footer {
       transform: translate(-50%, 0);
     }
   }
+
+  /* ===== Social Page Intro ================================================ */
+/* ===== Social Page Intro ================================================ */
+.social-intro {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 24px;
+}
+
+.social-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  background: #0e1324;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  .social-avatar {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+
   
