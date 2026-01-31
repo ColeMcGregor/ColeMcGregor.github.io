@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>McGregor Systems LLC · Contact</title>
+  <meta
+    name="description"
+    content="Contact McGregor Systems LLC for practical software repair, workflow automation, and small-business tooling."
+  />
+
+  <link rel="canonical" href="https://ColeMcGregor.github.io/contact.html" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="site-header">
+        <div class="header-top">
+          <div class="brand">
+            <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
+              <img
+                src="assets/LogoMcGregorSystemsSmall.png"
+                alt="McGregor Systems LLC"
+                class="llc-logo"
+              />
+              <span class="llc-name">McGregor Systems LLC</span>
+            </a>
+            <strong class="brand-person">Cole McGregor</strong>
+          </div>
+        <nav class="header-nav" aria-label="Primary">
+          <a class="nav-link is-active" href="index.html">Home</a>
+          <a class="nav-link" href="business.html">Work</a>
+          <a class="nav-link" href="aboutme.html">About</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      </header>
+
+    <section class="page-hero">
+      <h1>Contact</h1>
+      <p class="summary">
+        I look forward to hearing from you!
+      </p>
+      <p class="meta">
+        Prefer email? <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- Contact layout (form left, details right) -->
+    <section class="contact-split" aria-label="Contact form and details">
+      <div class="contact-left card">
+        <h2>Let’s get started</h2>
+        <p class="meta">
+          Fill this out and I’ll reply with next steps (or ask a couple clarifying questions).
+          If it’s not a fit, I’ll tell you.
+        </p>
+
+        <!--
+          NOTE: This is a static site. The form uses mailto by default.
+          If you later add Formspree / Netlify Forms, keep the same fields and replace the action/method.
+        -->
+        <form
+          class="contact-form"
+          action="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-grid">
+            <label class="field">
+              <span class="field-label">First name</span>
+              <input class="input" type="text" name="First Name" autocomplete="given-name" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Last name</span>
+              <input class="input" type="text" name="Last Name" autocomplete="family-name" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Email</span>
+              <input class="input" type="email" name="Email" autocomplete="email" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Phone (optional)</span>
+              <input class="input" type="tel" name="Phone" autocomplete="tel" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field-label">What do you need help with?</span>
+            <textarea
+              class="textarea"
+              name="Project Details"
+              rows="8"
+              placeholder="Helpful details: what’s broken, where it lives (tool/site/app), who uses it, what it should do, and what you’ve tried. If you have screenshots/logs, mention them."
+              required
+            ></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+            <a class="btn btn-ghost" href="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)">
+              Email instead
+            </a>
+          </div>
+
+          <p class="meta">
+            Tip: If it’s a website issue, include the URL and what device/browser you’re on.
+            If it’s a spreadsheet/report issue, include what “correct output” looks like.
+          </p>
+        </form>
+      </div>
+
+      <aside class="contact-right card" aria-label="Contact details">
+        <div class="contact-card-brand">
+          <img
+            src="assets/LogoMcGregorSystemsSmall.png"
+            alt="McGregor Systems LLC"
+            class="contact-logo"
+          />
+          <div>
+            <div class="contact-org">McGregor Systems LLC</div>
+            <div class="meta">Software Repair · Workflow Automation · Small Tools</div>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <p><strong>Email:</strong> <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
+          <p><strong>Location:</strong> Upstate NY (remote-friendly)</p>
+          <p class="meta">
+            Typical first step: a quick call or email thread to confirm scope, then a short discovery pass.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a class="btn btn-ghost" href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <hr class="contact-divider" />
+
+        <div class="contact-badges">
+          <div class="meta">
+            Contract work through McGregor Systems LLC.
+          </div>
+          <a class="meta" href="business.html">See services & engagement models →</a>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
