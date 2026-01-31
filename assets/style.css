@@ -839,3 +839,35 @@ footer {
 
   .contact-divider { margin: 14px 0 12px; }
 }
+
+@media (max-width: 640px) {
+  /* Landing hero text centering */
+  .hero {
+    text-align: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1,
+  .hero-text p,
+  .hero-text .summary,
+  .hero-text .meta {
+    text-align: center;
+  }
+
+  /* Center the CTA button */
+  .hero-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 280px; /* keeps it from looking goofy-wide */
+  }
+}
+
