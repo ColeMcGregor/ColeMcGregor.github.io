@@ -66,55 +66,79 @@
         -->
         <form
           class="contact-form"
-          action="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)"
-          method="post"
-          enctype="text/plain"
+          action="https://formspree.io/f/xzdgwkre"
+          method="POST"
         >
+          <!-- Formspree helpers -->
+          <input type="hidden" name="_subject" value="New Project Inquiry · McGregor Systems LLC">
+          <input type="text" name="_gotcha" style="display:none">
+        
           <div class="form-grid">
             <label class="field">
               <span class="field-label">First name</span>
-              <input class="input" type="text" name="First Name" autocomplete="given-name" required />
+              <input
+                class="input"
+                type="text"
+                name="first_name"
+                autocomplete="given-name"
+                required
+              />
             </label>
-
+        
             <label class="field">
               <span class="field-label">Last name</span>
-              <input class="input" type="text" name="Last Name" autocomplete="family-name" required />
+              <input
+                class="input"
+                type="text"
+                name="last_name"
+                autocomplete="family-name"
+                required
+              />
             </label>
-
+        
             <label class="field">
               <span class="field-label">Email</span>
-              <input class="input" type="email" name="Email" autocomplete="email" required />
+              <input
+                class="input"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
             </label>
-
+        
             <label class="field">
               <span class="field-label">Phone (optional)</span>
-              <input class="input" type="tel" name="Phone" autocomplete="tel" />
+              <input
+                class="input"
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+              />
             </label>
           </div>
-
+        
           <label class="field">
             <span class="field-label">What do you need help with?</span>
             <textarea
               class="textarea"
-              name="Project Details"
+              name="project_details"
               rows="8"
               placeholder="Helpful details: what’s broken, where it lives (tool/site/app), who uses it, what it should do, and what you’ve tried. If you have screenshots/logs, mention them."
               required
             ></textarea>
           </label>
-
+        
           <div class="form-actions">
             <button class="btn" type="submit">Send</button>
-            <a class="btn btn-ghost" href="mailto:mcgregorsystemsllc@gmail.com?subject=Project%20Inquiry%20(McGregor%20Systems%20LLC)">
-              Email instead
-            </a>
           </div>
-
+        
           <p class="meta">
             Tip: If it’s a website issue, include the URL and what device/browser you’re on.
             If it’s a spreadsheet/report issue, include what “correct output” looks like.
           </p>
         </form>
+      
       </div>
 
       <aside class="contact-right card" aria-label="Contact details">

@@ -48,13 +48,10 @@ body {
   font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
   color: var(--ink);
 
+  /* IMPORTANT: background.png lives in /assets/, and this CSS lives in /assets/style.css */
   background:
-    linear-gradient(
-      rgba(246, 248, 251, 0.92),
-      rgba(246, 248, 251, 0.92)
-    ),
+    linear-gradient(rgba(246, 248, 251, 0.92), rgba(246, 248, 251, 0.92)),
     url("background.png");
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -471,6 +468,17 @@ footer {
 
 /* Header stack + full-width buttons on small screens */
 @media (max-width: 640px) {
+  /* IMPORTANT: mobile Safari hates background-attachment: fixed */
+  body {
+    background:
+      linear-gradient(rgba(246, 248, 251, 0.92), rgba(246, 248, 251, 0.92)),
+      url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
   .header-top { flex-direction: column; align-items: flex-start; }
   .header-cta { width: 100%; }
   .header-cta .btn { width: 100%; text-align: center; }
@@ -652,116 +660,182 @@ footer {
 
 /* ===============================
    Contact Page Split Layout
-   Add this near your layout components (e.g., after .grid/.card)
    =============================== */
 
-   .contact-split {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 16px;
-    align-items: start;
-  }
-  
-  @media (max-width: 900px) {
-    .contact-split {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* Left column form */
+.contact-split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contact-split { grid-template-columns: 1fr; }
+}
+
+/* Left column form */
+.contact-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(38,41,44,.82);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  box-shadow: 0 1px 0 rgba(17,24,39,.03);
+}
+
+.textarea { resize: vertical; min-height: 140px; }
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid rgba(28, 181, 186, 0.45);
+  outline-offset: 2px;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* Right column */
+.contact-card-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-logo {
+  width: 48px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.contact-org {
+  font-weight: 950;
+  color: var(--brand-charcoal);
+}
+
+.contact-details p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.contact-links {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-divider {
+  margin: 18px 0 14px;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* ===============================
+   PHONE / SMALL SCREEN IMPROVEMENTS
+   =============================== */
+
+@media (max-width: 640px) {
+  /* Make the split feel like stacked cards with better breathing room */
+  .contact-split { gap: 14px; }
+
   .contact-form {
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    margin-top: 8px;
+    gap: 10px;
   }
-  
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  
-  @media (max-width: 640px) {
-    .form-grid { grid-template-columns: 1fr; }
-  }
-  
-  .field {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  
+
+  /* Larger tap targets + better readability */
   .field-label {
-    font-weight: 800;
-    font-size: 13px;
-    color: rgba(38,41,44,.82);
+    font-size: 12px;
+    letter-spacing: 0.01em;
   }
-  
+
   .input,
   .textarea {
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+
+  .textarea { min-height: 160px; }
+
+  /* Actions: full-width buttons (better for thumbs) */
+  .form-actions { gap: 10px; }
+  .form-actions .btn,
+  .form-actions button,
+  .form-actions input[type="submit"] {
     width: 100%;
-    padding: 11px 12px;
+    text-align: center;
+  }
+
+  /* Right column: tighten and keep brand readable */
+  .contact-card-brand { gap: 10px; }
+
+  .contact-logo {
+    width: 44px;
+    height: 36px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* Links: stack into comfy pills */
+  .contact-links { gap: 8px; }
+
+  .contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
     border-radius: 12px;
     border: 1px solid var(--border);
     background: var(--surface);
-    color: var(--ink);
-    font: inherit;
-    box-shadow: 0 1px 0 rgba(17,24,39,.03);
+    text-decoration: none;
   }
-  
-  .textarea { resize: vertical; min-height: 140px; }
-  
-  .input:focus,
-  .textarea:focus {
-    outline: 2px solid rgba(28, 181, 186, 0.45);
-    outline-offset: 2px;
+
+  .contact-links a:hover {
+    background: rgba(28, 181, 186, 0.08);
   }
-  
-  .form-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 6px;
-  }
-  
-  /* Right column */
-  .contact-card-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .contact-logo {
-    width: 48px;
-    height: 38px;
-    object-fit: contain;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    background: #fff;
-  }
-  
-  .contact-org {
-    font-weight: 950;
-    color: var(--brand-charcoal);
-  }
-  
-  .contact-details p {
-    margin: 10px 0 0;
-    color: var(--muted);
-    font-size: 15px;
-  }
-  
-  .contact-links {
-    margin-top: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .contact-divider {
-    margin: 18px 0 14px;
-    border: 0;
-    border-top: 1px solid var(--border);
-  }
-  
+
+  .contact-divider { margin: 14px 0 12px; }
+}
