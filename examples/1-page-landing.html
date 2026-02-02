@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 1-Page Medical Website</title>
+  <meta
+    name="description"
+    content="Example 1-page medical website structure for clinics and private practices."
+  />
+
+  <!-- Adjust path if your examples folder sits alongside assets -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="#top" aria-label="Example clinic home">
+            <!-- Logo stub -->
+            <img
+              src="assets/STUB-logo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Example Clinic Name</span>
+          </a>
+          <strong class="brand-person">Primary Care · Family Medicine</strong>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#providers">Providers</a>
+          <a class="nav-link" href="#new-patients">New Patients</a>
+          <a class="nav-link" href="#insurance">Insurance</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <!-- Background/hero image stub -->
+        <img
+          src="assets/STUB-hero-image.jpg"
+          alt="Clinic hero image (placeholder)"
+          class="hero-photo"
+        />
+      </div>
+
+      <div class="hero-text">
+        <h1>Care that’s clear, accessible, and patient-focused</h1>
+        <p class="summary">
+          Brief one-sentence positioning statement. Mention what you do and who you serve.
+          Keep it simple and readable.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Request an Appointment</a>
+          <a class="btn btn-ghost" href="#new-patients">New Patient Info</a>
+        </div>
+
+        <p class="meta">
+          <!-- Quick facts -->
+          Accepting new patients · Telehealth available · Serving [City/Region]
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick highlights -->
+    <section>
+      <h2>At a glance</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Convenient access</h3>
+          <p class="meta">Same-week openings · Telehealth</p>
+          <p>
+            Short description of availability and access. Keep it concrete.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Patient-first approach</h3>
+          <p class="meta">Clear communication · Practical plans</p>
+          <p>
+            Short description of how care is delivered and what patients can expect.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Common insurance accepted</h3>
+          <p class="meta">Plans vary · Call to confirm</p>
+          <p>
+            Keep this non-promissory. You can list common plans below in the insurance section.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Services</h2>
+      <p class="meta">
+        High-level list of what you do. Keep it scannable.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Primary care</h3>
+          <p class="meta">Annual visits · Chronic care · Follow-ups</p>
+          <p>
+            1–2 sentences describing the service category. Avoid jargon.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Preventive care</h3>
+          <p class="meta">Screenings · Immunizations · Wellness</p>
+          <p>
+            1–2 sentences describing the service category.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Women’s / Men’s health</h3>
+          <p class="meta">Routine care · Ongoing support</p>
+          <p>
+            1–2 sentences describing the service category.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Telehealth</h3>
+          <p class="meta">When appropriate · Secure visits</p>
+          <p>
+            Describe what telehealth is used for, in plain language.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Not sure if we’re the right fit?</strong>
+        <span>Call or send a message — we’ll point you to the right next step.</span>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- Providers -->
+    <section id="providers">
+      <h2>Providers</h2>
+      <p class="meta">
+        Brief overview. Keep bios short and structured.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <!-- Provider photo stub -->
+          <img
+            src="assets/STUB-provider-1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>Dr. First Last, MD</h3>
+          <p class="meta">Primary Care Physician</p>
+          <p>
+            Short bio (40–80 words). Focus on patient-facing value: approach, specialties,
+            and what patients can expect.
+          </p>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/STUB-provider-2.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>First Last, NP</h3>
+          <p class="meta">Nurse Practitioner</p>
+          <p>
+            Short bio (40–80 words). Keep it warm and clear. Avoid long credential lists.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- New Patients -->
+    <section id="new-patients">
+      <h2>New Patients</h2>
+      <p class="meta">
+        Make this a simple checklist. Reduce uncertainty.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>How to get started</h3>
+          <p class="meta">3 quick steps</p>
+          <ol style="margin: 0; padding-left: 18px;">
+            <li>Contact us to request an appointment.</li>
+            <li>Complete intake paperwork (online or in-office).</li>
+            <li>Bring ID, insurance card, and medication list.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3>What to bring</h3>
+          <p class="meta">Helps us help you faster</p>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li>Photo ID</li>
+            <li>Insurance card (if applicable)</li>
+            <li>Current medications</li>
+            <li>Prior records (optional)</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Paperwork stub:</strong>
+        <span>Link to intake forms or portal (placeholder).</span>
+        <a class="btn btn-ghost" href="assets/STUB-intake-form.pdf">View Forms</a>
+      </div>
+    </section>
+
+    <!-- Insurance -->
+    <section id="insurance">
+      <h2>Insurance & Billing</h2>
+      <p class="meta">
+        Keep this accurate and non-absolute. Encourage confirmation.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Common plans accepted</h3>
+          <p class="meta">Plan participation changes</p>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li>Plan A (placeholder)</li>
+            <li>Plan B (placeholder)</li>
+            <li>Plan C (placeholder)</li>
+            <li>Medicare / Medicaid (if applicable)</li>
+          </ul>
+          <p style="margin-top: 12px;">
+            Please call to confirm coverage before your visit.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Self-pay</h3>
+          <p class="meta">Transparent pricing when possible</p>
+          <p>
+            Brief statement about self-pay options and when estimates can be provided.
+            Avoid listing exact prices unless you intend to maintain them.
+          </p>
+          <p class="meta">
+            Billing questions: (###) ###-#### · billing@example.com
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-card">
+      <h2>Contact</h2>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Clinic Info</h3>
+          <p class="meta">Hours · phone · location</p>
+
+          <p><strong>Phone:</strong> (###) ###-####</p>
+          <p><strong>Fax:</strong> (###) ###-####</p>
+          <p><strong>Email:</strong> contact@example.com</p>
+
+          <p style="margin-top: 12px;">
+            <strong>Address:</strong><br />
+            123 Main Street<br />
+            City, State ZIP
+          </p>
+
+          <p style="margin-top: 12px;">
+            <strong>Hours:</strong><br />
+            Mon–Fri: 9:00 AM – 5:00 PM<br />
+            Sat: By appointment<br />
+            Sun: Closed
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Send a message</h3>
+          <p class="meta">Form stub</p>
+
+          <!-- Form is a stub on purpose (no backend). Replace with Formspree/Calendly/etc. -->
+          <form class="contact-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Phone or email</span>
+              <input type="text" name="contact" placeholder="(###) ###-#### or you@example.com" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+            </label>
+
+            <button class="btn" type="button" aria-disabled="true">
+              Send (placeholder)
+            </button>
+
+            <p class="meta" style="margin-top: 10px;">
+              In a real site, this form would send to a secure inbox or scheduling tool.
+            </p>
+          </form>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Map stub:</strong>
+        <span>Embed a map or provide directions (placeholder).</span>
+        <a class="btn btn-ghost" href="#">Open Map (placeholder)</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

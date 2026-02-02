@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Website Examples · McGregor Systems LLC</title>
+  <meta
+    name="description"
+    content="Example website structures demonstrating different sizes and layouts, focused on medical clinics and private practices."
+  />
+
+  <link rel="canonical" href="https://ColeMcGregor.github.io/examples.html" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
+            <img
+              src="assets/LogoMcGregorSystemsSmall.png"
+              alt="McGregor Systems LLC"
+              class="llc-logo"
+            />
+            <span class="llc-name">McGregor Systems LLC</span>
+          </a>
+          <strong class="brand-person">Cole McGregor</strong>
+        </div>
+
+        <nav class="header-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="business.html">Work</a>
+          <a class="nav-link" href="aboutme.html">About</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link is-active" href="examples.html">Examples</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section>
+      <h1>Example Website Structures</h1>
+
+      <p class="summary">
+        These examples demonstrate different website sizes and structural approaches.
+        Content is intentionally generic and simplified for demonstration purposes —
+        final websites are always customized to the specific business and use case.
+      </p>
+
+      <p class="meta">
+        The goal of these examples is to help visualize scope and organization, not to
+        showcase visual design or final wording.
+      </p>
+    </section>
+
+    <!-- Example Categories -->
+    <section>
+      <h2>Medical Websites</h2>
+
+      <p class="meta">
+        Example structures designed for clinics, private practices, and healthcare-adjacent
+        businesses. Emphasis is placed on clarity, usability, and patient-facing information.
+      </p>
+
+      <div class="grid grid-2">
+
+        <!-- Optional thumbnail
+          <img
+            src="assets/examples/medical-1-page.png"
+            alt="Thumbnail of N-page medical website example"
+            class="example-thumb"
+          />
+          -->
+
+        <article class="card">
+            <h3>4-Page Medical Website (Recommended)</h3>
+            <p>
+              A balanced structure with dedicated pages for services, providers, and clinic
+              information. Suitable for most established practices.
+            </p>
+            <a class="btn btn-ghost" href="examples/4-page-landing/">View Example</a>
+          </article>
+
+        <article class="card">
+          <h3>1-Page Medical Website (Budget/Minimum Needs)</h3>
+          <p>
+            A single scrolling page that presents services, a brief provider overview,
+            new patient information, and contact details in one place.
+          </p>
+          <a class="btn btn-ghost" href="examples/1-page-landing/">View Example</a>
+        </article>
+
+        <article class="card">
+          <h3>3-Page Medical Website 
+            (Both budget friendly and more detailed)</h3>
+          <p>
+            Separates core information across three pages to improve scanning and navigation,
+            while keeping the site lean and easy to maintain.
+          </p>
+          <a class="btn btn-ghost" href="examples/3-page-landing/">View Example</a>
+        </article>
+
+        <article class="card">
+          <h3>7-Page Medical Website (For larger or more complex practices)</h3>
+          <p>
+            An expanded structure for larger or more complex practices, with room for detailed
+            onboarding, insurance information, and additional services.
+          </p>
+          <a class="btn btn-ghost" href="examples/7-page-landing/">View Example</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Guidance -->
+    <section class="callout">
+      <strong>Not sure what fits your needs?</strong>
+      <span>
+        If you’re unsure, we can talk through your needs and pick the right structure together.
+      </span>
+      <a class="btn btn-ghost" href="contact.html">Contact Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
