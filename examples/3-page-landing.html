@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 3-Page Medical Website — Home</title>
+  <meta
+    name="description"
+    content="Example 3-page medical website home page structure for clinics and private practices."
+  />
+
+  <!-- Example pages use the examples-only stylesheet -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="3-page-landing.html" aria-label="Example clinic home">
+            <img
+              src="assets/STUB-logo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Example Clinic Name</span>
+          </a>
+          <strong class="brand-person">Primary Care · Family Medicine</strong>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="3-page-landing.html">Home</a>
+          <a class="nav-link" href="3-page-services.html">Services</a>
+          <a class="nav-link" href="3-page-contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <img
+          src="assets/STUB-hero-image.jpg"
+          alt="Clinic hero image (placeholder)"
+          class="hero-photo"
+        />
+      </div>
+
+      <div class="hero-text">
+        <h1>Care that’s clear, practical, and patient-focused</h1>
+        <p class="summary">
+          A calm, modern clinic website layout designed to build trust quickly and make the
+          next step obvious—without adding complexity or maintenance burden.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="3-page-contact.html">Request an Appointment</a>
+          <a class="btn btn-ghost" href="3-page-services.html">View Services</a>
+        </div>
+
+        <p class="meta">
+          Accepting new patients · Telehealth available (if offered) · Serving [City/Region]
+        </p>
+      </div>
+    </section>
+
+    <!-- At a glance -->
+    <section>
+      <h2>At a glance</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>How to get started</h3>
+          <p class="meta">New patient steps · Forms · What to bring</p>
+          <p>
+            Clear onboarding details live on the Contact page to reduce uncertainty and
+            help your staff spend less time repeating the basics.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="3-page-contact.html">New Patient Info</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Common services</h3>
+          <p class="meta">Plain language · Typical booking reasons</p>
+          <p>
+            A clean overview of care offered, written to help visitors self-select before
+            contacting the clinic.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="3-page-services.html">Explore Services</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Insurance & billing</h3>
+          <p class="meta">Non-promissory · Confirm coverage</p>
+          <p>
+            High-level guidance that reduces confusion without creating maintenance
+            headaches or making absolute claims.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="3-page-services.html#insurance">Billing Overview</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services preview -->
+    <section>
+      <h2>Services</h2>
+      <p class="meta">
+        This is a short preview. The Services page includes “what patients commonly book for”
+        to reduce confusion and unnecessary calls.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Primary care</h3>
+          <p class="meta">Annual visits · Ongoing support · Follow-ups</p>
+          <p>
+            Routine care, preventive visits, and planning—kept straightforward and actionable.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Preventive care</h3>
+          <p class="meta">Wellness · Screenings · Immunizations</p>
+          <p>
+            Support for staying ahead of problems, with clear, practical next steps.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Sick visits</h3>
+          <p class="meta">Short-term concerns · Symptom support</p>
+          <p>
+            When you need a visit sooner—availability varies. Call to confirm openings.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Telehealth (if offered)</h3>
+          <p class="meta">Select concerns · Follow-ups</p>
+          <p>
+            Virtual visits when appropriate. Details and expectations are listed on the Services page.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Not sure what you need?</strong>
+        <span>We can help point you to the right next step—no guessing required.</span>
+        <a class="btn btn-ghost" href="3-page-contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- Providers teaser (compressed for 3-page tier) -->
+    <section>
+      <h2>Meet the providers</h2>
+      <p class="meta">
+        In the 3-page tier, provider info is kept brief. The Services page includes a compact
+        “Meet the Provider(s)” section for trust without a dedicated page.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <img
+            src="assets/STUB-provider-1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>Dr. First Last, MD</h3>
+          <p class="meta">Primary Care Physician</p>
+          <p>
+            Calm, clear communication with practical care plans. Focused on preventive visits,
+            chronic care support, and helping patients understand next steps.
+          </p>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/STUB-provider-2.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>First Last, NP</h3>
+          <p class="meta">Nurse Practitioner</p>
+          <p>
+            Patient-first visits that stay straightforward and respectful of your time.
+            Supports routine care, follow-ups, and select same-week concerns when available.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Prefer a specific clinician?</strong>
+        <span>Request your preferred provider when you contact the clinic.</span>
+        <a class="btn btn-ghost" href="3-page-contact.html">Request Appointment</a>
+      </div>
+    </section>
+
+    <!-- Location preview + CTA -->
+    <section>
+      <h2>Location</h2>
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Clinic Info</h3>
+          <p class="meta">Hours · phone · address</p>
+
+          <p><strong>Phone:</strong> (###) ###-####</p>
+          <p><strong>Fax:</strong> (###) ###-####</p>
+          <p><strong>Address:</strong> 123 Main Street, City, State ZIP</p>
+
+          <p style="margin-top: 12px;">
+            <strong>Hours:</strong><br />
+            Mon–Fri: 9:00 AM – 5:00 PM<br />
+            Sat: By appointment<br />
+            Sun: Closed
+          </p>
+
+          <p class="meta" style="margin-top: 12px;">
+            Directions, parking, and accessibility notes are listed on the Contact page.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Ready to get started?</h3>
+          <p class="meta">Clear next step · No unnecessary friction</p>
+          <p>
+            Use the Contact page for new patient steps, forms, insurance reminders, and a
+            simple message form stub (no backend assumed).
+          </p>
+
+          <div class="hero-actions" style="margin-top: 14px;">
+            <a class="btn" href="3-page-contact.html">Contact the Clinic</a>
+            <a class="btn btn-ghost" href="3-page-services.html">Review Services</a>
+          </div>
+
+          <p class="meta" style="margin-top: 12px;">
+            If this is a medical emergency, call 911 or go to the nearest emergency room.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
