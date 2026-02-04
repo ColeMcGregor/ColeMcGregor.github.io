@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 3-Page Medical Website — Services</title>
+  <meta
+    name="description"
+    content="Example 3-page medical website services page structure for clinics and private practices."
+  />
+
+  <!-- Example pages use the examples-only stylesheet -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="3-page-landing.html" aria-label="Example clinic home">
+            <img
+              src="assets/TemplateClinicLogo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
+          </a>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="3-page-landing.html">Home</a>
+          <a class="nav-link" href="3-page-services.html" aria-current="page">Services</a>
+          <a class="nav-link" href="3-page-contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page intro WITH IMAGE ON RIGHT -->
+    <section id="top">
+      <div style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+      ">
+
+        <!-- Left text area -->
+        <div style="flex: 1 1 52%; min-width: 260px;">
+          <h1>Services</h1>
+
+          <p class="summary">
+            This page helps visitors self-select before calling. Browse common services, see typical booking reasons,
+            and (below) check each provider’s focus areas.
+          </p>
+
+          <p class="meta">
+            Availability varies by provider and schedule. If you’re unsure what to book, contact the clinic and we’ll help.
+          </p>
+        </div>
+
+        <!-- Right image area (45%) -->
+        <div style="flex: 1 1 45%; min-width: 240px;">
+          <img
+            src="assets/MedicalTools1.jpg"
+            alt="Medical tools and clinical environment"
+            style="
+              width: 100%;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow-soft);
+              object-fit: cover;
+            "
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Primary service categories -->
+    <section id="common-services">
+      <h2>Common services</h2>
+      <p class="meta">
+        High-level overview. Each card should answer: “Is this something you handle?” and “What do I do next?”
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Primary care</h3>
+          <p class="meta">Annual visits · ongoing support · follow-ups</p>
+          <p>
+            Routine visits, preventive planning, and long-term health support. If you’re establishing care,
+            start with a new patient appointment.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Preventive care</h3>
+          <p class="meta">Screenings · immunizations · wellness</p>
+          <p>
+            Support for staying ahead of problems with practical next steps. We’ll help you understand
+            what screenings may be appropriate for your age and history.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Sick visits</h3>
+          <p class="meta">Short-term concerns · symptom support</p>
+          <p>
+            When something feels off and you want guidance. Same-week availability varies—call to confirm openings.
+            For severe symptoms, go to urgent care or the ER.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Chronic care</h3>
+          <p class="meta">Ongoing conditions · monitoring · care plans</p>
+          <p>
+            Structured follow-ups for ongoing conditions. Visits focus on practical, manageable plans and
+            clear “what to do next” guidance.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Women’s / Men’s health</h3>
+          <p class="meta">Routine care · preventive support</p>
+          <p>
+            Routine visits and ongoing support tailored to your needs. If you’re unsure what to book, contact
+            the clinic and we’ll route you appropriately.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Telehealth (if offered)</h3>
+          <p class="meta">When appropriate · follow-ups</p>
+          <p>
+            Virtual visits can be a good fit for select concerns and follow-ups. Some issues require an in-person
+            exam—staff will help determine the best option.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Not sure what you need?</strong>
+        <span>Tell us what’s going on and we’ll point you to the right next step.</span>
+        <a class="btn btn-ghost" href="3-page-contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- “What patients commonly book for” -->
+    <section>
+      <h2>What patients commonly book for</h2>
+      <p class="meta">
+        This section reduces calls by helping people describe what they need. Keep it short and non-diagnostic.
+      </p>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>New patient visit</h3>
+          <p class="meta">Establish care · transfer records</p>
+          <p>
+            First visit at the clinic, care history review, and planning. Bring a medication list and any records you have.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Annual / wellness visit</h3>
+          <p class="meta">Preventive planning</p>
+          <p>
+            A check-in focused on prevention and long-term health. Staff can clarify what to expect and what to bring.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Follow-up</h3>
+          <p class="meta">Results · ongoing care</p>
+          <p>
+            Review labs, progress, or next steps. Great for chronic care check-ins and medication adjustments when needed.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Short-term symptoms</h3>
+          <p class="meta">Sick visit</p>
+          <p>
+            New symptoms or concerns you’d like evaluated. If symptoms are severe, go to urgent care or the ER.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Medication questions</h3>
+          <p class="meta">Refills · side effects</p>
+          <p>
+            Questions about current medications, refills, or side effects. Policies vary—ask staff what timing to expect.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Preventive items</h3>
+          <p class="meta">Immunizations · screenings</p>
+          <p>
+            Vaccines, screening guidance, and prevention planning. If you’re unsure what applies to you, we’ll help.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Provider specialties (kept thumbnail images) -->
+    <section id="providers">
+      <h2>Provider specialties</h2>
+      <p class="meta">
+        Instead of repeating the landing page bios, this section focuses on each clinician’s common focus areas.
+        Mention your preferred clinician when you contact us.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitFemale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>Dr. First Last, MD</h3>
+          <p class="meta">Primary Care Physician · Focus areas</p>
+
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Preventive visits and long-term care planning</li>
+            <li>Chronic condition management</li>
+            <li>Complex care coordination</li>
+            <li>Medication management</li>
+            <li>Screening guidance</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitMale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>First Last, NP</h3>
+          <p class="meta">Nurse Practitioner · Focus areas</p>
+
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Same-week symptom visits</li>
+            <li>Routine follow-ups</li>
+            <li>Medication questions</li>
+            <li>Telehealth when appropriate</li>
+            <li>Patient education</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

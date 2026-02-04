@@ -29,13 +29,12 @@
         <div class="brand">
           <a class="llc-badge" href="3-page-landing.html" aria-label="Example clinic home">
             <img
-              src="assets/STUB-logo.png"
+              src="assets/TemplateClinicLogo.png"
               alt="Example Clinic logo (placeholder)"
               class="llc-logo"
             />
-            <span class="llc-name">Example Clinic Name</span>
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
           </a>
-          <strong class="brand-person">Primary Care · Family Medicine</strong>
         </div>
 
         <nav class="header-nav" aria-label="Example clinic navigation">
@@ -50,7 +49,7 @@
     <section class="hero" id="top">
       <div class="hero-media">
         <img
-          src="assets/STUB-hero-image.jpg"
+          src="assets/DoctorHeroPortraitFemale1AIAugmented.png"
           alt="Clinic hero image (placeholder)"
           class="hero-photo"
         />
@@ -86,11 +85,11 @@
             help your staff spend less time repeating the basics.
           </p>
           <p style="margin-top: 12px;">
-            <a class="btn btn-ghost" href="3-page-contact.html">New Patient Info</a>
+            <a class="btn btn-ghost" href="3-page-contact.html#request-an-appointment">New Patient Info</a>
           </p>
         </article>
 
-        <article class="card">
+        <article class="card" >
           <h3>Common services</h3>
           <p class="meta">Plain language · Typical booking reasons</p>
           <p>
@@ -98,7 +97,7 @@
             contacting the clinic.
           </p>
           <p style="margin-top: 12px;">
-            <a class="btn btn-ghost" href="3-page-services.html">Explore Services</a>
+            <a class="btn btn-ghost" href="3-page-services.html#common-services">Explore Services</a>
           </p>
         </article>
 
@@ -160,55 +159,104 @@
 
       <div class="callout">
         <strong>Not sure what you need?</strong>
-        <span>We can help point you to the right next step—no guessing required.</span>
-        <a class="btn btn-ghost" href="3-page-contact.html">Contact</a>
+        <span>We can help point you to the right next step, no guessing required.</span>
+        <a class="btn btn-ghost" href="3-page-contact.html#top">Contact</a>
       </div>
     </section>
 
-    <!-- Providers teaser (compressed for 3-page tier) -->
-    <section>
+    <!-- Providers (expanded for trust on landing) -->
+    <section id="providers">
       <h2>Meet the providers</h2>
       <p class="meta">
-        In the 3-page tier, provider info is kept brief. The Services page includes a compact
-        “Meet the Provider(s)” section for trust without a dedicated page.
+        A brief overview of our care team, including training background and clinical interests.
       </p>
 
-      <div class="grid grid-2">
-        <article class="card">
+      <div class="provider-feature-grid">
+
+        <!-- Provider 1 – image LEFT, text RIGHT -->
+        <article class="card provider-feature provider-right">
           <img
-            src="assets/STUB-provider-1.jpg"
+            src="assets/DoctorHeroPortraitFemale1.jpg"
             alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+            class="provider-feature-photo"
           />
-          <h3>Dr. First Last, MD</h3>
-          <p class="meta">Primary Care Physician</p>
-          <p>
-            Calm, clear communication with practical care plans. Focused on preventive visits,
-            chronic care support, and helping patients understand next steps.
-          </p>
+
+          <div class="provider-feature-content">
+            <h3>Dr. First Last, MD</h3>
+            <p class="meta provider-role">Primary Care Physician</p>
+
+            <div class="provider-tags" aria-label="Provider focus areas">
+              <span class="provider-tag">Preventive care</span>
+              <span class="provider-tag">Chronic care</span>
+              <span class="provider-tag">Care planning</span>
+            </div>
+
+            <p class="provider-blurb">
+              Board-certified in Family Medicine (placeholder). Completed medical training at
+              <em>[Medical School]</em> and residency at <em>[Residency Program]</em>.
+              Clinical interests include preventive care, long-term condition management, and
+              helping patients build realistic, sustainable health plans.
+            </p>
+
+            <ul class="provider-bullets">
+              <li><strong>Training:</strong> [Medical School] · [Residency Program]</li>
+              <li><strong>Interests:</strong> prevention, chronic disease management, care coordination</li>
+              <li><strong>Style:</strong> collaborative, plain-language explanations, structured next steps</li>
+            </ul>
+
+            <p class="meta provider-note">
+              Tip: request this provider when scheduling if you have a preference.
+            </p>
+          </div>
         </article>
 
-        <article class="card">
+        <!-- Provider 2 – image RIGHT, text LEFT -->
+        <article class="card provider-feature provider-left">
           <img
-            src="assets/STUB-provider-2.jpg"
+            src="assets/DoctorHeroPortraitMale1.jpg"
             alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+            class="provider-feature-photo"
           />
-          <h3>First Last, NP</h3>
-          <p class="meta">Nurse Practitioner</p>
-          <p>
-            Patient-first visits that stay straightforward and respectful of your time.
-            Supports routine care, follow-ups, and select same-week concerns when available.
-          </p>
+
+          <div class="provider-feature-content">
+            <h3>First Last, NP</h3>
+            <p class="meta provider-role">Nurse Practitioner</p>
+
+            <div class="provider-tags" aria-label="Provider focus areas">
+              <span class="provider-tag">Routine care</span>
+              <span class="provider-tag">Follow-ups</span>
+              <span class="provider-tag">Same-week concerns</span>
+            </div>
+
+            <p class="provider-blurb">
+              Advanced practice nurse with training in <em>[Program / Institution]</em> (placeholder).
+              Clinical interests include routine primary care, patient education, and creating
+              simple, actionable plans for common concerns and follow-up care.
+            </p>
+
+            <ul class="provider-bullets">
+              <li><strong>Training:</strong> [NP Program] · [Clinical rotations]</li>
+              <li><strong>Interests:</strong> routine care, symptom evaluation, patient education</li>
+              <li><strong>Style:</strong> practical, time-respectful visits with clear next steps</li>
+            </ul>
+
+            <p class="meta provider-note">
+              Availability varies—ask staff about scheduling options for this provider.
+            </p>
+          </div>
         </article>
+
       </div>
 
       <div class="callout">
         <strong>Prefer a specific clinician?</strong>
         <span>Request your preferred provider when you contact the clinic.</span>
-        <a class="btn btn-ghost" href="3-page-contact.html">Request Appointment</a>
+        <a class="btn btn-ghost" href="3-page-contact.html#top">Request Appointment</a>
       </div>
     </section>
+
+
+
 
     <!-- Location preview + CTA -->
     <section>
@@ -243,8 +291,8 @@
           </p>
 
           <div class="hero-actions" style="margin-top: 14px;">
-            <a class="btn" href="3-page-contact.html">Contact the Clinic</a>
-            <a class="btn btn-ghost" href="3-page-services.html">Review Services</a>
+            <a class="btn" href="3-page-contact.html#top">Contact the Clinic</a>
+            <a class="btn btn-ghost" href="3-page-services.html#common-services">Review Services</a>
           </div>
 
           <p class="meta" style="margin-top: 12px;">
@@ -256,7 +304,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure</p>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
     </footer>
 
   </div>

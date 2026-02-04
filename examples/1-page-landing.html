@@ -8,10 +8,10 @@
   <title>Example: 1-Page Medical Website</title>
   <meta
     name="description"
-    content="Example 1-page medical website structure for clinics and private practices."
+    content="Example 1-page medical website structure for clinics and private practices. Inclusive single-page layout with scannable sections and clear next steps."
   />
 
-  <!-- Adjust path if your examples folder sits alongside assets -->
+  <!-- Example pages use the examples-only stylesheet -->
   <link rel="stylesheet" href="example-style.css" />
 </head>
 
@@ -28,21 +28,19 @@
       <div class="header-top">
         <div class="brand">
           <a class="llc-badge" href="#top" aria-label="Example clinic home">
-            <!-- Logo stub -->
             <img
-              src="assets/STUB-logo.png"
+              src="assets/TemplateClinicLogo.png"
               alt="Example Clinic logo (placeholder)"
               class="llc-logo"
             />
-            <span class="llc-name">Example Clinic Name</span>
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
           </a>
-          <strong class="brand-person">Primary Care · Family Medicine</strong>
         </div>
 
         <nav class="header-nav" aria-label="Example clinic navigation">
           <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="#providers">Providers</a>
           <a class="nav-link" href="#new-patients">New Patients</a>
+          <a class="nav-link" href="#providers">Providers</a>
           <a class="nav-link" href="#insurance">Insurance</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
@@ -52,19 +50,18 @@
     <!-- Hero -->
     <section class="hero" id="top">
       <div class="hero-media">
-        <!-- Background/hero image stub -->
         <img
-          src="assets/STUB-hero-image.jpg"
+          src="assets/DoctorHeroPortraitFemale1AIAugmented.png"
           alt="Clinic hero image (placeholder)"
           class="hero-photo"
         />
       </div>
 
       <div class="hero-text">
-        <h1>Care that’s clear, accessible, and patient-focused</h1>
+        <h1>Care that’s clear, practical, and patient-focused</h1>
         <p class="summary">
-          Brief one-sentence positioning statement. Mention what you do and who you serve.
-          Keep it simple and readable.
+          A single-page clinic layout built to establish trust fast and make the next step obvious—without
+          adding complexity or maintenance burden.
         </p>
 
         <div class="hero-actions">
@@ -73,37 +70,45 @@
         </div>
 
         <p class="meta">
-          <!-- Quick facts -->
-          Accepting new patients · Telehealth available · Serving [City/Region]
+          Accepting new patients · Telehealth available (if offered) · Serving [City/Region]
         </p>
       </div>
     </section>
 
-    <!-- Quick highlights -->
+    <!-- At a glance -->
     <section>
       <h2>At a glance</h2>
       <div class="grid grid-3">
         <article class="card">
-          <h3>Convenient access</h3>
-          <p class="meta">Same-week openings · Telehealth</p>
+          <h3>How to get started</h3>
+          <p class="meta">New patient steps · Forms · What to bring</p>
           <p>
-            Short description of availability and access. Keep it concrete.
+            A simple checklist reduces uncertainty and helps your staff spend less time repeating the basics.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="#new-patients">New Patient Steps</a>
           </p>
         </article>
 
         <article class="card">
-          <h3>Patient-first approach</h3>
-          <p class="meta">Clear communication · Practical plans</p>
+          <h3>Common services</h3>
+          <p class="meta">Plain language · Typical booking reasons</p>
           <p>
-            Short description of how care is delivered and what patients can expect.
+            A clean overview of care offered, written to help visitors self-select before contacting the clinic.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="#services">Explore Services</a>
           </p>
         </article>
 
         <article class="card">
-          <h3>Common insurance accepted</h3>
-          <p class="meta">Plans vary · Call to confirm</p>
+          <h3>Insurance & billing</h3>
+          <p class="meta">Non-promissory · Confirm coverage</p>
           <p>
-            Keep this non-promissory. You can list common plans below in the insurance section.
+            High-level guidance that reduces confusion without creating maintenance headaches or making absolute claims.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="#insurance">Billing Overview</a>
           </p>
         </article>
       </div>
@@ -113,85 +118,47 @@
     <section id="services">
       <h2>Services</h2>
       <p class="meta">
-        High-level list of what you do. Keep it scannable.
+        This section is intentionally scannable. Use plain language and list “what patients commonly book for.”
       </p>
 
       <div class="grid grid-2">
         <article class="card">
           <h3>Primary care</h3>
-          <p class="meta">Annual visits · Chronic care · Follow-ups</p>
+          <p class="meta">Annual visits · Ongoing support · Follow-ups</p>
           <p>
-            1–2 sentences describing the service category. Avoid jargon.
+            Routine care, preventive visits, and planning—kept straightforward and actionable.
           </p>
         </article>
 
         <article class="card">
           <h3>Preventive care</h3>
-          <p class="meta">Screenings · Immunizations · Wellness</p>
+          <p class="meta">Wellness · Screenings · Immunizations</p>
           <p>
-            1–2 sentences describing the service category.
+            Support for staying ahead of problems, with clear, practical next steps.
           </p>
         </article>
 
         <article class="card">
-          <h3>Women’s / Men’s health</h3>
-          <p class="meta">Routine care · Ongoing support</p>
+          <h3>Sick visits</h3>
+          <p class="meta">Short-term concerns · Symptom support</p>
           <p>
-            1–2 sentences describing the service category.
+            When you need a visit sooner—availability varies. Call to confirm openings.
           </p>
         </article>
 
         <article class="card">
-          <h3>Telehealth</h3>
-          <p class="meta">When appropriate · Secure visits</p>
+          <h3>Telehealth (if offered)</h3>
+          <p class="meta">Select concerns · Follow-ups</p>
           <p>
-            Describe what telehealth is used for, in plain language.
+            Virtual visits when appropriate. Set expectations clearly and list what telehealth is used for.
           </p>
         </article>
       </div>
 
       <div class="callout">
-        <strong>Not sure if we’re the right fit?</strong>
-        <span>Call or send a message — we’ll point you to the right next step.</span>
+        <strong>Not sure what you need?</strong>
+        <span>We can help point you to the right next step, no guessing required.</span>
         <a class="btn btn-ghost" href="#contact">Contact</a>
-      </div>
-    </section>
-
-    <!-- Providers -->
-    <section id="providers">
-      <h2>Providers</h2>
-      <p class="meta">
-        Brief overview. Keep bios short and structured.
-      </p>
-
-      <div class="grid grid-2">
-        <article class="card">
-          <!-- Provider photo stub -->
-          <img
-            src="assets/STUB-provider-1.jpg"
-            alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
-          />
-          <h3>Dr. First Last, MD</h3>
-          <p class="meta">Primary Care Physician</p>
-          <p>
-            Short bio (40–80 words). Focus on patient-facing value: approach, specialties,
-            and what patients can expect.
-          </p>
-        </article>
-
-        <article class="card">
-          <img
-            src="assets/STUB-provider-2.jpg"
-            alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
-          />
-          <h3>First Last, NP</h3>
-          <p class="meta">Nurse Practitioner</p>
-          <p>
-            Short bio (40–80 words). Keep it warm and clear. Avoid long credential lists.
-          </p>
-        </article>
       </div>
     </section>
 
@@ -199,7 +166,7 @@
     <section id="new-patients">
       <h2>New Patients</h2>
       <p class="meta">
-        Make this a simple checklist. Reduce uncertainty.
+        Make this section concrete. The goal is to reduce uncertainty and speed up intake.
       </p>
 
       <div class="grid grid-2">
@@ -211,6 +178,9 @@
             <li>Complete intake paperwork (online or in-office).</li>
             <li>Bring ID, insurance card, and medication list.</li>
           </ol>
+          <p class="meta" style="margin-top: 12px;">
+            If you have prior records, bring what you have—we’ll help fill in the gaps.
+          </p>
         </article>
 
         <article class="card">
@@ -219,9 +189,12 @@
           <ul style="margin: 0; padding-left: 18px;">
             <li>Photo ID</li>
             <li>Insurance card (if applicable)</li>
-            <li>Current medications</li>
+            <li>Current medications (or a list)</li>
             <li>Prior records (optional)</li>
           </ul>
+          <p class="meta" style="margin-top: 12px;">
+            Arrive a few minutes early if you’re completing paperwork in-office.
+          </p>
         </article>
       </div>
 
@@ -232,11 +205,55 @@
       </div>
     </section>
 
+    <!-- Providers -->
+    <section id="providers">
+      <h2>Meet the providers</h2>
+      <p class="meta">
+        Keep bios short and patient-facing. Focus on approach, common visit types, and communication style.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitFemale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>Dr. First Last, MD</h3>
+          <p class="meta">Primary Care Physician</p>
+          <p>
+            Calm, clear communication with practical care plans. Focused on preventive visits, chronic care support,
+            and helping patients understand next steps.
+          </p>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitMale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>First Last, NP</h3>
+          <p class="meta">Nurse Practitioner</p>
+          <p>
+            Patient-first visits that stay straightforward and respectful of your time. Supports routine care,
+            follow-ups, and select same-week concerns when available.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Prefer a specific clinician?</strong>
+        <span>Request your preferred provider when you contact the clinic.</span>
+        <a class="btn btn-ghost" href="#contact">Request Appointment</a>
+      </div>
+    </section>
+
     <!-- Insurance -->
     <section id="insurance">
       <h2>Insurance & Billing</h2>
       <p class="meta">
-        Keep this accurate and non-absolute. Encourage confirmation.
+        Keep this accurate and non-absolute. Encourage confirmation and avoid promising participation.
       </p>
 
       <div class="grid grid-2">
@@ -252,14 +269,17 @@
           <p style="margin-top: 12px;">
             Please call to confirm coverage before your visit.
           </p>
+          <p class="meta">
+            If you’re unsure what to ask, we can help you verify the right details with your insurer.
+          </p>
         </article>
 
         <article class="card">
           <h3>Self-pay</h3>
           <p class="meta">Transparent pricing when possible</p>
           <p>
-            Brief statement about self-pay options and when estimates can be provided.
-            Avoid listing exact prices unless you intend to maintain them.
+            If you’re paying out of pocket, we can provide a general estimate when possible.
+            Exact pricing varies by visit type and needs.
           </p>
           <p class="meta">
             Billing questions: (###) ###-#### · billing@example.com
@@ -269,13 +289,13 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact-card">
+    <section id="contact">
       <h2>Contact</h2>
 
       <div class="grid grid-2">
         <article class="card">
           <h3>Clinic Info</h3>
-          <p class="meta">Hours · phone · location</p>
+          <p class="meta">Hours · phone · address</p>
 
           <p><strong>Phone:</strong> (###) ###-####</p>
           <p><strong>Fax:</strong> (###) ###-####</p>
@@ -293,11 +313,15 @@
             Sat: By appointment<br />
             Sun: Closed
           </p>
+
+          <p class="meta" style="margin-top: 12px;">
+            For directions, parking, and accessibility notes, add a short line here or below.
+          </p>
         </article>
 
         <article class="card">
           <h3>Send a message</h3>
-          <p class="meta">Form stub</p>
+          <p class="meta">Form stub (no backend assumed)</p>
 
           <!-- Form is a stub on purpose (no backend). Replace with Formspree/Calendly/etc. -->
           <form class="contact-form" action="#" method="post">
@@ -332,11 +356,15 @@
         <span>Embed a map or provide directions (placeholder).</span>
         <a class="btn btn-ghost" href="#">Open Map (placeholder)</a>
       </div>
+
+      <p class="meta" style="margin-top: 12px;">
+        If this is a medical emergency, call 911 or go to the nearest emergency room.
+      </p>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure</p>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
     </footer>
 
   </div>

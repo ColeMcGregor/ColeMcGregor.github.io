@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 3-Page Medical Website — Contact</title>
+  <meta
+    name="description"
+    content="Example 3-page medical website contact page structure for clinics and private practices."
+  />
+
+  <!-- Example pages use the examples-only stylesheet -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="3-page-landing.html" aria-label="Example clinic home">
+            <img
+              src="assets/TemplateClinicLogo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
+          </a>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="3-page-landing.html">Home</a>
+          <a class="nav-link" href="3-page-services.html">Services</a>
+          <a class="nav-link" href="3-page-contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page intro WITH IMAGE ON RIGHT -->
+    <section id="top">
+      <div style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+      ">
+
+        <!-- Left text area -->
+        <div style="flex: 1 1 52%; min-width: 260px;">
+          <h1>Contact</h1>
+          <p class="summary">
+            Use this page for clear next steps: how to request an appointment, new patient guidance,
+            directions, and a simple contact form stub (no backend assumed).
+          </p>
+          <p class="meta">
+            If this is a medical emergency, call 911 or go to the nearest emergency room.
+          </p>
+        </div>
+
+        <!-- Right image area (45%) -->
+        <div style="flex: 1 1 45%; min-width: 240px;">
+          <img
+            src="assets/DoctorWithPhone.jpg"
+            alt="Clinician speaking with a patient by phone"
+            style="
+              width: 100%;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow-soft);
+              object-fit: cover;
+            "
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact: two-column -->
+    <section>
+      <div class="grid grid-2">
+
+        <!-- Clinic info -->
+        <article class="card">
+          <h2>Clinic Info</h2>
+          <p class="meta">Hours · phone · address</p>
+
+          <p><strong>Phone:</strong> (###) ###-####</p>
+          <p><strong>Fax:</strong> (###) ###-####</p>
+          <p><strong>Email:</strong> contact@example.com</p>
+
+          <p style="margin-top: 12px;">
+            <strong>Address:</strong><br />
+            123 Main Street<br />
+            City, State ZIP
+          </p>
+
+          <p style="margin-top: 12px;">
+            <strong>Hours:</strong><br />
+            Mon–Fri: 9:00 AM – 5:00 PM<br />
+            Sat: By appointment<br />
+            Sun: Closed
+          </p>
+
+          <p class="meta" style="margin-top: 12px;">
+            Tip: Add parking details, building entrance notes, and accessibility info here if relevant.
+          </p>
+        </article>
+
+        <!-- Contact form stub -->
+        <article class="card">
+          <h2>Send a message</h2>
+          <p class="meta">Form stub (no backend assumed)</p>
+
+          <!-- Form is a stub on purpose. Replace with Formspree/Calendly/etc. -->
+          <form class="contact-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Phone or email</span>
+              <input type="text" name="contact" placeholder="(###) ###-#### or you@example.com" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Preferred appointment time (optional)</span>
+              <input type="text" name="preferred_time" placeholder="e.g., weekdays after 3 PM" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us what you need help with (general info only—avoid sensitive medical details)."
+              ></textarea>
+            </label>
+
+            <button class="btn" type="button" aria-disabled="true">
+              Send (placeholder)
+            </button>
+
+            <p class="meta" style="margin-top: 10px;">
+              In a real site, this form would send to a secure inbox, patient portal, or scheduling tool.
+            </p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- Appointment + New patient steps -->
+    <section id="request-an-appointment">
+      <h2>Request an appointment</h2>
+      <p class="meta">
+        Keep this section simple. The goal is to reduce uncertainty and speed up intake.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>New patients</h3>
+          <p class="meta">3 quick steps</p>
+          <ol style="margin: 0; padding-left: 18px;">
+            <li>Call or send a message to request your first appointment.</li>
+            <li>Complete intake paperwork (online or in-office).</li>
+            <li>Bring ID, insurance card, and a current medication list.</li>
+          </ol>
+          <p class="meta" style="margin-top: 12px;">
+            If you have prior records, bring what you have—we’ll help fill in the gaps.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Returning patients</h3>
+          <p class="meta">Refills · follow-ups · scheduling changes</p>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li><strong>Scheduling:</strong> Call during business hours.</li>
+            <li><strong>Refills:</strong> Allow 48–72 hours when possible (policy varies).</li>
+            <li><strong>Updates:</strong> Let us know if your insurance or contact info changes.</li>
+          </ul>
+          <p class="meta" style="margin-top: 12px;">
+            For urgent symptoms, call 911 or go to the nearest emergency room.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Paperwork stub:</strong>
+        <span>Link to intake forms or portal (placeholder).</span>
+        <a class="btn btn-ghost" href="assets/STUB-intake-form.pdf">View Forms</a>
+      </div>
+    </section>
+
+    <!-- Insurance reminder -->
+    <section>
+      <h2>Insurance reminder</h2>
+      <p class="meta">
+        Keep this accurate and non-absolute. Encourage confirmation and avoid promising participation.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Before your visit</h3>
+          <p class="meta">Reduce surprises</p>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li>Confirm the clinic is in-network for your specific plan.</li>
+            <li>Confirm your copay and deductible status.</li>
+            <li>Bring your insurance card and photo ID.</li>
+          </ul>
+          <p class="meta" style="margin-top: 12px;">
+            If you’re unsure what to ask, we can help you verify the right details with your insurer.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Self-pay</h3>
+          <p class="meta">Transparent pricing when possible</p>
+          <p>
+            If you’re paying out of pocket, we can provide a general estimate when possible.
+            Exact pricing varies by visit type and needs.
+          </p>
+          <p class="meta">
+            Billing questions: (###) ###-#### · billing@example.com
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Location / Map stub -->
+    <section>
+      <h2>Directions</h2>
+      <p class="meta">
+        Add parking notes, entrances, and accessibility details. Embed a map or link out to mapping apps.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Parking & access</h3>
+          <p class="meta">Short, practical notes</p>
+          <ul style="margin: 0; padding-left: 18px;">
+            <li>Parking: [Lot / street / garage] (placeholder)</li>
+            <li>Entrance: [Main entrance / side door / elevator] (placeholder)</li>
+            <li>Accessibility: [Ramp / elevator / assistance available] (placeholder)</li>
+          </ul>
+          <p class="meta" style="margin-top: 12px;">
+            Update these details to match the actual building—this is where confusion often happens.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Map</h3>
+          <p class="meta">Embed stub</p>
+          <p>
+            Replace this card with an embedded map, or keep it as a simple “Open Map” link.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="#">Open Map (placeholder)</a>
+          </p>
+          <p class="meta" style="margin-top: 12px;">
+            Consider including a short “landmark” note for easier navigation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
