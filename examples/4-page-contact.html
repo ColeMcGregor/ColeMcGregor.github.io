@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 4-Page Medical Website — New Patients & Contact</title>
+  <meta
+    name="description"
+    content="Example new patient + contact page structure for clinics and private practices (4-page version)."
+  />
+
+  <!-- Example pages use the examples-only stylesheet -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="4-page-landing.html" aria-label="Example clinic home">
+            <img
+              src="assets/TemplateClinicLogo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
+          </a>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="4-page-landing.html">Home</a>
+          <a class="nav-link" href="4-page-services.html">Services</a>
+          <a class="nav-link" href="4-page-providers.html">Providers</a>
+          <a class="nav-link" href="4-page-new-patients-contact.html" aria-current="page">New Patients &amp; Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page intro WITH IMAGE ON RIGHT (consistent with 3-page services intro style) -->
+    <section id="top">
+      <div style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+      ">
+
+        <!-- Left text area -->
+        <div style="flex: 1 1 52%; min-width: 260px;">
+          <h1>New patients &amp; contact</h1>
+
+          <p class="summary">
+            Everything you need in one place: first-visit steps, what to bring, insurance reminders,
+            and the fastest ways to reach the clinic.
+          </p>
+
+          <div class="hero-actions" style="margin-top: 14px;">
+            <a class="btn" href="#request-an-appointment">Request an Appointment</a>
+            <a class="btn btn-ghost" href="#clinic-info">Clinic Info</a>
+          </div>
+
+          <p class="meta" style="margin-top: 12px;">
+            If this is a medical emergency, call 911 or go to the nearest emergency room.
+          </p>
+        </div>
+
+        <!-- Right image area -->
+        <div style="flex: 1 1 45%; min-width: 240px;">
+          <img
+            src="assets/DoctorWithPhone.jpg"
+            alt="Doctor with phone (placeholder)"
+            style="
+              width: 100%;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow-soft);
+              object-fit: cover;
+            "
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- New patient steps -->
+    <section id="new-patients">
+      <h2>New patient steps</h2>
+      <p class="meta">
+        Keep this short and practical. The goal is to reduce calls and remove uncertainty.
+      </p>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>1) Reach out</h3>
+          <p class="meta">Phone · email · form</p>
+          <p>
+            Use the contact methods below. Tell us whether you’re a new patient and what you’d like help with.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2) Share basics</h3>
+          <p class="meta">Reason for visit · availability</p>
+          <p>
+            We’ll ask a few quick questions so we can schedule the right visit type and provider.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3) Prepare for your visit</h3>
+          <p class="meta">What to bring</p>
+          <p>
+            Bring your insurance card (if applicable), photo ID, a medication list, and any relevant records you have.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Not sure what to book?</strong>
+        <span>Describe what’s going on and we’ll route you to the right visit type.</span>
+        <a class="btn btn-ghost" href="4-page-services.html#booking-reasons">Booking Examples</a>
+      </div>
+    </section>
+
+    <!-- What to bring / intake -->
+    <section id="intake">
+      <h2>What to bring</h2>
+      <p class="meta">
+        Example checklist. Adjust to match your clinic’s policies and workflows.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Bring these items</h3>
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Photo ID</li>
+            <li>Insurance card (if using insurance)</li>
+            <li>Medication list (name + dose if possible)</li>
+            <li>Allergies and prior diagnoses (if known)</li>
+            <li>Any recent labs, imaging, or referral notes (if relevant)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Optional but helpful</h3>
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Prior primary care provider name + contact</li>
+            <li>Preferred pharmacy information</li>
+            <li>Brief timeline of symptoms (for sick visits)</li>
+            <li>Questions you want answered during the visit</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Insurance & billing -->
+    <section id="insurance-billing">
+      <h2>Insurance &amp; billing</h2>
+      <p class="meta">
+        Keep this non-promissory. Patients should confirm coverage directly with their insurer.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Insurance (high-level)</h3>
+          <p class="meta">Accepted plans vary</p>
+          <p>
+            We accept many major insurance plans (placeholder). Coverage depends on your specific plan and benefits.
+            Please confirm eligibility, copays, and deductibles with your insurer.
+          </p>
+          <p class="meta" style="margin-top: 10px;">
+            Tip: bring your insurance card and be ready to confirm your member ID and group number.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Self-pay</h3>
+          <p class="meta">Ask before your visit</p>
+          <p>
+            If you are self-pay, ask staff about pricing expectations and payment options before your appointment.
+          </p>
+          <p class="meta" style="margin-top: 10px;">
+            Billing questions are best handled by phone so we can provide the most accurate guidance.
+          </p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Insurance questions?</strong>
+        <span>If you’re unsure what your plan covers, call your insurer first. We can confirm what information we need.</span>
+        <a class="btn btn-ghost" href="#contact-methods">Contact methods</a>
+      </div>
+    </section>
+
+    <!-- Request appointment / contact form -->
+    <section id="request-an-appointment">
+      <h2>Request an appointment</h2>
+      <p class="meta">
+        This is a simple form stub (no backend assumed). Replace with your preferred form service or integration.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Quick message form (example)</h3>
+
+          <!-- Keep consistent with your existing form style patterns (simple inputs) -->
+          <form class="contact-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Full name</span>
+              <input type="text" name="name" placeholder="Jane Doe" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Phone number</span>
+              <input type="tel" name="phone" placeholder="(###) ###-####" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Email (optional)</span>
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">What do you need help with?</span>
+              <textarea name="message" rows="5" placeholder="Example: I’m a new patient and I’d like to schedule an annual wellness visit. Weekday mornings work best."></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send request</button>
+
+            <p class="meta" style="margin-top: 12px;">
+              Do not include sensitive personal medical details in this form. Staff will follow up to confirm scheduling.
+            </p>
+          </form>
+        </article>
+
+        <article class="card" id="contact-methods">
+          <h3>Other ways to contact us</h3>
+          <p class="meta">Use what matches your workflow</p>
+
+          <p><strong>Phone:</strong> (###) ###-####</p>
+          <p><strong>Fax:</strong> (###) ###-####</p>
+          <p><strong>Email:</strong> hello@exampleclinic.com</p>
+
+          <p class="meta" style="margin-top: 12px;">
+            <strong>Response expectation:</strong> Most messages are returned within 1–2 business days (placeholder).
+            If you have urgent symptoms, go to urgent care or the ER.
+          </p>
+
+          <div class="callout" style="margin-top: 16px;">
+            <strong>Tip:</strong>
+            <span>Include your preferred days/times so we can schedule faster.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Clinic info -->
+    <section id="clinic-info">
+      <h2>Clinic info</h2>
+      <p class="meta">
+        Hours, location, and access details. Replace with your real operational information.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Hours</h3>
+          <p style="margin-top: 10px;">
+            <strong>Mon–Fri:</strong> 9:00 AM – 5:00 PM<br />
+            <strong>Sat:</strong> By appointment<br />
+            <strong>Sun:</strong> Closed
+          </p>
+
+          <p class="meta" style="margin-top: 12px;">
+            Same-day and same-week availability varies. Call to confirm openings.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Location</h3>
+          <p><strong>Address:</strong> 123 Main Street, City, State ZIP</p>
+
+          <p class="meta" style="margin-top: 12px;">
+            <strong>Parking:</strong> On-site parking (placeholder).<br />
+            <strong>Accessibility:</strong> ADA-accessible entrance (placeholder).<br />
+            <strong>Public transit:</strong> [Bus line / stop] (placeholder).
+          </p>
+
+          <p class="meta" style="margin-top: 12px;">
+            Add a map embed or directions link here if desired.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

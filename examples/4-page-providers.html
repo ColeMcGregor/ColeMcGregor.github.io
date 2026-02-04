@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Cole McGregor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Example: 4-Page Medical Website — Providers</title>
+  <meta
+    name="description"
+    content="Example providers page structure for clinics and private practices (4-page version)."
+  />
+
+  <!-- Example pages use the examples-only stylesheet -->
+  <link rel="stylesheet" href="example-style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Meta navigation (not part of the example site) -->
+    <div class="example-nav" style="margin: 16px 0;">
+      <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
+    </div>
+
+    <!-- Example site header -->
+    <header class="site-header">
+      <div class="header-top">
+        <div class="brand">
+          <a class="llc-badge" href="4-page-landing.html" aria-label="Example clinic home">
+            <img
+              src="assets/TemplateClinicLogo.png"
+              alt="Example Clinic logo (placeholder)"
+              class="llc-logo"
+            />
+            <span class="llc-name">Alternative Example Clinic Name Spot</span>
+          </a>
+        </div>
+
+        <nav class="header-nav" aria-label="Example clinic navigation">
+          <a class="nav-link" href="4-page-landing.html">Home</a>
+          <a class="nav-link" href="4-page-services.html">Services</a>
+          <a class="nav-link" href="4-page-providers.html" aria-current="page">Providers</a>
+          <a class="nav-link" href="4-page-new-patients-contact.html">New Patients &amp; Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page intro WITH IMAGE ON RIGHT -->
+    <section id="top">
+      <div style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+      ">
+
+        <!-- Left text area -->
+        <div style="flex: 1 1 52%; min-width: 260px;">
+          <h1>Providers</h1>
+
+          <p class="summary">
+            Meet the care team. These profiles are designed to build trust quickly: training background,
+            clinical interests, and care style—without overwhelming patients with a résumé.
+          </p>
+
+          <div class="hero-actions" style="margin-top: 14px;">
+            <a class="btn" href="4-page-new-patients-contact.html#request-an-appointment">Request an Appointment</a>
+            <a class="btn btn-ghost" href="#provider-specialties">Provider specialties</a>
+          </div>
+
+          <p class="meta" style="margin-top: 12px;">
+            Prefer a specific clinician? Request them when scheduling.
+          </p>
+        </div>
+
+        <!-- Right image area -->
+        <div style="flex: 1 1 45%; min-width: 240px;">
+          <img
+            src="assets/ClinicTeam1.jpg"
+            alt="Clinic team or clinical hallway (placeholder)"
+            style="
+              width: 100%;
+              border-radius: var(--radius);
+              box-shadow: var(--shadow-soft);
+              object-fit: cover;
+            "
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Practice philosophy -->
+    <section id="philosophy">
+      <h2>Our approach</h2>
+      <p class="meta">
+        Keep this short and human. Patients want to know what the visit experience feels like.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Clear, practical visits</h3>
+          <p class="meta">Plain language · structured next steps</p>
+          <p>
+            Our goal is to make care understandable and actionable. Visits focus on what matters, what to do next,
+            and when to follow up—without unnecessary complexity.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Patient-centered planning</h3>
+          <p class="meta">Collaborative · sustainable changes</p>
+          <p>
+            We work with you to build realistic plans that fit your life. If you have preferences or concerns,
+            bring them up—we’ll adapt the plan around what’s feasible.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Full provider profiles (feature layout) -->
+    <section id="providers">
+      <h2>Meet the providers</h2>
+      <p class="meta">
+        Training, clinical interests, and care style. Replace placeholders with real bios and credentials.
+      </p>
+
+      <div class="provider-feature-grid">
+
+        <!-- Provider 1 – image LEFT, text RIGHT -->
+        <article class="card provider-feature provider-right" id="provider-1">
+          <img
+            src="assets/DoctorHeroPortraitFemale1.jpg"
+            alt="Provider headshot (placeholder)"
+            class="provider-feature-photo"
+          />
+
+          <div class="provider-feature-content">
+            <h3>Dr. First Last, MD</h3>
+            <p class="meta provider-role">Primary Care Physician</p>
+
+            <div class="provider-tags" aria-label="Provider focus areas">
+              <span class="provider-tag">Preventive care</span>
+              <span class="provider-tag">Chronic care</span>
+              <span class="provider-tag">Care planning</span>
+            </div>
+
+            <p class="provider-blurb">
+              Board-certified in Family Medicine (placeholder). Completed medical training at
+              <em>[Medical School]</em> and residency at <em>[Residency Program]</em>.
+              Clinical interests include preventive care, long-term condition management, and
+              helping patients build realistic, sustainable health plans.
+            </p>
+
+            <ul class="provider-bullets">
+              <li><strong>Training:</strong> [Medical School] · [Residency Program]</li>
+              <li><strong>Interests:</strong> prevention, chronic disease management, care coordination</li>
+              <li><strong>Style:</strong> collaborative, plain-language explanations, structured next steps</li>
+            </ul>
+
+            <p class="meta provider-note">
+              Tip: request this provider when scheduling if you have a preference.
+            </p>
+          </div>
+        </article>
+
+        <!-- Provider 2 – image RIGHT, text LEFT -->
+        <article class="card provider-feature provider-left" id="provider-2">
+          <img
+            src="assets/DoctorHeroPortraitMale1.jpg"
+            alt="Provider headshot (placeholder)"
+            class="provider-feature-photo"
+          />
+
+          <div class="provider-feature-content">
+            <h3>First Last, NP</h3>
+            <p class="meta provider-role">Nurse Practitioner</p>
+
+            <div class="provider-tags" aria-label="Provider focus areas">
+              <span class="provider-tag">Routine care</span>
+              <span class="provider-tag">Follow-ups</span>
+              <span class="provider-tag">Same-week concerns</span>
+            </div>
+
+            <p class="provider-blurb">
+              Advanced practice nurse with training in <em>[Program / Institution]</em> (placeholder).
+              Clinical interests include routine primary care, patient education, and creating
+              simple, actionable plans for common concerns and follow-up care.
+            </p>
+
+            <ul class="provider-bullets">
+              <li><strong>Training:</strong> [NP Program] · [Clinical rotations]</li>
+              <li><strong>Interests:</strong> routine care, symptom evaluation, patient education</li>
+              <li><strong>Style:</strong> practical, time-respectful visits with clear next steps</li>
+            </ul>
+
+            <p class="meta provider-note">
+              Availability varies—ask staff about scheduling options for this provider.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="callout">
+        <strong>Want help choosing a clinician?</strong>
+        <span>Tell us what you’re looking for and we’ll recommend the best fit.</span>
+        <a class="btn btn-ghost" href="4-page-new-patients-contact.html#request-an-appointment">Request Appointment</a>
+      </div>
+    </section>
+
+    <!-- Provider specialties (moved from Services page) -->
+    <section id="provider-specialties">
+      <h2>Provider specialties</h2>
+      <p class="meta">
+        Common focus areas by clinician. Mention your preferred clinician when you contact us.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitFemale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>Dr. First Last, MD</h3>
+          <p class="meta">Primary Care Physician · Focus areas</p>
+
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Preventive visits and long-term care planning</li>
+            <li>Chronic condition management</li>
+            <li>Complex care coordination</li>
+            <li>Medication management</li>
+            <li>Screening guidance</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/DoctorHeroPortraitMale1.jpg"
+            alt="Provider headshot (placeholder)"
+            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
+          />
+          <h3>First Last, NP</h3>
+          <p class="meta">Nurse Practitioner · Focus areas</p>
+
+          <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <li>Same-week symptom visits</li>
+            <li>Routine follow-ups</li>
+            <li>Medication questions</li>
+            <li>Telehealth when appropriate</li>
+            <li>Patient education</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Provider FAQ -->
+    <section id="provider-faq">
+      <h2>Provider FAQ (example)</h2>
+      <p class="meta">
+        Keep answers short. This reduces repetitive front-desk questions.
+      </p>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Can I request a specific provider?</h3>
+          <p>
+            Yes. Mention your preferred clinician when scheduling. Availability varies by schedule and visit type.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Will I always see the same clinician?</h3>
+          <p>
+            Many visits can be scheduled with the same clinician, but urgent scheduling needs may require flexibility.
+            Ask staff about options.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>How do I choose the right visit type?</h3>
+          <p>
+            If you’re unsure, describe what’s going on. Staff can recommend the correct appointment type.
+            See booking examples on the Services page.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="4-page-services.html#booking-reasons">Booking Examples</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Do providers offer telehealth?</h3>
+          <p>
+            Telehealth availability and eligibility vary. Ask staff whether your concern is appropriate for a virtual visit.
+          </p>
+          <p style="margin-top: 12px;">
+            <a class="btn btn-ghost" href="4-page-services.html#common-services">Services Overview</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
