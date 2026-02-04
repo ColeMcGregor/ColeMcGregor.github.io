@@ -8,38 +8,36 @@
   <title>Example: 1-Page Medical Website</title>
   <meta
     name="description"
-    content="Example 1-page medical website structure for clinics and private practices. Inclusive single-page layout with scannable sections and clear next steps."
+    content="Example 1-page medical website structure for clinics and private practices. Clear, scannable, conversion-focused layout."
   />
 
-  <!-- Example pages use the examples-only stylesheet -->
   <link rel="stylesheet" href="example-style.css" />
 </head>
 
 <body>
   <div class="wrap">
 
-    <!-- Meta navigation (not part of the example site) -->
+    <!-- Meta navigation -->
     <div class="example-nav" style="margin: 16px 0;">
       <a class="btn btn-ghost" href="../examples.html">Back to Examples</a>
     </div>
 
-    <!-- Example site header -->
+    <!-- Header -->
     <header class="site-header">
       <div class="header-top">
         <div class="brand">
-          <a class="llc-badge" href="#top" aria-label="Example clinic home">
+          <a class="llc-badge" href="#top">
             <img
               src="assets/TemplateClinicLogo.png"
-              alt="Example Clinic logo (placeholder)"
+              alt="Example Clinic logo"
               class="llc-logo"
             />
             <span class="llc-name">Alternative Example Clinic Name Spot</span>
           </a>
         </div>
 
-        <nav class="header-nav" aria-label="Example clinic navigation">
+        <nav class="header-nav">
           <a class="nav-link" href="#services">Services</a>
-          <a class="nav-link" href="#new-patients">New Patients</a>
           <a class="nav-link" href="#providers">Providers</a>
           <a class="nav-link" href="#insurance">Insurance</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -52,7 +50,7 @@
       <div class="hero-media">
         <img
           src="assets/DoctorHeroPortraitFemale1AIAugmented.png"
-          alt="Clinic hero image (placeholder)"
+          alt="Clinic hero image"
           class="hero-photo"
         />
       </div>
@@ -60,13 +58,13 @@
       <div class="hero-text">
         <h1>Care that’s clear, practical, and patient-focused</h1>
         <p class="summary">
-          A single-page clinic layout built to establish trust fast and make the next step obvious—without
-          adding complexity or maintenance burden.
+          A single-page clinic layout designed to build trust quickly and make the next step obvious—
+          without unnecessary complexity.
         </p>
 
         <div class="hero-actions">
           <a class="btn" href="#contact">Request an Appointment</a>
-          <a class="btn btn-ghost" href="#new-patients">New Patient Info</a>
+          <a class="btn btn-ghost" href="#services">View Services</a>
         </div>
 
         <p class="meta">
@@ -81,12 +79,12 @@
       <div class="grid grid-3">
         <article class="card">
           <h3>How to get started</h3>
-          <p class="meta">New patient steps · Forms · What to bring</p>
+          <p class="meta">New patients · What to bring · Next steps</p>
           <p>
-            A simple checklist reduces uncertainty and helps your staff spend less time repeating the basics.
+            Clear onboarding details are placed near Contact to reduce uncertainty and staff back-and-forth.
           </p>
           <p style="margin-top: 12px;">
-            <a class="btn btn-ghost" href="#new-patients">New Patient Steps</a>
+            <a class="btn btn-ghost" href="#contact">Getting Started</a>
           </p>
         </article>
 
@@ -94,7 +92,7 @@
           <h3>Common services</h3>
           <p class="meta">Plain language · Typical booking reasons</p>
           <p>
-            A clean overview of care offered, written to help visitors self-select before contacting the clinic.
+            A clean overview of care offered, written to help visitors self-select before calling.
           </p>
           <p style="margin-top: 12px;">
             <a class="btn btn-ghost" href="#services">Explore Services</a>
@@ -105,7 +103,7 @@
           <h3>Insurance & billing</h3>
           <p class="meta">Non-promissory · Confirm coverage</p>
           <p>
-            High-level guidance that reduces confusion without creating maintenance headaches or making absolute claims.
+            High-level guidance that reduces confusion without creating maintenance headaches.
           </p>
           <p style="margin-top: 12px;">
             <a class="btn btn-ghost" href="#insurance">Billing Overview</a>
@@ -118,177 +116,222 @@
     <section id="services">
       <h2>Services</h2>
       <p class="meta">
-        This section is intentionally scannable. Use plain language and list “what patients commonly book for.”
+        This section is intentionally scannable. List what patients commonly book for.
       </p>
 
       <div class="grid grid-2">
         <article class="card">
           <h3>Primary care</h3>
-          <p class="meta">Annual visits · Ongoing support · Follow-ups</p>
-          <p>
-            Routine care, preventive visits, and planning—kept straightforward and actionable.
-          </p>
+          <p class="meta">Annual visits · ongoing support</p>
+          <p>Routine care, preventive visits, and long-term planning.</p>
         </article>
 
         <article class="card">
           <h3>Preventive care</h3>
-          <p class="meta">Wellness · Screenings · Immunizations</p>
-          <p>
-            Support for staying ahead of problems, with clear, practical next steps.
-          </p>
+          <p class="meta">Wellness · screenings</p>
+          <p>Support for staying ahead of problems with clear next steps.</p>
         </article>
 
         <article class="card">
           <h3>Sick visits</h3>
-          <p class="meta">Short-term concerns · Symptom support</p>
-          <p>
-            When you need a visit sooner—availability varies. Call to confirm openings.
-          </p>
+          <p class="meta">Short-term concerns</p>
+          <p>Availability varies—call to confirm openings.</p>
         </article>
 
         <article class="card">
           <h3>Telehealth (if offered)</h3>
-          <p class="meta">Select concerns · Follow-ups</p>
-          <p>
-            Virtual visits when appropriate. Set expectations clearly and list what telehealth is used for.
-          </p>
+          <p class="meta">Select concerns · follow-ups</p>
+          <p>Virtual visits when appropriate, with clear expectations.</p>
         </article>
       </div>
 
       <div class="callout">
         <strong>Not sure what you need?</strong>
-        <span>We can help point you to the right next step, no guessing required.</span>
+        <span>We’ll help point you to the right next step.</span>
         <a class="btn btn-ghost" href="#contact">Contact</a>
       </div>
     </section>
 
-    <!-- New Patients -->
-    <section id="new-patients">
-      <h2>New Patients</h2>
-      <p class="meta">
-        Make this section concrete. The goal is to reduce uncertainty and speed up intake.
-      </p>
-
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>How to get started</h3>
-          <p class="meta">3 quick steps</p>
-          <ol style="margin: 0; padding-left: 18px;">
-            <li>Contact us to request an appointment.</li>
-            <li>Complete intake paperwork (online or in-office).</li>
-            <li>Bring ID, insurance card, and medication list.</li>
-          </ol>
-          <p class="meta" style="margin-top: 12px;">
-            If you have prior records, bring what you have—we’ll help fill in the gaps.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>What to bring</h3>
-          <p class="meta">Helps us help you faster</p>
-          <ul style="margin: 0; padding-left: 18px;">
-            <li>Photo ID</li>
-            <li>Insurance card (if applicable)</li>
-            <li>Current medications (or a list)</li>
-            <li>Prior records (optional)</li>
-          </ul>
-          <p class="meta" style="margin-top: 12px;">
-            Arrive a few minutes early if you’re completing paperwork in-office.
-          </p>
-        </article>
-      </div>
-
-      <div class="callout">
-        <strong>Paperwork stub:</strong>
-        <span>Link to intake forms or portal (placeholder).</span>
-        <a class="btn btn-ghost" href="assets/STUB-intake-form.pdf">View Forms</a>
-      </div>
-    </section>
 
     <!-- Providers -->
-    <section id="providers">
-      <h2>Meet the providers</h2>
-      <p class="meta">
-        Keep bios short and patient-facing. Focus on approach, common visit types, and communication style.
-      </p>
+<section id="providers">
+  <h2>Meet the providers</h2>
+  <p class="meta">
+    A deeper look at each clinician: background and approach up top, and what they commonly handle at this clinic below.
+  </p>
 
-      <div class="grid grid-2">
-        <article class="card">
-          <img
-            src="assets/DoctorHeroPortraitFemale1.jpg"
-            alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
-          />
-          <h3>Dr. First Last, MD</h3>
-          <p class="meta">Primary Care Physician</p>
-          <p>
-            Calm, clear communication with practical care plans. Focused on preventive visits, chronic care support,
-            and helping patients understand next steps.
+  <div class="provider-feature-grid">
+
+    <!-- Provider 1 – image LEFT, text RIGHT -->
+    <article class="card provider-feature provider-right">
+      <img
+        src="assets/DoctorHeroPortraitFemale1.jpg"
+        alt="Provider headshot (placeholder)"
+        class="provider-feature-photo"
+      />
+
+      <div class="provider-feature-content">
+        <h3>Dr. First Last, MD</h3>
+        <p class="meta provider-role">Primary Care Physician</p>
+
+        <!-- ===== Upper: Personal / Education / Professional ===== -->
+        <div>
+          <div class="provider-tags" aria-label="Provider bio highlights">
+            <span class="provider-tag">Family Medicine</span>
+            <span class="provider-tag">Plain-language care</span>
+            <span class="provider-tag">Prevention-first</span>
+          </div>
+
+          <p class="provider-blurb">
+            Dr. Last is a family physician focused on long-term, relationship-based primary care.
+            She is known for calm, direct explanations and structured plans that patients can actually follow.
           </p>
-        </article>
 
-        <article class="card">
-          <img
-            src="assets/DoctorHeroPortraitMale1.jpg"
-            alt="Provider headshot (placeholder)"
-            style="width: 100%; border-radius: var(--radius); margin-bottom: 12px;"
-          />
-          <h3>First Last, NP</h3>
-          <p class="meta">Nurse Practitioner</p>
-          <p>
-            Patient-first visits that stay straightforward and respectful of your time. Supports routine care,
-            follow-ups, and select same-week concerns when available.
+          <ul class="provider-bullets">
+            <li><strong>Education:</strong> <em>[Medical School]</em> (MD)</li>
+            <li><strong>Residency:</strong> <em>[Residency Program]</em> (Family Medicine)</li>
+            <li><strong>Experience:</strong> Primary care, prevention planning, chronic care follow-up</li>
+            <li><strong>Approach:</strong> collaborative decision-making and clear “next step” guidance</li>
+          </ul>
+
+          <p class="meta provider-note" style="margin-top: 10px;">
+            Tip: request this provider when scheduling if you have a preference.
           </p>
-        </article>
-      </div>
+        </div>
 
-      <div class="callout">
-        <strong>Prefer a specific clinician?</strong>
-        <span>Request your preferred provider when you contact the clinic.</span>
-        <a class="btn btn-ghost" href="#contact">Request Appointment</a>
+        <!-- ===== Lower: Clinic specialties / what they handle here ===== -->
+        <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border);">
+          <h4 class="meta" style="margin: 0 0 10px;">
+            What Dr. Last commonly handles at this clinic
+          </h4>
+
+          <div class="provider-tags" aria-label="Clinic specialties">
+            <span class="provider-tag">New patients</span>
+            <span class="provider-tag">Annual visits</span>
+            <span class="provider-tag">Chronic care</span>
+            <span class="provider-tag">Care coordination</span>
+            <span class="provider-tag">Medication management</span>
+          </div>
+
+          <ul class="provider-bullets">
+            <li>New patient visits and transferring care</li>
+            <li>Annual physicals and preventive planning</li>
+            <li>Structured follow-ups for ongoing conditions</li>
+            <li>Care coordination across specialists (when needed)</li>
+            <li>Medication review, adjustments, and monitoring</li>
+          </ul>
+
+          <p class="meta" style="margin-left: 0; margin-top: 8px;">
+            If you’re unsure who to schedule with, contact the clinic and staff will help route you.
+          </p>
+        </div>
       </div>
-    </section>
+    </article>
+
+    <!-- Provider 2 – image RIGHT, text LEFT -->
+    <article class="card provider-feature provider-left">
+      <img
+        src="assets/DoctorHeroPortraitMale1.jpg"
+        alt="Provider headshot (placeholder)"
+        class="provider-feature-photo"
+      />
+
+      <div class="provider-feature-content">
+        <h3>First Last, NP</h3>
+        <p class="meta provider-role">Nurse Practitioner</p>
+
+        <!-- ===== Upper: Personal / Education / Professional ===== -->
+        <div>
+          <div class="provider-tags" aria-label="Provider bio highlights">
+            <span class="provider-tag">Patient education</span>
+            <span class="provider-tag">Time-respectful visits</span>
+            <span class="provider-tag">Practical plans</span>
+          </div>
+
+          <p class="provider-blurb">
+            First Last is an advanced practice nurse focused on accessible, patient-first care.
+            Visits are straightforward, respectful of your time, and designed to end with a clear plan.
+          </p>
+
+          <ul class="provider-bullets">
+            <li><strong>Education:</strong> <em>[NP Program / Institution]</em></li>
+            <li><strong>Clinical training:</strong> <em>[Rotations / Focus Areas]</em></li>
+            <li><strong>Experience:</strong> Routine care, follow-ups, symptom visits, patient education</li>
+            <li><strong>Approach:</strong> practical evaluation with simple, actionable next steps</li>
+          </ul>
+
+          <p class="meta provider-note" style="margin-top: 10px;">
+            Availability varies—ask staff about scheduling options.
+          </p>
+        </div>
+
+        <!-- ===== Lower: Clinic specialties / what they handle here ===== -->
+        <div style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border);">
+          <h4 class="meta" style="margin: 0 0 10px;">
+            What First Last commonly handles at this clinic
+          </h4>
+
+          <div class="provider-tags" aria-label="Clinic specialties">
+            <span class="provider-tag">Follow-ups</span>
+            <span class="provider-tag">Same-week concerns</span>
+            <span class="provider-tag">Routine visits</span>
+            <span class="provider-tag">Telehealth (if offered)</span>
+            <span class="provider-tag">Preventive guidance</span>
+          </div>
+
+          <ul class="provider-bullets">
+            <li>Routine visits and ongoing care follow-ups</li>
+            <li>Same-week symptom concerns when available</li>
+            <li>Medication questions and refill conversations</li>
+            <li>Telehealth visits (when appropriate)</li>
+            <li>Patient education and prevention-focused guidance</li>
+          </ul>
+
+          <p class="meta" style="margin-left: 0; margin-top: 8px;">
+            For severe symptoms, call 911 or go to the nearest emergency room.
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="callout">
+    <strong>Prefer a specific clinician?</strong>
+    <span>Request your preferred provider when you contact the clinic.</span>
+    <a class="btn btn-ghost" href="#contact">Request Appointment</a>
+  </div>
+</section>
+
+
+
 
     <!-- Insurance -->
     <section id="insurance">
       <h2>Insurance & Billing</h2>
-      <p class="meta">
-        Keep this accurate and non-absolute. Encourage confirmation and avoid promising participation.
-      </p>
 
       <div class="grid grid-2">
         <article class="card">
-          <h3>Common plans accepted</h3>
-          <p class="meta">Plan participation changes</p>
-          <ul style="margin: 0; padding-left: 18px;">
+          <h3>Coverage</h3>
+          <p class="meta">Plan participation varies</p>
+          <ul style="padding-left:18px;">
             <li>Plan A (placeholder)</li>
             <li>Plan B (placeholder)</li>
-            <li>Plan C (placeholder)</li>
             <li>Medicare / Medicaid (if applicable)</li>
           </ul>
-          <p style="margin-top: 12px;">
-            Please call to confirm coverage before your visit.
-          </p>
-          <p class="meta">
-            If you’re unsure what to ask, we can help you verify the right details with your insurer.
-          </p>
+          <p>Please call to confirm coverage.</p>
         </article>
 
         <article class="card">
           <h3>Self-pay</h3>
-          <p class="meta">Transparent pricing when possible</p>
-          <p>
-            If you’re paying out of pocket, we can provide a general estimate when possible.
-            Exact pricing varies by visit type and needs.
-          </p>
-          <p class="meta">
-            Billing questions: (###) ###-#### · billing@example.com
-          </p>
+          <p class="meta">Estimates when possible</p>
+          <p>Pricing varies by visit type and needs.</p>
+          <p class="meta">Billing: (###) ###-####</p>
         </article>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact + New Patient Info -->
     <section id="contact">
       <h2>Contact</h2>
 
@@ -298,71 +341,49 @@
           <p class="meta">Hours · phone · address</p>
 
           <p><strong>Phone:</strong> (###) ###-####</p>
-          <p><strong>Fax:</strong> (###) ###-####</p>
           <p><strong>Email:</strong> contact@example.com</p>
 
-          <p style="margin-top: 12px;">
-            <strong>Address:</strong><br />
-            123 Main Street<br />
+          <p style="margin-top:12px;">
+            <strong>Address:</strong><br>
+            123 Main Street<br>
             City, State ZIP
           </p>
 
-          <p style="margin-top: 12px;">
-            <strong>Hours:</strong><br />
-            Mon–Fri: 9:00 AM – 5:00 PM<br />
-            Sat: By appointment<br />
-            Sun: Closed
-          </p>
-
-          <p class="meta" style="margin-top: 12px;">
-            For directions, parking, and accessibility notes, add a short line here or below.
+          <p style="margin-top:12px;">
+            <strong>Hours:</strong><br>
+            Mon–Fri: 9–5<br>
+            Sat: By appointment
           </p>
         </article>
 
         <article class="card">
-          <h3>Send a message</h3>
-          <p class="meta">Form stub (no backend assumed)</p>
+          <h3>New patients</h3>
+          <p class="meta">3 simple steps</p>
+          <ol style="padding-left:18px;">
+            <li>Call or send a message to request an appointment.</li>
+            <li>Complete intake paperwork.</li>
+            <li>Bring ID, insurance card, and medication list.</li>
+          </ol>
 
-          <!-- Form is a stub on purpose (no backend). Replace with Formspree/Calendly/etc. -->
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" style="margin-top:14px;">
             <label class="field">
               <span class="field-label">Name</span>
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" placeholder="Your name">
             </label>
-
             <label class="field">
               <span class="field-label">Phone or email</span>
-              <input type="text" name="contact" placeholder="(###) ###-#### or you@example.com" />
+              <input type="text" placeholder="(###) ###-####">
             </label>
-
-            <label class="field">
-              <span class="field-label">Message</span>
-              <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
-            </label>
-
-            <button class="btn" type="button" aria-disabled="true">
-              Send (placeholder)
-            </button>
-
-            <p class="meta" style="margin-top: 10px;">
-              In a real site, this form would send to a secure inbox or scheduling tool.
-            </p>
+            <button class="btn" type="button">Send (placeholder)</button>
           </form>
         </article>
       </div>
 
-      <div class="callout">
-        <strong>Map stub:</strong>
-        <span>Embed a map or provide directions (placeholder).</span>
-        <a class="btn btn-ghost" href="#">Open Map (placeholder)</a>
-      </div>
-
-      <p class="meta" style="margin-top: 12px;">
+      <p class="meta" style="margin-top:12px;">
         If this is a medical emergency, call 911 or go to the nearest emergency room.
       </p>
     </section>
 
-    <!-- Footer -->
     <footer>
       <p>© <span id="year"></span> Example Clinic Name · Example Website Structure · Built by McGregor Systems LLC</p>
     </footer>
