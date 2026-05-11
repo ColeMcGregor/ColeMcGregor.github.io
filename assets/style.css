@@ -202,7 +202,7 @@ h3 {
 .hero {
   min-height: calc(100vh - 120px);
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  grid-template-columns: minmax(0, 0.98fr) minmax(420px, 1.02fr);
   gap: clamp(28px, 5vw, 72px);
 
   align-items: stretch;
@@ -222,7 +222,7 @@ h3 {
 
   align-self: stretch;
 
-  min-height: 520px;
+  min-height: 580px;
   position: relative;
   overflow: visible;
 }
@@ -237,20 +237,22 @@ h3 {
 }
 
 .hero-photo {
-  width: min(600px, 125%);
+  width: min(720px, 135%);
   height: auto;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 105px);
 
   object-fit: contain;
   object-position: center bottom;
 
-  /*transform: translate(36px, -25px);*/
+  transform: translate(36px, -18px);
 
   border-radius: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
 }
+
+
 
 .hero-text {
   min-width: 0;
@@ -688,7 +690,6 @@ footer {
   background: #0e1324;
   box-shadow: 0 6px 16px rgba(17,24,39,.22);
 }
-
 /* ===== Mobile ============================================================= */
 @media (max-width: 980px) {
   .llc-name { display: none; }
@@ -705,22 +706,28 @@ footer {
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 54px 0 74px;
+    gap: 28px;
+    padding: 42px 0 72px;
+    align-items: center;
   }
 
   .hero-text {
     max-width: 760px;
+    padding-bottom: 0;
   }
 
   .hero-media {
     order: -1;
     min-height: 0;
-    justify-content: flex-start;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
   }
 
   .hero-photo {
-    width: min(320px, 80vw);
+    width: min(360px, 82vw);
+    max-height: none;
+    transform: none;
   }
 }
 
@@ -736,16 +743,19 @@ footer {
   }
 
   .wrap {
-    padding-top: 22px;
+    padding-top: 18px;
   }
 
   .header-top {
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   .brand {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12px;
   }
 
   .brand-person {
@@ -754,40 +764,78 @@ footer {
 
   .header-nav {
     width: 100%;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
+    padding: 4px 0 8px;
     scrollbar-width: none;
+    gap: 24px;
   }
 
   .header-nav::-webkit-scrollbar { height: 0; }
 
   .nav-link {
     flex: 0 0 auto;
+    font-size: 18px;
   }
 
   .hero {
-    text-align: left;
-    padding: 42px 0 62px;
+    text-align: center;
+    gap: 28px;
+    padding: 34px 0 58px;
+  }
+
+  .hero-media {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-photo {
+    width: min(390px, 88vw);
+    transform: none;
   }
 
   .hero-text {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .hero-text::before {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .hero-text h1,
+  .hero-text p,
+  .hero-text .summary,
+  .hero-text .meta {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(40px, 11vw, 54px);
+    line-height: 1.08;
+    max-width: 11ch;
+  }
+
+  .summary {
+    font-size: clamp(22px, 6vw, 29px);
+    line-height: 1.52;
+    max-width: 18ch;
   }
 
   .hero-actions {
     width: 100%;
+    justify-content: center;
   }
 
   .hero-actions .btn {
     width: 100%;
     max-width: 300px;
     text-align: center;
-  }
-
-  .hero-photo {
-    width: min(280px, 78vw);
   }
 
   .form-grid { grid-template-columns: 1fr; }
@@ -867,52 +915,4 @@ footer {
     width: 96px;
     height: 96px;
   }
-}
-
-/* ===== Pricing table stacked ============================================= */
-@media (max-width: 900px) {
-  .pricing-table thead { display: none; }
-
-  .pricing-table tbody tr {
-    display: block;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .pricing-table tbody td {
-    display: block;
-    padding: 8px 0;
-    border: none;
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-
-  .pricing-table tbody td::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--muted-2);
-    margin-bottom: 4px;
-  }
-
-  .pricing-table td:first-child,
-  .pricing-table td:nth-child(2),
-  .pricing-table td:nth-child(3) {
-    white-space: normal;
-  }
-}
-
-/* ===== Motion & Print Preferences ======================================== */
-@media (prefers-reduced-motion: reduce) {
-  * { animation: none !important; transition: none !important; }
-}
-
-@media print {
-  body { background: #fff; color: #111; }
-  a { color: #0645ad; }
-  .hero, .card, .page-hero, .contact-card { box-shadow: none; border-color: #ddd; }
-  footer { color: #444; }
 }
