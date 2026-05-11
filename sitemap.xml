@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://colemcgregor.github.io/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/aboutme.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/business.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/portfolio.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/examples.html</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/contact.html</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://colemcgregor.github.io/social.html</loc>
+    <priority>0.50</priority>
+  </url>
+
+</urlset>
