@@ -244,7 +244,7 @@ h3 {
   object-fit: contain;
   object-position: center bottom;
 
-  transform: translate(36px, -25px);
+  /*transform: translate(36px, -25px);*/
 
   border-radius: 0;
   border: 0;
