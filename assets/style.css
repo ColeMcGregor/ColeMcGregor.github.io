@@ -227,14 +227,7 @@ h3 {
   overflow: visible;
 }
 
-.hero-media::before {
-  content: "";
-  position: absolute;
-  inset: auto 4% 6% 4%;
-  height: 42%;
-  background: radial-gradient(circle at center, rgba(28,181,186,.06), transparent 72%);
-  z-index: -1;
-}
+
 
 .hero-photo {
   width: min(720px, 135%);
@@ -244,7 +237,7 @@ h3 {
   object-fit: contain;
   object-position: center bottom;
 
-  transform: translate(36px, -18px);
+  /* transform: translate(36px, -18px); */
 
   border-radius: 0;
   border: 0;
