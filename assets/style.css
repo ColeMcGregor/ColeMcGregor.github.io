@@ -909,3 +909,74 @@ footer {
     height: 96px;
   }
 }
+
+/* ===== Mobile Rates Table Fix ============================================ */
+@media (max-width: 760px) {
+  #rates .card {
+    overflow: visible;
+  }
+
+  .pricing-table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    table-layout: auto;
+    border-spacing: 0;
+  }
+
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing-table tbody tr {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pricing-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .pricing-table tbody td {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 7px 0;
+    border-bottom: none;
+
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .pricing-table tbody td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 3px;
+
+    color: var(--muted-2);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .pricing-table td:first-child,
+  .pricing-table td:nth-child(2),
+  .pricing-table td:nth-child(3),
+  .pricing-table td:nth-child(4) {
+    white-space: normal !important;
+  }
+
+  .pricing-table td:nth-child(4) {
+    max-width: 100%;
+  }
+}
