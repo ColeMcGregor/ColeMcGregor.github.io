@@ -161,6 +161,21 @@ a:focus-visible {
   font-weight: 650;
 }
 
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
 /* ===== Typography / Sections ============================================= */
 section { margin-top: 46px; }
 
@@ -908,6 +923,26 @@ footer {
     width: 96px;
     height: 96px;
   }
+  .header-right {
+    width: 100%;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .header-actions .btn {
+    min-width: 132px;
+    max-width: calc(50vw - 28px);
+    text-align: center;
+    padding: 14px 18px;
+  }
+
 }
 
 /* ===== Mobile Rates Table Fix ============================================ */
