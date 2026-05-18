@@ -288,7 +288,78 @@ h3 {
   margin-top: 28px;
 }
 
+/* ===== Technology Strip ================================================== */
+.tech-strip {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  padding: 22px var(--pad);
+  background: rgba(255, 255, 255, 0.64);
+  border-top: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 4vw, 52px);
+  flex-wrap: wrap;
+
+  overflow-x: hidden;
+}
+
+.tech-strip + .tech-strip {
+  border-top: 0;
+  border-bottom: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.tech-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.78;
+  transition:
+    opacity 140ms ease,
+    transform 140ms ease;
+}
+
+.tech-item:hover,
+.tech-item:focus-within {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.tech-item img {
+  width: auto;
+  height: 32px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .tech-strip {
+    padding: 18px var(--pad);
+    gap: 22px 30px;
+  }
+
+  .tech-strip + .tech-strip {
+    padding-top: 6px;
+  }
+
+  .tech-item img {
+    height: 28px;
+    max-width: 86px;
+  }
+}
+
 /* ===== Buttons ============================================================ */
+
+
+
 .btn {
   display: inline-block;
   padding: 13px 20px;
