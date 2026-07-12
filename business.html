@@ -31,17 +31,17 @@
           </a>
           <strong class="brand-person">Cole McGregor</strong>
         </div>
-      <nav class="header-nav" aria-label="Primary">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link is-active" href="business.html">Work</a>
-        <a class="nav-link" href="aboutme.html">About</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <!-- <a class="nav-link" href="examples.html">Examples</a> -->
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-    </div>
-    </header>
 
+        <nav class="header-nav" aria-label="Primary">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link is-active" href="business.html">Work</a>
+          <a class="nav-link" href="aboutme.html">About</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <!-- <a class="nav-link" href="examples.html">Examples</a> -->
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
     <section class="page-hero">
       <h1>What We Do</h1>
@@ -120,6 +120,7 @@
           </p>
         </article>
       </div>
+    </section>
 
     <section>
       <h2>How I deliver</h2>
@@ -130,12 +131,14 @@
             I avoid “rewrite first” thinking. Changes are scoped, testable, and aimed at removing the real source of failure.
           </p>
         </article>
+
         <article class="card">
           <h3>Clarity + documentation</h3>
           <p>
             I add the minimum structure and notes that reduce future ambiguity: diagrams, handoff notes, and practical docs.
           </p>
         </article>
+
         <article class="card">
           <h3>Respect for operations</h3>
           <p>
@@ -146,7 +149,7 @@
     </section>
 
     <section id="rates">
-      <h2>Rates & engagement models</h2>
+      <h2>Rates &amp; engagement models</h2>
 
       <div class="card">
         <div class="rate-anchors">
@@ -154,6 +157,7 @@
             <strong>Starting point:</strong>
             <span>Discovery is the safest way to begin when scope is unclear.</span>
           </div>
+
           <div class="anchor">
             <strong>Goal:</strong>
             <span>Turn uncertainty into a clear plan before committing to bigger work.</span>
@@ -169,12 +173,12 @@
               <th>Notes</th>
             </tr>
           </thead>
-          <tbody>
 
+          <tbody>
             <tr>
               <td data-label="Engagement Type"><strong>Discovery</strong></td>
               <td data-label="Structure">Time-based<br>(familiarization)</td>
-              <td data-label="Rate / Terms">$40 / hour</td>
+              <td data-label="Rate / Terms">$90 / hour</td>
               <td data-label="Notes">
                 Initial system spin-up focused on understanding how components connect.
                 Includes code reading, environment familiarization, workflow mapping,
@@ -185,7 +189,7 @@
             <tr>
               <td data-label="Engagement Type"><strong>Advisory / Review</strong></td>
               <td data-label="Structure">Time-based<br>(no implementation)</td>
-              <td data-label="Rate / Terms">$50 / hour</td>
+              <td data-label="Rate / Terms">$100 / hour</td>
               <td data-label="Notes">
                 Architectural review, second opinions, design validation, or written recommendations without direct implementation.
               </td>
@@ -194,21 +198,17 @@
             <tr>
               <td data-label="Engagement Type"><strong>Hourly</strong></td>
               <td data-label="Structure">Time-based</td>
-              <td data-label="Rate / Terms">
-                $50 / hour
-              </td>
+              <td data-label="Rate / Terms">$100 / hour</td>
               <td data-label="Notes">
                 Intended for ongoing or iterative work where scope evolves over time, such as continued improvements,
                 maintenance, or multi-step changes. Not typically used for small, fixed-scope one-off fixes.
               </td>
             </tr>
-            
 
             <tr>
               <td data-label="Engagement Type"><strong>Retainer</strong></td>
               <td data-label="Structure">Prepaid block</td>
-              <td data-label="Rate / Terms">10% discount<br>on hourly
-              </td>
+              <td data-label="Rate / Terms">10% discount<br>on hourly</td>
               <td data-label="Notes">
                 Hours are billed against the retainer at a discounted rate. Suitable for ongoing support, maintenance, or recurring work.
               </td>
@@ -223,7 +223,6 @@
                 Work outside the agreed scope or changes in requirements may require a revised quote.
               </td>
             </tr>
-            
 
             <tr>
               <td data-label="Engagement Type"><strong>Priority / expedited</strong></td>
@@ -237,13 +236,12 @@
             <tr>
               <td data-label="Engagement Type"><strong>Communication/Admin</strong></td>
               <td data-label="Structure">Conditional</td>
-              <td data-label="Rate / Terms">$10 / instance<br>or $40 / hour</td>
+              <td data-label="Rate / Terms">$20 / instance<br>or $80 / hour</td>
               <td data-label="Notes">
                 Does not apply to initial communication. Applies to project-related communication that is not directly adjacent to active technical work,
-                and is assessed at the end of the engagement. Also covers admin work (invoicing and billing time is not charged)
+                and is assessed at the end of the engagement. Also covers admin work; invoicing and billing time is not charged.
               </td>
             </tr>
-
           </tbody>
         </table>
 
@@ -255,19 +253,18 @@
 
     <section class="contact-card">
       <h2>Get in touch</h2>
-    
+
       <p>
         The best way to reach me is through the contact form.
       </p>
-    
+
       <p class="meta">
         Helpful details to include: what’s wrong, where it lives, who uses it,
         and what “done” looks like. Overexplaining is welcome.
       </p>
-    
+
       <a class="btn" href="contact.html">Open Contact Form</a>
     </section>
-    
 
     <footer>
       <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
@@ -289,17 +286,17 @@
       </a>
     </span>
   </template>
-  
+
   <script>
     class RateTooltip extends HTMLElement {
       connectedCallback() {
         if (this.shadowRoot) return;
-  
+
         const template = document.getElementById("rate-tooltip-template");
         if (!template) return;
-  
+
         const shadow = this.attachShadow({ mode: "open" });
-  
+
         shadow.innerHTML = `
           <style>
             :host {
@@ -307,10 +304,9 @@
               display: inline-block;
               margin-left: 6px;
             }
-  
-            /* Focusable icon for mobile + accessibility */
+
             .icon {
-              all: unset; /* important: avoid mobile button defaults */
+              all: unset;
               display: inline-flex;
               align-items: center;
               justify-content: center;
@@ -324,44 +320,41 @@
               user-select: none;
               cursor: pointer;
             }
-  
+
             :host(:hover) .icon,
             :host(:focus-within) .icon {
               color: var(--ink);
               border-color: var(--accent);
             }
-  
+
             .popup {
               position: absolute;
-              bottom: calc(100% + 0px); /* intentionally tight */
+              bottom: calc(100% + 0px);
               right: 0;
               z-index: 1000;
-  
+
               width: 280px;
               padding: 12px 14px;
-  
+
               background: var(--surface);
               color: var(--ink);
               border: 1px solid var(--border);
               border-radius: 10px;
               box-shadow: 0 10px 24px rgba(0,0,0,.4);
-  
+
               font-size: 13px;
               line-height: 1.5;
-  
-              /* 👇 YOU ASKED TO KEEP THIS */
+
               text-wrap: wrap;
-  
-              /* extra safety for long URLs / words */
               overflow-wrap: anywhere;
-  
+
               opacity: 0;
               visibility: hidden;
               pointer-events: none;
               transform: translateY(4px);
               transition: opacity 120ms ease, transform 120ms ease;
             }
-  
+
             :host(:hover) .popup,
             :host(:focus-within) .popup {
               opacity: 1;
@@ -369,22 +362,21 @@
               pointer-events: auto;
               transform: translateY(0);
             }
-  
+
             .source {
               font-size: 12px;
               color: var(--muted);
             }
-  
+
             .source a {
               color: var(--accent);
               text-decoration: none;
             }
-  
+
             .source a:hover {
               text-decoration: underline;
             }
-  
-            /* Mobile: center and keep fully on-screen */
+
             @media (max-width: 640px) {
               .popup {
                 right: auto;
@@ -392,39 +384,35 @@
                 width: min(92vw, 320px);
                 transform: translate(-50%, 0);
               }
-  
+
               :host(:hover) .popup,
               :host(:focus-within) .popup {
                 transform: translate(-50%, 0);
               }
             }
           </style>
-  
+
           <button
             class="icon"
             type="button"
             aria-label="Show rate context"
           >!</button>
-  
+
           <div class="popup"></div>
         `;
-  
+
         shadow.querySelector(".popup").appendChild(
           template.content.cloneNode(true)
         );
       }
     }
-  
+
     customElements.define("rate-tooltip", RateTooltip);
   </script>
-  
-  
-  
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-  
 </body>
 </html>
