@@ -146,7 +146,7 @@ small, .small { font-size: .875rem; }
 .interest-card__icon { color: #72ced0; font-size: 1.7rem; }
 .interest-card h3 { font-size: 1rem; color: #eff6f6; }
 
-/* Interactive interests: hover-driven cards and one shared speech bubble. */
+/* Interactive interests: hover-driven cards and one shared speech bubble */
 .interest-interactive { position: relative; }
 .interest-card { width: 100%; color: inherit; font: inherit; text-align: left; cursor: default; border-radius: 0; }
 .interest-card__title { font-family: var(--font-heading); font-size: 1rem; font-weight: 600; line-height: 1.3; color: #eff6f6; }
@@ -182,59 +182,235 @@ small, .small { font-size: .875rem; }
 .page-hero .eyebrow { color: #78d0d2; }
 .page-hero .lead { color: #b9cacc; max-width: 67ch; }
 
-/* Learning — tabs, bookshelf, courses and reviews */
+/* Learning — generated bookcase and course entries */
 .learning-section + .learning-section { margin-top: clamp(65px, 9vw, 105px); padding-top: clamp(45px, 6vw, 70px); border-top: 1px solid var(--line); }
 .learning-section__heading { margin-bottom: 24px; }
-.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0; }
-.tab { min-height: 44px; padding: 10px 16px; border: 1px solid #a9c0c2; border-radius: var(--radius-sm); background: transparent; color: var(--ink-soft); font-weight: 700; font-size: .86rem; }
-.tab:hover { border-color: var(--accent); color: var(--accent); background: #e8f0ef; }
-.tab[aria-selected='true'], .tab.is-active { color: white; background: var(--accent); border-color: var(--accent); }
-.tab-panel[hidden] { display: none; }
 .entry-list { display: grid; gap: 12px; }
 .learning-entry { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(17px, 2.6vw, 25px); min-width: 0; }
-
-/* Mark any book as an active read by adding class="currently-reading" to its article. */
-.learning-entry.currently-reading {
-  border-color: var(--accent);
-  border-left: 4px solid var(--accent);
-  background: #f7fcfb;
-}
-.learning-entry.currently-reading::before {
-  content: "Currently reading";
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 14px;
-  padding: 4px 11px;
-  border-radius: 100px;
-  background: var(--accent-tint);
-  color: #175e63;
-  font-size: .76rem;
-  font-weight: 700;
-  letter-spacing: .015em;
-  line-height: 1.5;
-}
-
-.learning-entry__layout { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 22px; }
-/* Course and resource entries have no cover, so their content spans both columns. */
-.learning-entry__layout > .learning-entry__content:only-child { grid-column: 1 / -1; }
-.learning-entry__cover { width: 74px; aspect-ratio: 3 / 4.2; display: grid; place-items: center; overflow: hidden; background: #d2e3e4; color: var(--accent); border-left: 3px solid var(--accent); border-radius: 2px; }
-.learning-entry__cover img { height: 100%; width: 100%; object-fit: cover; }
 .learning-entry__content { min-width: 0; display: grid; align-content: start; gap: 8px; }
 .learning-entry__title { font-family: var(--font-heading); font-size: clamp(1.06rem, 2vw, 1.32rem); font-weight: 600; line-height: 1.3; }
 .learning-entry__meta { color: var(--muted); font-size: .87rem; }
-.learning-entry__status { display: inline-block; justify-self: start; padding: 3px 9px; border-radius: 100px; background: var(--surface-muted); color: #345f65; font-size: .72rem; font-weight: 700; }
-.learning-entry__status[data-status='completed'] { background: #dcf2e9; color: #17674c; }
-.learning-entry__status[data-status='in-progress'] { background: #e4eefd; color: #305d9b; }
-.learning-entry__status[data-status='planned'] { background: #edf0f1; color: #58676b; }
-.review { margin-top: 5px; }
-.review__text { margin: 0; white-space: pre-line; color: var(--ink-soft); line-height: 1.7; }
-.review:not(.is-expanded) .review__text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
-.review__toggle { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 5px 0; background: transparent; border: 0; color: var(--accent); font-weight: 700; font-size: .87rem; text-align: left; }
-.review__toggle:hover { color: #14565b; text-decoration: underline; }
-.review__toggle::after { content: '⌄'; display: inline-block; font-size: 1.1em; line-height: 1; }
-.review.is-expanded .review__toggle::after { transform: rotate(180deg); }
-.review__text, .review__toggle { overflow-wrap: anywhere; }
+.learning-entry__summary { margin: 10px 0; line-height: 1.7; }
+.learning-entry__reflection { margin-top: 12px; }
+.learning-entry__reflection summary { color: var(--accent); cursor: pointer; font-weight: 600; padding: 5px 0; }
+.learning-entry__reflection summary:hover { text-decoration: underline; }
+.learning-entry__reflection-body { padding: 12px 0 5px; line-height: 1.75; white-space: pre-line; color: var(--ink-soft); }
 .learning-empty { border: 1px dashed #a7bcbf; padding: 32px; color: var(--muted); background: #f9fbfa; }
+.learning-status-note { padding: 14px 0; color: var(--muted); }
+.learning-error { padding: 18px; border: 1px solid #b91c1c; color: #a52b2b; background: #fff8f8; }
+
+/* The bookcase grows with its shelf rows. Category colors match the site palette. */
+.bookshelf { width: 100%; min-width: 0; }
+.bookshelf-case {
+  overflow: hidden;
+  border: 12px solid var(--dark-deep);
+  border-top-width: 18px;
+  border-bottom-width: 20px;
+  border-radius: 6px;
+  background: var(--dark);
+  box-shadow: inset 0 0 0 2px rgba(137, 181, 181, .17), 0 13px 32px rgba(0, 0, 0, .14);
+}
+.bookshelf-section { --shelf-back: #385a60; --shelf-light: #688d92; --shelf-dark: #203e44; }
+.bookshelf-section--personal { --shelf-back: #4b6668; --shelf-light: #83a3a3; --shelf-dark: #2b474b; }
+.bookshelf-section--fiction { --shelf-back: #354b58; --shelf-light: #708a97; --shelf-dark: #1f3440; }
+.bookshelf-section__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 13px 14px;
+  background: linear-gradient(to bottom, var(--shelf-light), var(--shelf-back));
+  border-top: 1px solid rgba(201,230,230,.32);
+  border-bottom: 5px solid var(--shelf-dark);
+  color: #f2f7f7;
+}
+.bookshelf-section + .bookshelf-section .bookshelf-section__label { border-top: 6px solid var(--dark-deep); }
+.bookshelf-section__title { font-family: var(--font-body); font-size: .85rem; letter-spacing: .025em; line-height: 1.4; }
+.bookshelf-section__count { color: #e1eeee; font-size: .73rem; white-space: nowrap; }
+.bookshelf-row {
+  padding: 15px 11px 0;
+  background:
+    radial-gradient(ellipse at 45% 100%, rgba(231,255,255,.08), transparent 65%),
+    linear-gradient(to right, rgba(0,0,0,.25), transparent 15%, transparent 85%, rgba(0,0,0,.25)),
+    var(--shelf-back);
+}
+.bookshelf-row__books { display: flex; align-items: flex-end; gap: 3px; width: 100%; min-width: 0; }
+
+/*
+ * The first gradient draws the dark recessed channel.
+ * The second gradient draws the wooden shelf underneath.
+ */
+.bookshelf-row__plank {
+  position: relative;
+  height: 24px;
+  margin: 0 -11px;
+  background:
+    linear-gradient(to bottom, transparent 0 4px, #132a30 4px 20px, transparent 20px),
+    linear-gradient(to bottom, var(--shelf-light), var(--shelf-back) 35%, var(--shelf-dark));
+  border-top: 2px solid rgba(198,227,227,.54);
+  box-shadow: inset 0 5px 4px rgba(0,0,0,.25), 0 6px 10px rgba(0,0,0,.35);
+}
+
+/* Plaques span the measured width of their book group. */
+.bookshelf-group-plaque {
+  position: absolute;
+  top: 5px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+  padding: 1px 4px;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: inset 0 1px rgba(255,255,255,.35), 0 1px 2px rgba(0,0,0,.45);
+  font-family: Georgia, serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Antique brass indicates a named series. */
+.bookshelf-group-plaque--series {
+  border-color: #e2c88a;
+  background: linear-gradient(to bottom, #d6bf87, #ad8b57 65%, #8f7249);
+  color: #292318;
+}
+
+/* Brushed pewter indicates books grouped by author. */
+.bookshelf-group-plaque--author {
+  border-color: #d6e1e4;
+  background: linear-gradient(to bottom, #d6e0e3, #a4b2b8 65%, #788b93);
+  color: #202b31;
+}
+.bookshelf-row__empty { align-self: center; color: #e1eeee; font-size: .85rem; }
+.bookshelf-case__base { height: 13px; background: linear-gradient(#698d94, #13262c); }
+
+/* Each book is an accessible button with subtle rounded-spine shading. */
+.bookshelf-book {
+  position: relative;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 29px 2px 28px;
+  border: 1px solid rgba(0,0,0,.55);
+  border-radius: 3px 3px 1px 1px;
+  background: linear-gradient(90deg, rgba(0,0,0,.25) 0%, rgba(255,255,255,.03) 20%, rgba(255,255,255,.12) 50%, rgba(255,255,255,.03) 80%, rgba(0,0,0,.25) 100%), var(--book-color);
+  box-shadow: inset 2px 0 rgba(255,255,255,.24), inset -2px 0 rgba(0,0,0,.3), 2px 1px 2px rgba(0,0,0,.35);
+  color: #fff3d9;
+  transform: rotate(var(--book-tilt));
+  transform-origin: bottom center;
+  cursor: pointer;
+  isolation: isolate;
+  transition: transform .18s ease, filter .18s ease;
+}
+
+/* Paper edges sit inside the cover with corners cut back. */
+.bookshelf-book::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px;
+  right: 4px;
+  height: 5px;
+  background: linear-gradient(180deg, #fffdf4 0%, #e6e0cd 65%, #b4ae9d 100%);
+  clip-path: polygon(1px 0, calc(100% - 1px) 0, 100% 100%, 0 100%);
+  border-radius: 1px 1px 0 0;
+  pointer-events: none;
+}
+
+/* Lower decorative binding band */
+.bookshelf-book::after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  left: 2px;
+  right: 2px;
+  height: 2px;
+  background: linear-gradient(180deg, #f6e6bc, #8d865d);
+  pointer-events: none;
+}
+
+/* Titles run upward along the spine with their original capitalization. */
+.bookshelf-book__spine {
+  display: block;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  flex: none;
+  font-family: Georgia, serif;
+  font-size: var(--book-font-size, 8px);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: 0;
+  text-transform: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.bookshelf-book:hover, .bookshelf-book:focus-visible {
+  z-index: 4;
+  filter: brightness(1.2);
+  transform: translateY(-9px) rotate(0deg);
+  outline: 2px solid #8de3e4;
+  outline-offset: 2px;
+}
+
+/* Reading books use more saturated covers and a notched fabric bookmark. */
+.bookshelf-book.is-reading { filter: saturate(1.65) brightness(1.08); }
+.bookshelf-book.is-reading:hover, .bookshelf-book.is-reading:focus-visible { filter: saturate(1.75) brightness(1.23); }
+.bookshelf-book__bookmark {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 12px;
+  height: 23px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #9f623c, #e3b873 48%, #a96b43);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+  box-shadow: 0 0 1px rgba(0,0,0,.4);
+  pointer-events: none;
+}
+
+/* Shared modal styling for book descriptions and learning records. */
+.bookshelf-dialog {
+  width: min(620px, calc(100% - 24px));
+  max-height: min(82vh, 850px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-bright);
+  color: var(--ink);
+  box-shadow: 0 24px 75px rgba(0,0,0,.35);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.bookshelf-dialog::backdrop { background: rgba(8, 22, 27, .7); }
+.bookshelf-dialog__content { padding: clamp(22px, 4vw, 34px); }
+.bookshelf-dialog__title { margin: 8px 0 10px; font-size: clamp(1.45rem, 3vw, 2.1rem); }
+.bookshelf-dialog__meta { color: var(--muted); font-size: .86rem; }
+.bookshelf-dialog__section { padding-top: 17px; margin-top: 17px; border-top: 1px solid var(--line); }
+.bookshelf-dialog__section h3 { margin-bottom: 10px; font-size: 1rem; }
+.bookshelf-dialog__section p { color: var(--ink-soft); line-height: 1.75; }
+.bookshelf-dialog__reflection { white-space: pre-line; }
+.bookshelf-dialog__reflection--empty { font-style: italic; opacity: .75; }
+.bookshelf-dialog__footer { display: flex; justify-content: flex-end; padding: 0 clamp(22px, 4vw, 34px) 22px; }
+
+@media (max-width: 440px) {
+  .bookshelf-case { border-width: 7px; border-top-width: 12px; }
+  .bookshelf-row { padding-left: 6px; padding-right: 6px; }
+  .bookshelf-row__plank { margin-left: -6px; margin-right: -6px; }
+  .bookshelf-section__label { padding: 10px; }
+  .bookshelf-section__title { font-size: .74rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookshelf-book { transition: none; }
+}
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: clamp(24px, 5vw, 68px); align-items: start; }
@@ -267,8 +443,7 @@ small, .small { font-size: .875rem; }
 .skip-link:focus { top: 10px; }
 .sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-
-/* Homepage featured projects — editorial layout */
+/* Homepage featured projects */
 .project-business-note { margin-top: 6px; color: var(--muted); font-size: .91rem; line-height: 1.6; }
 .project-business-note a { color: var(--accent); font-weight: 700; text-decoration: none; }
 .project-business-note a:hover { text-decoration: underline; }
@@ -276,7 +451,7 @@ small, .small { font-size: .875rem; }
 .featured-project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(28px, 5vw, 72px); padding-bottom: clamp(38px, 5vw, 64px); border-bottom: 1px solid var(--line); }
 .featured-project:last-child { padding-bottom: 0; border-bottom: 0; }
 .featured-project__content { display: grid; justify-items: start; align-content: center; gap: 17px; }
-.featured-project__category { color: var(--accent); font-size: .76rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.featured-project__category { color: var(--accent); font-size: .76rem; text-transform: uppercase; letter-spacing: .08em; }
 .featured-project__content h3 { font-size: clamp(2rem, 3vw, 2.8rem); }
 .featured-project__description { color: var(--ink-soft); line-height: 1.75; }
 .featured-project__highlight { padding-left: 16px; border-left: 3px solid var(--accent); }
@@ -285,7 +460,8 @@ small, .small { font-size: .875rem; }
 .featured-project__link { margin-top: 5px; }
 .featured-project__media { display: flex; align-items: center; justify-content: center; min-height: 290px; padding: clamp(16px, 3vw, 28px); background: var(--surface-alt); overflow: hidden; }
 .featured-project__media > img { width: 100%; max-height: 430px; object-fit: contain; }
-/* Project screenshot carousels: only the current image and neighboring images are visible. */
+
+/* Project screenshot carousels */
 .showcase { width: 100%; min-width: 0; }
 .showcase__stage { position: relative; height: clamp(290px, 34vw, 420px); perspective: 1050px; overflow: hidden; }
 .showcase__slide { position: absolute; top: 50%; left: 50%; display: block; width: 92%; padding: 0; border: 0; background: transparent; border-radius: var(--radius-sm); box-shadow: 0 12px 28px rgba(18, 38, 42, .22); transition: transform .4s ease, opacity .4s ease, filter .4s ease, visibility .4s ease; transform-style: preserve-3d; cursor: pointer; }
@@ -303,8 +479,6 @@ small, .small { font-size: .875rem; }
 .showcase__arrow { width: 38px; height: 38px; flex: 0 0 auto; border-radius: 50%; border: 1px solid #9fbabd; background: #f8fbfa; color: var(--accent); font-weight: 700; }
 .showcase__arrow:hover { background: #d2e7e6; }
 .showcase__caption { flex: 1; max-width: 230px; color: var(--ink-soft); text-align: center; font-size: .78rem; }
-
-/* Reverse the visual order while preserving reading order in the HTML. */
 .featured-project--reversed .featured-project__media { grid-column: 1; grid-row: 1; }
 .featured-project--reversed .featured-project__content { grid-column: 2; grid-row: 1; }
 
@@ -315,10 +489,6 @@ small, .small { font-size: .875rem; }
   .featured-project--reversed .featured-project__media,
   .featured-project--reversed .featured-project__content { grid-column: 1; grid-row: auto; }
 }
-
-
-
-
 
 @media (max-width: 900px) {
   .hero__layout { grid-template-columns: minmax(0, 1fr) minmax(200px, .65fr); gap: 30px; }
@@ -339,20 +509,363 @@ small, .small { font-size: .875rem; }
   .project-grid { grid-template-columns: 1fr; }
   .section-heading { align-items: start; flex-direction: column; }
   .form-row { grid-template-columns: 1fr; }
-  .learning-entry__layout { grid-template-columns: 58px minmax(0, 1fr); gap: 14px; }
-  .learning-entry__cover { width: 58px; }
 }
 
 @media (max-width: 440px) {
   .container, .container--narrow, .site-header__inner { width: min(calc(100% - 28px), var(--max-width)); }
   .interest-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
   .interest-card { padding: 16px; min-height: 135px; }
-  .tabs { flex-direction: column; }
-  .tab { width: 100%; text-align: left; }
   .hero__actions .button { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Shared Back to Top component */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+  cursor: pointer;
+  transition: background-color .2s ease, transform .2s ease;
+}
+.back-to-top[hidden] { display: none !important; }
+.back-to-top:hover { background: #1c686d; transform: translateY(-3px); }
+.back-to-top:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+@media (max-width: 600px) {
+  .back-to-top { bottom: 16px; left: 16px; width: 44px; height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top { transition: none; }
+}
+
+/* ==========================================================
+   Learning file cabinet — independent JS, shared stylesheet
+   ========================================================== */
+
+/*
+ * Each folder starts 45px wide.
+ * One open folder expands to use the remaining width.
+ * The cabinet has a fixed desktop height to prevent page jumps.
+ */
+.learning-cabinet {
+  position: relative;
+  display: flex;
+  gap: 3px;
+  width: 100%;
+  height: 400px;
+  padding: 9px;
+  background: #263d43;
+  border: 5px solid #182e34;
+  border-radius: 7px;
+  box-shadow: 0 12px 26px rgba(10,30,35,.15);
+}
+
+.learning-folder {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 0 0 45px;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #587b80;
+  transition: flex-grow .22s ease;
+}
+
+.learning-folder:nth-child(2n) {
+  background: #6a7d79;
+}
+
+.learning-folder:nth-child(3n) {
+  background: #6e7686;
+}
+
+.learning-folder.is-open {
+  flex: 1 1 0;
+  background: #eee8dc;
+}
+
+/*
+ * The title reads from bottom to top.
+ * The record count stays at the top of the folder.
+ */
+.learning-folder__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 45px;
+  width: 45px;
+  min-width: 0;
+  padding: 11px 6px;
+  border: 0;
+  background: transparent;
+  color: #fff9e9;
+  cursor: pointer;
+}
+
+.learning-folder__tab:hover {
+  background: rgba(255,255,255,.1);
+}
+
+.learning-folder__tab:focus-visible {
+  outline: 3px solid #e4d09a;
+  outline-offset: -4px;
+}
+
+.learning-folder__tab-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-heading);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .025em;
+  white-space: nowrap;
+}
+
+.learning-folder.is-open .learning-folder__tab {
+  background: #42666b;
+}
+
+/*
+ * The count plate uses a flat, solid tan.
+ * It is the number of records in the folder, regardless of status.
+ */
+.learning-folder__indicators {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  pointer-events: none;
+}
+
+.learning-folder__record-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 23px;
+  height: 19px;
+  padding: 1px 4px;
+  border: 1px solid #a99b7d;
+  border-radius: 2px;
+  background: #d4c4a4;
+  color: #2c3738;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/*
+ * The nameplate is positioned only in the space to the right
+ * of the folders. It does not overlap or cover the folders.
+ *
+ * Each folder occupies 45px and a 3px gap.
+ * JavaScript provides --folder-count as the data changes.
+ */
+.learning-cabinet__nameplate-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(9px + var(--folder-count, 0) * 48px);
+  right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.learning-cabinet__nameplate {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  width: min(310px, calc(100% - 36px));
+  padding: 18px 20px;
+  border: 1px solid #8c816b;
+  border-radius: 4px;
+  background: #b8aa8d;
+  color: #2e302b;
+  text-align: center;
+}
+
+/* Simple lettering without a metallic or engraved effect. */
+.learning-cabinet__nameplate-title {
+  font-family: Georgia, serif;
+  font-size: clamp(12px, 1.5vw, 17px);
+  font-weight: 700;
+  letter-spacing: .11em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.learning-cabinet__nameplate-subtitle {
+  padding-top: 7px;
+  border-top: 1px solid #8c816b;
+  font-family: var(--font-body);
+  font-size: clamp(9px, 1vw, 11px);
+  font-weight: 600;
+  letter-spacing: .025em;
+  line-height: 1.4;
+  color: #414137;
+}
+
+/* Hide the label when any folder is open. */
+.learning-cabinet.has-open-folder .learning-cabinet__nameplate-area {
+  display: none;
+}
+
+/* Open folder contents */
+.learning-folder__panel {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 22px;
+  background: #eee8dc;
+  color: #263b3f;
+}
+
+.learning-folder__panel[hidden] {
+  display: none !important;
+}
+
+.learning-folder__heading {
+  margin-bottom: 5px;
+  color: #243f44;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.learning-folder__count {
+  margin-bottom: 17px;
+  color: #586e6d;
+  font-size: .78rem;
+}
+
+.learning-folder__records {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+}
+
+/* Each record is a keyboard-accessible button that opens a detail dialog. */
+.learning-record {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #cbd1c8;
+  border-left: 4px solid #50868b;
+  background: #fbfaf5;
+  color: #263b3f;
+  text-align: left;
+  border-radius: 3px;
+}
+
+.learning-record:hover {
+  border-color: #50868b;
+  background: #fff;
+}
+
+.learning-record__title {
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: .91rem;
+}
+
+.learning-record__meta {
+  color: #52666b;
+  font-size: .76rem;
+}
+
+.learning-record__note {
+  color: #496d71;
+  font-size: .75rem;
+}
+
+.learning-course-progress {
+  margin-top: 8px;
+  color: #386970;
+  font-size: .88rem;
+}
+
+/*
+ * Mobile: the folders form a vertical accordion.
+ * Record counts move to the right of the horizontal tabs.
+ * No nameplate is needed because there is no unused side area.
+ */
+@media (max-width: 680px) {
+  .learning-cabinet {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+
+  .learning-folder,
+  .learning-folder.is-open {
+    display: block;
+    flex: none;
+  }
+
+  .learning-folder__tab {
+    width: 100%;
+    height: 46px;
+    justify-content: flex-start;
+    padding: 8px 15px;
+  }
+
+  .learning-folder__tab-text {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding-right: 40px;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .learning-folder__indicators {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 12px;
+    flex-direction: row;
+    gap: 7px;
+  }
+
+  .learning-cabinet__nameplate-area {
+    display: none;
+  }
+
+  .learning-folder__panel {
+    max-height: 360px;
+    padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learning-folder {
+    transition: none;
+  }
 }

@@ -1,0 +1,44 @@
+{
+  "courses": [
+    {
+      "category": "Game Development",
+      "type": "course",
+      "title": "The Ultimate 2D Top Down Unreal Engine Course",
+      "provider": "Udemy · Cobra Code",
+      "status": "completed",
+      "progress": 100,
+      "summary": "2D top-down game development using Unreal Engine.",
+      "reflection": ""
+    },
+    {
+      "category": "Game Development",
+      "type": "course",
+      "title": "Unreal Engine 5 C++ Game Development",
+      "provider": "Udemy · GameDev.tv Team, Kaan Alpar",
+      "status": "in-progress",
+      "progress": 47,
+      "summary": "Crash course in all things unreal. Teaches how to make games of varying types through 5 projects. C++ game development with Unreal Engine. Progress is from the earlier 5.3 edition.",
+      "reflection": ""
+    },
+    {
+      "category": "Game Development",
+      "type": "self-study",
+      "title": "Perforce documentation and self-training",
+      "provider": "Perforce official documentation",
+      "status": "in-progress",
+      "summary": "Self-directed study of Perforce Helix Core and its documentation, including version-control workflows.",
+      "reflection": "",
+      "url": "https://help.perforce.com/helix-core/"
+    },
+    {
+      "category": "Software Architecture",
+      "type": "certification",
+      "title": "Certified Professional for Software Architecture – Foundation Level (CPSA-F)",
+      "provider": "iSAQB",
+      "status": "in-progress",
+      "summary": "Preparation for the iSAQB Certified Professional for Software Architecture Foundation Level certification. The syllabus covers software architecture design principles, architectural requirements, system decomposition, architectural documentation, quality attributes, and evaluating architectural decisions.",
+      "reflection": "",
+      "url": "https://www.isaqb.org/"
+    }
+  ]
+}

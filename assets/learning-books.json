@@ -1,0 +1,597 @@
+
+{
+  "books": [
+    {
+      "category": "professional",
+      "title": "Clean Architecture",
+      "author": "Robert C. Martin",
+      "status": "finished",
+      "summary": "An examination of software architecture, dependency direction, component boundaries, and the separation of business rules from implementation details.",
+      "reflection": "An eye-opening book. I learned much about what I had yet to understand about software with this book and it spurred me to learn more about software architecture, as well asdesign patterns and principles. Would recommend."
+    },
+    {
+      "category": "professional",
+      "title": "The Clean Coder",
+      "author": "Robert C. Martin",
+      "status": "finished",
+      "summary": "A discussion of professional responsibility in software engineering, including estimates, commitments, communication, and development discipline.",
+      "reflection": "This book was a brutal reminder that I knew nothing about what it meant to be a professional coder and had much to learn. It also helped me to understand what it means to be a professional in software and how to approach interacting with the other kinds of people I could expect as an engineer. I think this book should be included in most if not all first year seminars for software engineering students."
+    },
+    {
+      "category": "professional",
+      "title": "Game Programming Patterns",
+      "author": "Robert Nystrom",
+      "status": "finished",
+      "summary": "A collection of software design patterns applied to game development, including game loops, state management, component systems, and performance considerations.",
+      "reflection": "I read this book after learning about it in The Art of Game Design, by Jesse Schell. It was a wonderful lensing of the design patterns I learned about in Clean Architecture and also why I began Design Patterns. I learned much about how design patterns are applied to game development and how to think about the architecture of games, especially in terms of performance and maintainability. I would greatly recommend this book to anyone interested in game development."
+    },
+    {
+      "category": "professional",
+      "title": "Game Feel",
+      "author": "Steve Swink",
+      "status": "finished",
+      "summary": "An exploration of the relationship between player input, movement, animation, visual response, and the sensation of interacting with a game.",
+      "reflection": "A fascinating book about the phenomenological experience that games, especially good games, are meant to create. The idea that games are not just about mechanics and rules, but the nuance of how those mechanics and rules are experienced by the player is what makes or breaks most games. If studying game design, while not first, This book should be high on the list of books to read."
+    },
+    {
+      "category": "professional",
+      "title": "The Art of Game Design (3rd Edition)",
+      "author": "Jesse Schell",
+      "status": "finished",
+      "summary": "A broad examination of game design through player experience, mechanics, balance, narrative, interfaces, and the relationships between design decisions.",
+      "reflection": "A very thorough and well written book about the game design process and all it entails. Gives a holistic overview and provides insights into the facets of game design a game dev, and especially an entrepreneurial game dev, should be aware of. I would recommend this book as a great please to start for anyone interested in game design."
+    },
+    {
+      "category": "professional",
+      "title": "Programming Game AI by Example",
+      "author": "Mat Buckland",
+      "status": "reading",
+      "summary": "A practical introduction to game artificial intelligence, covering state machines, steering behaviors, pathfinding, decision making, and related algorithms.",
+      "reflection": ""
+    },
+    {
+      "category": "professional",
+      "title": "The Design and Analysis of Algorithms",
+      "author": "",
+      "status": "finished",
+      "summary": "A technical study of algorithm design, correctness, computational complexity, and methods for comparing the efficiency of different solutions.",
+      "reflection": "A book that was assigned to me in a college course, but I was so interested in I read it whole instead of in chapters. I hadn't realized how much I didn't understand about algorithmic data manipulation until this book and class, and it has kindled a great love of them since then. I would recommend this book to those who enjoy the complicated math and logic involved in backend and game programming, or even how something like a GPS works."
+    },
+    {
+      "category": "professional",
+      "title": "Scrum",
+      "author": "Jeff Sutherland",
+      "status": "finished",
+      "summary": "An introduction to Scrum as an iterative approach to organizing work, with an emphasis on feedback, team coordination, and incremental delivery.",
+      "reflection": "A short but concise book about the Agile Scrum methodology, I read this book in my final year of college to better take on the role of product owner for our teams capstone. It helped me to not only understand Scrum better, but also the purposes of using it and how to help others accomplish their roles best too. I would recommend to those who are joining a Scrum team at any point."
+    },
+    {
+      "category": "professional",
+      "title": "Creating Character Arcs",
+      "author": "K. M. Weiland",
+      "status": "finished",
+      "summary": "A guide to character development through internal conflict, motivation, personal beliefs, and the relationship between character change and plot structure.",
+      "reflection": "A fascinating but brief book about the kinds of character arcs that exist in stories and their rhetorical purposes, as well as how to use all of them to enrich the feelings of life and fullness in a story, as few stories have only one character we want to pay attention to the whole time. Would firmly recommend to anyone starting to write or screenwrite stories, as it is a helpful primer on how to flesh out characters and their arcs."
+    },
+    {
+      "category": "professional",
+      "title": "The Hero's Two Journeys",
+      "author": "Christopher Vogler and Michael Hauge",
+      "status": "finished",
+      "summary": "A storytelling framework that examines external plot development alongside the internal transformation of a story's central character.",
+      "reflection": "An interesting take on the classic Campbellian Hero's Journey, it discusses how stories are not simply the classic hero's journey in part, but really two journeys, one internal and psychological, the other external and central to the story. The best stories have both of them staggered from eachother in progress and resolution to create the most compelling narratives. Would recommend it (and its source book, the Hero's Journey) to those who wish to further understand the mechanics of storytelling."
+    },
+    {
+      "category": "professional",
+      "title": "Save the Cat!",
+      "author": "Blake Snyder",
+      "status": "finished",
+      "summary": "A screenwriting guide organized around story structure, genre expectations, pacing, and a sequence of narrative beats.",
+      "reflection": "A very interesting and short primer on screenwriting and story structure, it explains well and concisely the necessary beats and structures expected in a story adapted for the screen. While not immediately obvious, it holds much wisdom for creating not only screenplays but also game plots and more broadly stories as a whole. I would suggest it as a good starting point to story writing for digital media."
+    },
+    {
+      "category": "professional",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "status": "reading",
+      "summary": "A technical examination of data systems, storage engines, replication, partitioning, transactions, consistency, and distributed-system reliability.",
+      "reflection": ""
+    },
+    {
+      "category": "professional",
+      "title": "Design Patterns",
+      "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+      "status": "reading",
+      "summary": "A foundational work in software engineering by the Gang of Four (GoF), introducing 23 reusable object-oriented design patterns. The book organizes these patterns into creational, structural, and behavioral categories, explaining their intent, structure, applicability, and trade-offs in software design.",
+      "reflection": ""
+    },
+
+    {
+      "category": "personal",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "status": "finished",
+      "summary": "A framework for developing habits through small behavioral changes, environmental design, repetition, and systems that support long-term consistency.",
+      "reflection": "Honestly, one of those books that changes one's framework of thinking and perspectives on how to approach aspects of life that cause you to struggle in various ways. Helps understand that life is much like investing, in that the compounding of effort is what makes for an incredible sum of change. I would *highly* recommend this book to anyone who struggles with habits, consistency, or staying on the path of self-improvement."
+    },
+    {
+      "category": "personal",
+      "title": "The Confidence Gap",
+      "author": "Russ Harris",
+      "status": "reading",
+      "summary": "An approach to confidence based on acceptance and commitment therapy, emphasizing action in the presence of fear rather than waiting for fear to disappear.",
+      "reflection": ""
+    },
+    {
+      "category": "personal",
+      "title": "The Four Agreements",
+      "author": "Don Miguel Ruiz",
+      "status": "reading",
+      "summary": "A short philosophical work presenting four personal agreements concerned with communication, assumptions, judgment, and individual conduct.",
+      "reflection": ""
+    },
+    {
+      "category": "personal",
+      "title": "The War of Art",
+      "author": "Steven Pressfield",
+      "status": "finished",
+      "summary": "An examination of resistance, procrastination, and the habits and discipline associated with sustained creative work.",
+      "reflection": "A somewhat chaotic examination of why artists and creators often struggle with the act of creation. Discusses the ideas of resistance as a sort of entity, and ties it into a lot of spiritual aspects that some might find unsual, but overall worth reading for the wisdoms within. Would recommend to those who struggle initiating their creativity in life."
+    },
+    {
+      "category": "personal",
+      "title": "How to Hold a Cockroach",
+      "author": "Matthew Maxwell",
+      "status": "finished",
+      "summary": "An illustrated exploration of the relationship between emotional discomfort, personal interpretation, and acceptance.",
+      "reflection": "What a book. I was not expecting much when going in but if you take the time and effort to really listen to it, it is profound. Similar to poetry, it requires careful consideration and a willingness to set aside preconceived notions and judgments to really understand the message. I would recommend it to anyone who finds discomfort at any point during life in any way, so, probably you, reader."
+    },
+    {
+      "category": "personal",
+      "title": "Ishmael",
+      "author": "Daniel Quinn",
+      "status": "completed",
+      "summary": "A philosophical novel in which a man becomes the student of Ishmael, a gorilla who teaches him to question humanity's assumptions about civilization, nature, and progress. Through a series of conversations, Ishmael examines the cultural stories that shape human behavior, particularly the belief that the world exists for humanity to control. The novel explores sustainability, human exceptionalism, and the relationship between civilization and the natural world.",
+      "reflection": "Perhaps the most foundational book of the person I am today. While overall not absurdly profound, the way that it explains religions and people and our interactions with the world altered the person I was at 16 to be the person I am today. It is not exaggeration to say it changed my life profoundly and for the better. Would absolutely recommend to just about any person."
+    },
+    {
+      "category": "personal",
+      "title": "The Gifts of Imperfection",
+      "author": "Brené Brown",
+      "status": "finished",
+      "summary": "A discussion of vulnerability, authenticity, shame, belonging, and the challenge of living without relying on perfection as a measure of personal worth.",
+      "reflection": "I really impactful book. Brené is like a soothing mother and loving aunt wrapped into the best kind of pastor. Definitely change dmy perspectives and several people I knows perspectives on the self. Would recommend overwhelmingly."
+    },
+    {
+      "category": "personal",
+      "title": "Daring Greatly",
+      "author": "Brené Brown",
+      "status": "finished",
+      "summary": "An exploration of vulnerability as part of relationships, leadership, creativity, and participation in situations where outcomes are uncertain.",
+      "reflection": ""
+    },
+    {
+      "category": "personal",
+      "title": "The Power of Vulnerability",
+      "author": "Brené Brown",
+      "format": "Audio program",
+      "status": "finished",
+      "summary": "An recorded conference disguised as an audiobook discussing vulnerability, shame, courage, connection, and the ways people respond to the possibility of rejection or failure.",
+      "reflection": "My introduction to Brené Brown, and an excellent discussion of vulnerability across ones life. While not very in depth it is a great 6 hour listen for those who have the time and have ever felt shame or vulnerable."
+    },
+    {
+      "category": "personal",
+      "title": "The Will to Change",
+      "author": "Bell Hooks",
+      "status": "finished",
+      "summary": "An examination of masculinity, emotional development, patriarchal expectations, and the role of love and connection in men's lives.",
+      "reflection": "A book about what it means in todays culture to be percieved of as male or masculine and how many classic ideals around masculinity are destructive to the freedoms of anyone as it limits ones ability to be themself effectively and genuinely. 10/10, will read again."
+    },
+    {
+      "category": "personal",
+      "title": "All About Love",
+      "author": "bell hooks",
+      "status": "finished",
+      "summary": "A philosophical and social examination of love as a practice involving care, responsibility, trust, knowledge, and commitment.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Eye of the World",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 1,
+      "summary": "The opening novel introduces the Two Rivers, a group of young travelers, and a growing conflict involving prophecy, ancient history, and the Dark One.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Great Hunt",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 2,
+      "summary": "A pursuit involving the stolen Horn of Valere expands the story's political and cultural landscape while developing the central characters' abilities.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Dragon Reborn",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 3,
+      "summary": "The characters follow separate paths toward Tear as the meaning and consequences of the Dragon Reborn become increasingly difficult to avoid.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Shadow Rising",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 4,
+      "summary": "The story broadens through the Aiel Waste, the Two Rivers, and new political conflicts, while revealing important parts of the world's history.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Fires of Heaven",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 5,
+      "summary": "Military campaigns, political divisions, and the growing influence of powerful channelers reshape the conflict surrounding Rand and his allies.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Lord of Chaos",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 6,
+      "summary": "Rival factions compete for influence over the Dragon Reborn as mistrust and political maneuvering contribute to major confrontations.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Crown of Swords",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 7,
+      "summary": "The aftermath of earlier conflicts leads to new efforts to secure power, resolve threats, and manage increasingly divided alliances.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Path of Daggers",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 8,
+      "summary": "Several groups pursue different political and military objectives as the consequences of channeling and the approaching Last Battle become more apparent.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Winter's Heart",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 9,
+      "summary": "A series of separate character journeys leads toward an attempt to alter one of the fundamental conditions affecting male channelers.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Crossroads of Twilight",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 10,
+      "summary": "The narrative follows several factions as they respond to major events, continue political negotiations, and prepare for future conflicts.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Knife of Dreams",
+      "author": "Robert Jordan",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 11,
+      "summary": "Long-running conflicts and character journeys move toward resolution as the setting experiences growing signs of the approaching Last Battle.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Gathering Storm",
+      "author": "Robert Jordan and Brandon Sanderson",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 12,
+      "summary": "Rand and Egwene face major personal and political crises as the Last Battle approaches and the struggle against the Shadow intensifies.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Towers of Midnight",
+      "author": "Robert Jordan and Brandon Sanderson",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 13,
+      "summary": "Preparations for the Last Battle bring together major storylines, while several characters confront unresolved obligations and threats.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Memory of Light",
+      "author": "Robert Jordan and Brandon Sanderson",
+      "status": "finished",
+      "series": "The Wheel of Time",
+      "seriesOrder": 14,
+      "summary": "The concluding novel centers on the Last Battle and the resolution of the conflict that has shaped the series.",
+      "reflection": ""
+    },
+   
+    {
+      "category": "fiction",
+      "title": "The Final Empire",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 1",
+      "seriesOrder": 1,
+      "summary": "A group of rebels and thieves attempts to challenge an apparently immortal ruler in a world shaped by ash, oppression, and metal-based magic.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Well of Ascension",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 1",
+      "seriesOrder": 2,
+      "summary": "The characters face the political and military consequences of revolution while investigating ancient prophecies and an approaching threat.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Hero of Ages",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 1",
+      "seriesOrder": 3,
+      "summary": "The first Mistborn trilogy concludes with the characters confronting the origins of their world's condition and the forces threatening its survival.",
+      "reflection": ""
+    },
+
+    {
+      "category": "fiction",
+      "title": "The Alloy of Law",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 2",
+      "seriesOrder": 1,
+      "summary": "Set in an industrializing version of Scadrial, the novel introduces Wax and Wayne through a mystery involving crime, law, and Allomancy.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Shadows of Self",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 2",
+      "seriesOrder": 2,
+      "summary": "A series of violent incidents leads Wax and his allies into a conflict involving political unrest, hidden identities, and questions of justice.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Bands of Mourning",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 2",
+      "seriesOrder": 3,
+      "summary": "An investigation into a legendary artifact takes Wax and his companions beyond familiar territory and reveals further details about Scadrial.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Lost Metal",
+      "author": "Brandon Sanderson",
+      "status": "finished",
+      "series": "Mistborn — Era 2",
+      "seriesOrder": 4,
+      "summary": "The second Mistborn era reaches its conclusion through an escalating threat to Elendel and discoveries connected to the wider Cosmere.",
+      "reflection": ""
+    },
+
+    {
+      "category": "fiction",
+      "title": "Dungeon Crawler Carl",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 1,
+      "summary": "After Earth's surface is transformed into a deadly dungeon, Carl and his cat Donut are forced to survive an intergalactic game show.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Carl's Doomsday Scenario",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 2,
+      "summary": "Carl and Donut continue through the dungeon's increasingly dangerous floors while navigating new rules, enemies, and survival challenges.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Dungeon Anarchist's Cookbook",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 3,
+      "summary": "The dungeon's fourth floor introduces an elaborate transit system, while Carl uncovers information about earlier crawlers and their resistance.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Gate of the Feral Gods",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 4,
+      "summary": "Carl and Donut confront new dangers involving the dungeon's factions, powerful entities, and the increasingly complicated consequences of their actions.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Butcher's Masquerade",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 5,
+      "summary": "The sixth floor's hunting competition places crawlers and outside participants into direct conflict, with high stakes for Carl and his allies.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Eye of the Bedlam Bride",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 6,
+      "summary": "A floor organized around a card-based combat system introduces new strategic challenges and develops the conflict with the dungeon's operators.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "This Inevitable Ruin",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 7,
+      "summary": "Carl's ongoing struggle reaches the dungeon's Faction Wars, where alliances, armies, and outside powers compete in an increasingly unstable environment.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Parade of Horribles",
+      "author": "Matt Dinniman",
+      "status": "finished",
+      "series": "Dungeon Crawler Carl",
+      "seriesOrder": 8,
+      "summary": "The eighth installment continues Carl and Donut's struggle within the dungeon following the events of Faction Wars.",
+      "reflection": ""
+    },
+
+    {
+      "category": "fiction",
+      "title": "The Name of the Wind",
+      "author": "Patrick Rothfuss",
+      "status": "finished",
+      "series": "The Kingkiller Chronicle",
+      "seriesOrder": 1,
+      "summary": "Kvothe begins recounting his life, from his childhood among traveling performers to his experiences with magic, music, and the University.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "The Wise Man's Fear",
+      "author": "Patrick Rothfuss",
+      "status": "finished",
+      "series": "The Kingkiller Chronicle",
+      "seriesOrder": 2,
+      "summary": "Kvothe's account continues through his studies, travels, encounters with powerful figures, and growing reputation.",
+      "reflection": ""
+    },
+
+    {
+      "category": "fiction",
+      "title": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "status": "finished",
+      "series": "A Song of Ice and Fire",
+      "seriesOrder": 1,
+      "summary": "The opening novel introduces the political rivalries of Westeros, the Stark family, and threats developing both within and beyond the Seven Kingdoms.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Clash of Kings",
+      "author": "George R. R. Martin",
+      "status": "finished",
+      "series": "A Song of Ice and Fire",
+      "seriesOrder": 2,
+      "summary": "Multiple claimants compete for the Iron Throne as Westeros enters a period of civil war, shifting alliances, and military conflict.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Storm of Swords",
+      "author": "George R. R. Martin",
+      "status": "finished",
+      "series": "A Song of Ice and Fire",
+      "seriesOrder": 3,
+      "summary": "The War of the Five Kings produces major political and personal consequences while threats beyond the Wall continue to grow.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Feast for Crows",
+      "author": "George R. R. Martin",
+      "status": "finished",
+      "series": "A Song of Ice and Fire",
+      "seriesOrder": 4,
+      "summary": "The story examines the political and social aftermath of war through characters in King's Landing, the Iron Islands, Dorne, and other regions.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "A Dance with Dragons",
+      "author": "George R. R. Martin",
+      "status": "finished",
+      "series": "A Song of Ice and Fire",
+      "seriesOrder": 5,
+      "summary": "The narrative follows developments in the North and across the Narrow Sea, including Jon Snow's leadership and Daenerys's attempts to rule Meereen.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Assassin's Apprentice",
+      "author": "Robin Hobb",
+      "series": "The Farseer Trilogy",
+      "seriesOrder": 1,
+      "status": "completed",
+      "summary": "The first novel in the Farseer Trilogy follows FitzChivalry Farseer, the illegitimate son of a royal prince, as he grows up at Buckkeep Castle. Trained in secrecy as an assassin for the crown, Fitz must navigate court politics, divided loyalties, and his developing magical abilities while searching for his place in a world that often treats him as an outsider.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Royal Assassin",
+      "author": "Robin Hobb",
+      "series": "The Farseer Trilogy",
+      "seriesOrder": 2,
+      "status": "completed",
+      "summary": "As the Six Duchies face increasingly dangerous attacks from the Red-Ship Raiders, Fitz becomes more deeply involved in defending the kingdom. Political rivalries, personal loyalties, and the demands of his service to the Farseer family place him under growing pressure. The novel explores duty, sacrifice, friendship, and the consequences of choices made in service to others.",
+      "reflection": ""
+    },
+    {
+      "category": "fiction",
+      "title": "Assassin's Quest",
+      "author": "Robin Hobb",
+      "series": "The Farseer Trilogy",
+      "seriesOrder": 3,
+      "status": "completed",
+      "summary": "The concluding novel follows Fitz beyond the familiar world of Buckkeep as he pursues a dangerous mission tied to the future of the Six Duchies. His journey brings him into contact with ancient mysteries, powerful magic, and questions about identity, loyalty, and personal freedom. The story brings the trilogy's central conflicts toward their resolution.",
+      "reflection": ""
+    }
+
+  ],
+
+  "courses": []
+}
