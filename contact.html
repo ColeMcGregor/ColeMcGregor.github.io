@@ -1,193 +1,224 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Cole McGregor" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>McGregor Systems LLC · Contact</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Cole McGregor">
   <meta
     name="description"
-    content="Contact McGregor Systems LLC for practical software repair, workflow automation, and small-business tooling."
-  />
+    content="Contact Cole McGregor about software engineering opportunities, technical collaboration, and professional projects."
+  >
 
-  <link rel="canonical" href="https://ColeMcGregor.github.io/contact.html" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>Contact | Cole McGregor</title>
+
+  <link
+    rel="canonical"
+    href="https://colemcgregor.com/contact.html"
+  >
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <div class="wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-        <div class="header-top">
-          <div class="brand">
-            <a class="llc-badge" href="index.html" aria-label="McGregor Systems LLC home">
-              <img
-                src="assets/LogoMcGregorSystemsSmall.png"
-                alt="McGregor Systems LLC"
-                class="llc-logo"
-              />
-              <span class="llc-name">McGregor Systems LLC</span>
-            </a>
-            <strong class="brand-person">Cole McGregor</strong>
-          </div>
-        <nav class="header-nav" aria-label="Primary">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="business.html">Business</a>
-          <a class="nav-link" href="aboutme.html">About</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <!-- <a class="nav-link" href="examples.html">Examples</a> -->
-          <a class="nav-link is-active" href="contact.html">Contact</a>
-        </nav>
-      </div>
-      </header>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="index.html">
+        <span class="site-brand__name">Cole McGregor</span>
+        <span class="site-brand__role">
+          Software Systems Engineer
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        Menu
+      </button>
+
+      <nav
+        class="site-nav"
+        id="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="learning.html">Learning</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
 
     <section class="page-hero">
-      <h1>Contact</h1>
-      <p class="summary">
-        I look forward to hearing from you!
-      </p>
-      <p class="meta">
-        Prefer email? <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a>
-      </p>
-    </section>
+      <div class="container page-hero__inner">
+        <p class="eyebrow">04 / Contact</p>
 
-    <!-- Contact layout (form left, details right) -->
-    <section class="contact-split" aria-label="Contact form and details">
-      <div class="contact-left card">
-        <h2>Let’s get started</h2>
-        <p class="meta">
-          Fill this out and I’ll reply with next steps (or ask a couple clarifying questions).
-          If it’s not a fit, I’ll tell you.
+        <h1>Let's connect.</h1>
+
+        <p class="lead">
+          Interested in discussing software engineering,
+          a technical collaboration, or a professional
+          opportunity? Here's where to reach me.
         </p>
-
-        <!--
-          NOTE: This is a static site. The form uses mailto by default.
-          If you later add Formspree / Netlify Forms, keep the same fields and replace the action/method.
-        -->
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xzdgwkre"
-          method="POST"
-        >
-          <!-- Formspree helpers -->
-          <input type="hidden" name="_subject" value="New Project Inquiry · McGregor Systems LLC">
-          <input type="text" name="_gotcha" style="display:none">
-        
-          <div class="form-grid">
-            <label class="field">
-              <span class="field-label">First name</span>
-              <input
-                class="input"
-                type="text"
-                name="first_name"
-                autocomplete="given-name"
-                required
-              />
-            </label>
-        
-            <label class="field">
-              <span class="field-label">Last name</span>
-              <input
-                class="input"
-                type="text"
-                name="last_name"
-                autocomplete="family-name"
-                required
-              />
-            </label>
-        
-            <label class="field">
-              <span class="field-label">Email</span>
-              <input
-                class="input"
-                type="email"
-                name="email"
-                autocomplete="email"
-                required
-              />
-            </label>
-        
-            <label class="field">
-              <span class="field-label">Phone (optional)</span>
-              <input
-                class="input"
-                type="tel"
-                name="phone"
-                autocomplete="tel"
-              />
-            </label>
-          </div>
-        
-          <label class="field">
-            <span class="field-label">What do you need help with?</span>
-            <textarea
-              class="textarea"
-              name="project_details"
-              rows="8"
-              placeholder="Example: Our website has a formatting issue with one of the pages and we need it fixed. We don't know anything more. Please help us fix it."
-
-              required
-            ></textarea>
-          </label>
-        
-          <div class="form-actions">
-            <button class="btn" type="submit">Send</button>
-          </div>
-        
-          <p class="meta">
-            Tip: If it’s a website issue, include the URL and what device/browser you’re on.
-            If it’s a spreadsheet/report issue, include what “correct output” looks like.
-          </p>
-        </form>
-      
       </div>
-
-      <aside class="contact-right card" aria-label="Contact details">
-        <div class="contact-card-brand">
-          <img
-            src="assets/LogoMcGregorSystemsSmall.png"
-            alt="McGregor Systems LLC"
-            class="contact-logo"
-          />
-          <div>
-            <div class="contact-org">McGregor Systems LLC</div>
-            <div class="meta">Software Repair · Workflow Automation · Small Tools</div>
-          </div>
-        </div>
-
-        <div class="contact-details">
-          <p><strong>Email:</strong> <a href="mailto:mcgregorsystemsllc@gmail.com">mcgregorsystemsllc@gmail.com</a></p>
-          <p><strong>Location:</strong> Upstate NY (remote-friendly)</p>
-          <p class="meta">
-            Typical first step: a quick call or email thread to confirm scope, then a short discovery pass.
-          </p>
-        </div>
-
-        <div class="contact-links">
-          <a class="btn btn-ghost" href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <hr class="contact-divider" />
-
-        <div class="contact-badges">
-          <div class="meta">
-            Contract work through McGregor Systems LLC.
-          </div>
-          <a class="meta" href="business.html">See services & engagement models →</a>
-        </div>
-      </aside>
     </section>
 
-    <footer>
-      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
-    </footer>
-  </div>
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div class="contact-panel">
+          <p class="eyebrow">
+            Professional Correspondence
+          </p>
+
+          <h2>Start a conversation.</h2>
+
+          <p>
+            I'm open to discussions about engineering roles,
+            projects, and collaborations. LinkedIn is currently
+            the clearest direct contact method for personal
+            or employment-related inquiries.
+          </p>
+
+          <div class="button-row" style="margin-top: 24px;">
+            <a
+              class="button"
+              href="https://www.linkedin.com/in/cole-mcgregor-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Message Me on LinkedIn &nearr;
+            </a>
+
+            <a
+              class="button button--outline"
+              href="assets/Cole_McGregor_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume &nearr;
+            </a>
+          </div>
+
+        </div>
+
+        <aside
+          class="contact-aside"
+          aria-label="Professional links"
+        >
+          <div>
+            <p class="eyebrow">Find Me Online</p>
+
+            <h2>Elsewhere.</h2>
+
+            <a
+              class="contact-link"
+              href="https://github.com/ColeMcGregor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/cole-mcgregor-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+              <span aria-hidden="true">&nearr;</span>
+            </a>
+          </div>
+
+          <div class="business-note">
+            <h3>Looking for commercial services?</h3>
+
+            <p>
+              For contract software engineering,
+              application development, and systems design
+              through my company, visit McGregor Systems LLC.
+            </p>
+
+            <a
+              class="text-link"
+              href="https://mcgregorsystemsusa.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              McGregor Systems LLC &nearr;
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>
+        &copy; <span data-current-year>2026</span>
+        Cole McGregor
+      </p>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a
+          href="https://github.com/ColeMcGregor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/cole-mcgregor-dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://mcgregorsystemsusa.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          McGregor Systems LLC
+        </a>
+      </nav>
+    </div>
+  </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggle = document.querySelector(".nav-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen =
+        navToggle.getAttribute("aria-expanded") === "true";
+
+      navToggle.setAttribute(
+        "aria-expanded",
+        String(!isOpen)
+      );
+
+      siteNav.classList.toggle("is-open", !isOpen);
+    });
+
+    document
+      .querySelectorAll("[data-current-year]")
+      .forEach(element => {
+        element.textContent = new Date().getFullYear();
+      });
   </script>
 </body>
 </html>

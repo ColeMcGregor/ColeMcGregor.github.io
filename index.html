@@ -1,228 +1,1114 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Cole McGregor" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Cole McGregor · Software Systems Engineer</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta
-    name="description"
-    content="Cole McGregor is a Software Systems Engineer building resilient applications, automation tools, workflow systems, and practical software for teams and businesses."
-  />
-
-  <link rel="canonical" href="https://ColeMcGregor.github.io/" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Cole McGregor">
+  <meta name="description" content="Cole McGregor is a software systems engineer developing web and Android applications, software architecture, and games.">
+  <title>Cole McGregor | Software Systems Engineer</title>
+  <link rel="canonical" href="https://colemcgregor.com/">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <div class="wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <div class="header-top">
-        <div class="brand">
-          <a class="llc-badge" href="index.html" aria-label="Cole McGregor home">
-            <img
-              src="assets/LogoMcGregorSystemsSmall.png"
-              alt="McGregor Systems LLC"
-              class="llc-logo"
-            />
-            <span class="llc-name">McGregor Systems LLC</span>
-          </a>
-          <strong class="brand-person">Cole McGregor</strong>
-        </div>
+  <!-- Shared navigation -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="index.html">
+        <span class="site-brand__name">Cole McGregor</span>
+        <span class="site-brand__role">Software Systems Engineer</span>
+      </a>
 
-        <nav class="header-nav" aria-label="Primary">
-          <a class="nav-link is-active" href="index.html">Home</a>
-          <a class="nav-link" href="business.html">Business</a>
-          <a class="nav-link" href="aboutme.html">About</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <!-- <a class="nav-link" href="studio/index.html">Studio</a> -->
-          <a class="nav-link" href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        Menu
+      </button>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h2>I create practical software systems that make your tasks more manageable.</h2>
-
-        <p class="summary">
-          I’m a Software Systems Engineer focused on full-stack applications,
-          workflow automation, bespoke tooling, and resilient systems that are
-          easier to understand, maintain, and improve.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn" href="portfolio.html">View My Work</a>
-          <a class="btn btn-ghost" href="contact.html">Contact Me</a>
-        </div>
-
-      </div>
-
-      <div class="hero-media">
-        <img
-          src="assets/ProfessionalPhotoNOBG.png"
-          alt="Portrait of Cole McGregor"
-          class="hero-photo"
-        />
-      </div>
-    </section>
-
-    <icon-bar-1></icon-bar-1>
-
-    <section class="page-hero" style="text-align: center;">
-      <h2>Software, systems, and the space between <br> (and even around) them.</h2>
-      <p class="summary" style="margin-left: auto; margin-right: auto;">
-        My work sits where application development, automation, architecture,
-        debugging, and human workflow meet. I take pride in a well built product,
-        and it results in software that does the job, explains itself clearly, 
-        and holds up when real people depend on it.
-      </p>
-    </section>
-
-
-    <section>
-      <h2>What is a Software Systems Engineer?</h2>
-
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Application Builder</h3>
-          <p>
-            I build usable software across all manner of systems. Whether something simple like PDF generation, 
-            or complex like an original game idea you may have had, I am prepared to build what you need, how you need.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Systems Thinker</h3>
-          <p>
-            I map how pieces best interact given business needs, structure the system around those needs, 
-            and ensure you understand to the degree necessary how and why they came about, meeting you where
-            you are.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Automation Partner</h3>
-          <p>
-            I turn repeated manual work into tools, and predictable processes, tweaking the process later if needs change.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <h2>Problems I Help Solve</h2>
-
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>Unstable tools and recurring bugs</h3>
-          <p class="meta">Brittle logic · surprise breakage · unclear ownership</p>
-          <p>
-            I stabilize systems, reduce failure points, and leave code and documentation easier to maintain. 
-            If a new engineer needs to take the system from me, they will have all the information needed to spin up.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Manual work that should not be manual</h3>
-          <p class="meta">Copy/paste workflows · spreadsheet dependency · preventable mistakes</p>
-          <p>
-            I automate repetitive work, add guardrails, and make your outcomes more predictable, if not standardized.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Reports and documents that keep breaking</h3>
-          <p class="meta">PDFs · formatting issues · inconsistent output</p>
-          <p>
-            I repair and design document generation systems so outputs are consistent,
-             reliable, and match how you picture it should.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Websites that need a stronger foundation</h3>
-          <p class="meta">Outdated layout · weak structure · unclear user path</p>
-          <p>
-            I build and restructure websites with clear information architecture and responsive design.  
-            If desired, we can work together to create a website as sprawling as you envision.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <icon-bar-2></icon-bar-2>
-
-    <section>
-      <h2>How I Work</h2>
-
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>1) Understand the system</h3>
-          <p>
-            I start by learning what exists, who uses it, whats causing friction, and where that friction can be eased.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>2) Find the leverage points</h3>
-          <p>
-            I identify the parts where targeted changes can create the most stability, clarity, or saved time.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>3) Build and hand off clearly</h3>
-          <p>
-            I implement the fix, explain the result, and leave behind documentation that real people can use. Yes, even you.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <div class="callout">
-      <strong>Community-serving organization?</strong>
-      <span>
-        Ask about discretionary discounts for organizations that serve their communities,
-        including nonprofits, faith organizations, medical practices, and public-service groups, as well as underserved communities.
-        <strong>Unsure if you qualify? Ask!</strong>
-      </span>
+      <nav
+        class="site-nav"
+        id="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="learning.html">Learning</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <section class="contact-card">
-      <h2>Want to work together?</h2>
+  <main id="main">
 
-      <p>
-        Feel free to include any relevant, or possibly irrelevant, information as you see fit. I dont mind a good story.
-      </p>
+    <!-- Introduction -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <h1 id="hero-title">
+            Software engineer.
+            <span class="accent-text">Lifelong learner.</span>
+          </h1>
 
-      <div style="margin-top: 14px;">
-        <a class="btn" href="contact.html">Go to Contact Form</a>
+          <p class="lead">
+            My name is Cole, I am a software systems engineer interested in
+            making incredible things. I work across systems and ideas, and enjoy exploring
+            new ways software can be used to solve problems and create experiences.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="projects.html">
+              Explore My Work &rarr;
+            </a>
+
+            <a class="button button--outline" href="contact.html">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <figure>
+          <div class="hero__portrait">
+            <img
+              src="assets/ProfessionalPhoto2.jpg"
+              alt="Professional portrait of Cole McGregor"
+              fetchpriority="high"
+            >
+          </div>
+
+          <figcaption class="hero__portrait-caption">
+            Cole McGregor · Albany, New York
+          </figcaption>
+        </figure>
       </div>
-
-      <p class="meta" style="margin-top: 16px;">
-        <a href="https://github.com/ColeMcGregor" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
     </section>
 
-    <certifications-footer></certifications-footer>
+    <!-- Biography and background -->
+    <section
+      class="section section--muted"
+      id="about"
+      aria-labelledby="about-heading"
+    >
+      <div class="container split-content">
+        <div>
+          <p class="eyebrow">01 / About Me</p>
+          <h2 id="about-heading">
+            A little about how I have come to be a software systems engineer.
+          </h2>
+        </div>
 
-    <footer>
-      <p>© <span id="year"></span> Cole McGregor · McGregor Systems LLC · Built with GitHub Pages</p>
-    </footer>
-  </div>
+        <div class="prose">
+          <p>
+            My background consists of formal software development
+            education, professional contract software engineering work, and military
+            service. I joined the U.S. Air Force after high school, where I served as an
+            Aircraft Armament Systems Specialist, and learned to work within complex,
+            technical systems requiring rigorous situational awareness and attention to detail.
+          </p>
 
-  <!-- script used for getting the current date -->
+          <p>
+            As my time in service ended, I turned to software and game development,
+            learning my passion for programming, and subsequently systems design
+            and architecture as I sought to understand how to better build software.
+            I learned that supplementing my education with independent study, reading, and experimentation
+            was essential in developing and improving my understanding of software and the systems around them.
+          </p>
+
+          <p>
+            Outside of professional development, I spend time
+            thinking up and creating games, reading, gardening, and
+            studying new subjects that help me understand both
+            technology and the people who use it. I keep a list of relevant
+            books, courses, and ideas in my learning journal.
+          </p>
+
+          <dl class="fact-list">
+            <div class="fact-list__item">
+              <dt>Education</dt>
+              <dd>
+                B.S. Software Development, Siena College
+                (Cum Laude)<br>
+                A.S. Computer Science, Hudson Valley Community College
+              </dd>
+            </div>
+
+            <div class="fact-list__item">
+              <dt>Experience</dt>
+              <dd>
+                Web, mobile, game, and desktop development, backend
+                services, database integration, workflow automation, and technical
+                tooling, alongside a background in military operations and leadership.
+              </dd>
+            </div>
+
+            <div class="fact-list__item">
+              <dt>Professional Work</dt>
+              <dd>
+                Founder of
+                <a
+                  href="https://mcgregorsystemsusa.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >McGregor Systems LLC</a>,
+                providing contract software engineering
+                and systems design services.
+              </dd>
+            </div>
+
+            <div class="fact-list__item">
+              <dt>Resume</dt>
+              <dd>
+                <a
+                  class="text-link"
+                  href="assets/Cole_McGregor_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View My Resume &rarr;
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering interests -->
+    <section
+      class="section section--dark"
+      aria-labelledby="interests-heading"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-heading__intro">
+            <p class="eyebrow">02 / Current Interests</p>
+            <h2 id="interests-heading">
+              Things I enjoy exploring.
+            </h2>
+
+            <p class="lead">
+              My interests typically overlap, with ideas learned in the pursuit of one
+              discipline informing how I approach finding solutions in another.
+            </p>
+          </div>
+        </div>
+
+        <div class="interest-interactive">
+          <div class="interest-grid" aria-label="Areas of interest">
+
+            <button
+              class="interest-card"
+              type="button"
+              aria-expanded="false"
+              aria-controls="interest-detail"
+              data-interest="architecture"
+            >
+              <span class="interest-card__icon" aria-hidden="true">&#128506;&#65039;</span>
+              <span class="interest-card__title">Software Architecture</span>
+            </button>
+
+            <button
+              class="interest-card"
+              type="button"
+              aria-expanded="false"
+              aria-controls="interest-detail"
+              data-interest="games"
+            >
+              <span class="interest-card__icon" aria-hidden="true">&#128377;&#65039;</span>
+              <span class="interest-card__title">Game Development</span>
+            </button>
+
+            <button
+              class="interest-card"
+              type="button"
+              aria-expanded="false"
+              aria-controls="interest-detail"
+              data-interest="apps"
+            >
+              <span class="interest-card__icon" aria-hidden="true">&#128241;</span>
+              <span class="interest-card__title">Mobile Apps</span>
+            </button>
+
+            <button
+              class="interest-card"
+              type="button"
+              aria-expanded="false"
+              aria-controls="interest-detail"
+              data-interest="tools"
+            >
+              <span class="interest-card__icon" aria-hidden="true">&#128736;&#65039;</span>
+              <span class="interest-card__title">Tools &amp; Applications</span>
+            </button>
+
+          </div>
+
+          <!-- Shared speech bubble -->
+          <div
+            class="interest-detail"
+            id="interest-detail"
+            role="region"
+            aria-label="Selected interest details"
+            hidden
+          >
+            <div class="interest-detail__heading">
+              <h3 id="interest-detail-title"></h3>
+            </div>
+
+            <p id="interest-detail-description"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section
+      class="section"
+      aria-labelledby="projects-heading"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="section-heading__intro">
+            <p class="eyebrow">03 / What I'm Building</p>
+
+            <h2 id="projects-heading">
+              Selected projects.
+            </h2>
+
+            <p class="lead">
+              A selection of application development,
+              mobile development, and software engineering work.
+            </p>
+
+            <p class="project-business-note">
+              For commercial and client projects, visit
+              <a
+                href="https://mcgregorsystemsusa.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                McGregor Systems LLC &rarr;
+              </a>
+            </p>
+          </div>
+
+          <a class="text-link" href="projects.html">
+            View All Projects &rarr;
+          </a>
+        </div>
+
+        <div class="featured-projects">
+
+          <!-- EldVatten -->
+          <article
+            class="featured-project"
+            aria-labelledby="featured-eldvatten-heading"
+          >
+            <div class="featured-project__content">
+
+              <p class="featured-project__category">
+                Full-Stack Web Application
+              </p>
+
+              <h3 id="featured-eldvatten-heading">
+                EldVatten
+              </h3>
+
+              <p class="featured-project__description">
+                A community management website and web application supporting
+                member accounts, communication, organizational
+                administration, and member needs.
+              </p>
+
+              <div class="featured-project__highlight">
+                <h4>Engineering Focus</h4>
+
+                <p>
+                  Full stack application architecture, relational
+                  data modeling, web-centric development, role based permissions, authentication,
+                  and automated testing.
+                </p>
+              </div>
+
+              <ul class="tag-list" aria-label="EldVatten technologies">
+                <li class="tag">Python</li>
+                <li class="tag">Django</li>
+                <li class="tag">PostgreSQL</li>
+                <li class="tag">Playwright</li>
+                <li class="tag">Docker</li>
+              </ul>
+
+              <a
+                class="text-link featured-project__link"
+                href="projects.html#eldvatten"
+              >
+                Explore Project &rarr;
+              </a>
+            </div>
+
+            <!-- EldVatten carousel -->
+            <div class="featured-project__media">
+              <div
+                class="showcase showcase--desktop"
+                data-showcase
+                aria-label="EldVatten screenshots"
+              >
+                <div class="showcase__stage">
+
+                  <!-- Site -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Website home"
+                    aria-label="Show EldVatten website home screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-site-home.png"
+                      alt="EldVatten: website home screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Tavern -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="The Tavern"
+                    aria-label="Show EldVatten Tavern screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-tavern.png"
+                      alt="EldVatten: the Tavern screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- My EldVatten -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="My EldVatten"
+                    aria-label="Show EldVatten My EldVatten screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-myeldvatten.png"
+                      alt="EldVatten: My EldVatten screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Events: Agenda -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Event agenda"
+                    aria-label="Show EldVatten event agenda screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-eventagenda.png"
+                      alt="EldVatten: event agenda screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Events: Calendar -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Event calendar"
+                    aria-label="Show EldVatten event calendar screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-eventcalendar.png"
+                      alt="EldVatten: event calendar screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Voting -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Voting"
+                    aria-label="Show EldVatten voting screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-voting.png"
+                      alt="EldVatten: voting screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Messages -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Messages"
+                    aria-label="Show EldVatten messages screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-messages.png"
+                      alt="EldVatten: messages screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Resources -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Resources"
+                    aria-label="Show EldVatten resources screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-resources.png"
+                      alt="EldVatten: resources screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Directory -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Member directory"
+                    aria-label="Show EldVatten member directory screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-directory.png"
+                      alt="EldVatten: member directory screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Admin -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Administration"
+                    aria-label="Show EldVatten administration screenshot"
+                  >
+                    <img
+                      src="assets/projects/Eldvatten-preview-webapp-admin.png"
+                      alt="EldVatten: administration screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                </div>
+
+                <div class="showcase__controls">
+                  <button
+                    class="showcase__arrow"
+                    type="button"
+                    data-direction="-1"
+                    aria-label="Previous EldVatten screenshot"
+                  >&#8592;</button>
+
+                  <span
+                    class="showcase__caption"
+                    aria-live="polite"
+                  ></span>
+
+                  <button
+                    class="showcase__arrow"
+                    type="button"
+                    data-direction="1"
+                    aria-label="Next EldVatten screenshot"
+                  >&#8594;</button>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- Arith-Matic -->
+          <article
+            class="featured-project featured-project--reversed"
+            aria-labelledby="featured-arith-matic-heading"
+          >
+            <div class="featured-project__content">
+
+              <p class="featured-project__category">
+                Android Educational Application
+              </p>
+
+              <h3 id="featured-arith-matic-heading">
+                Arith-Matic
+              </h3>
+
+              <p class="featured-project__description">
+                An educational arithmetic app designed
+                for low stimulation, ease of use, and self
+                directed learning and practice. Has stats and reports
+                for students, parents, and teachers to track progress and performance.
+              </p>
+
+              <div class="featured-project__highlight">
+                <h4>Engineering Focus</h4>
+
+                <p>
+                  Modular question generation factories, appropriate mobile
+                  design and architecture, and accessibility and stimulation 
+                  focused interface development.
+                </p>
+              </div>
+
+              <ul class="tag-list" aria-label="Arith-Matic technologies">
+                <li class="tag">Kotlin</li>
+                <li class="tag">Android</li>
+                <li class="tag">Educational Games</li>
+                <li class="tag">Jetpack Compose</li>
+              </ul>
+
+              <a
+                class="text-link featured-project__link"
+                href="projects.html#arith-matic"
+              >
+                Explore Project &rarr;
+              </a>
+            </div>
+
+            <!-- Arith-Matic carousel -->
+            <div class="featured-project__media">
+              <div
+                class="showcase showcase--mobile"
+                data-showcase
+                aria-label="Arith-Matic screenshots"
+              >
+                <div class="showcase__stage">
+
+                  <!-- Preview -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Main menu"
+                    aria-label="Show Arith-Matic main menu screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-preview.png"
+                      alt="Arith-Matic: main menu screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Round settings: Basic -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Basic round settings"
+                    aria-label="Show Arith-Matic basic round settings screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-settings-basic.png"
+                      alt="Arith-Matic: basic round settings screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Round settings: Advanced -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Advanced round settings"
+                    aria-label="Show Arith-Matic advanced round settings screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-settings-advanced.png"
+                      alt="Arith-Matic: advanced round settings screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Practice -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Practice"
+                    aria-label="Show Arith-Matic practice screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-practice.png"
+                      alt="Arith-Matic: practice screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Round complete -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Round complete"
+                    aria-label="Show Arith-Matic round complete screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-round-complete.png"
+                      alt="Arith-Matic: round complete screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- System settings -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="System settings"
+                    aria-label="Show Arith-Matic system settings screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-system-settings.png"
+                      alt="Arith-Matic: system settings screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- My stats -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="My statistics"
+                    aria-label="Show Arith-Matic statistics screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-my-stats.png"
+                      alt="Arith-Matic: my statistics screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Adults privacy -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Adult privacy"
+                    aria-label="Show Arith-Matic adult privacy screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-adults-privacy.png"
+                      alt="Arith-Matic: adult privacy screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- Adults stats -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="Adult statistics"
+                    aria-label="Show Arith-Matic adult statistics screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-adults_stats.png"
+                      alt="Arith-Matic: adult statistics screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                  <!-- About -->
+                  <button
+                    class="showcase__slide"
+                    type="button"
+                    data-caption="About"
+                    aria-label="Show Arith-Matic about screenshot"
+                  >
+                    <img
+                      src="assets/projects/arithmatic-about.png"
+                      alt="Arith-Matic: about screen"
+                      loading="lazy"
+                    >
+                  </button>
+
+                </div>
+
+                <div class="showcase__controls">
+                  <button
+                    class="showcase__arrow"
+                    type="button"
+                    data-direction="-1"
+                    aria-label="Previous Arith-Matic screenshot"
+                  >&#8592;</button>
+
+                  <span
+                    class="showcase__caption"
+                    aria-live="polite"
+                  ></span>
+
+                  <button
+                    class="showcase__arrow"
+                    type="button"
+                    data-direction="1"
+                    aria-label="Next Arith-Matic screenshot"
+                  >&#8594;</button>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning invitation -->
+    <section
+      class="section section--dark"
+      aria-labelledby="learning-heading"
+    >
+      <div class="container split-content">
+        <div>
+          <p class="eyebrow">04 / Beyond the Code</p>
+          <h2 id="learning-heading">
+            Good ideas inform good engineering.
+          </h2>
+        </div>
+
+        <div class="prose">
+          <p class="lead">
+            Reading, experimentation, and continuing my education
+            are key parts of how I develop my understanding
+            of the world and the software systems I work with.
+          </p>
+
+          <p>
+            My learning journal is a place I write about books,
+            courses, independent studies, and the ideas I've taken
+            away from each of them. I write about each one, sharing
+            insights and reflections.
+          </p>
+
+          <p>
+            Topics include professional software engineering, game development, self-improvement, and all sorts of fiction.
+          </p>
+
+          <a class="button button--light" href="learning.html">
+            Explore My Learning Journal &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="section section--compact">
+      <div class="container split-content">
+        <div>
+          <p class="eyebrow">05 / Connect</p>
+          <h2>Interested in my work?</h2>
+        </div>
+
+        <div class="prose">
+          <p class="lead">
+            I'm always interested in discussions
+            about engineering, software projects, games, philosophy,
+            horticulture, and, of course,
+            professional opportunities.
+          </p>
+
+          <div class="button-row">
+            <a class="button" href="contact.html">
+              Contact Me &rarr;
+            </a>
+
+            <a
+              class="button button--outline"
+              href="https://github.com/ColeMcGregor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>
+        &copy; <span data-current-year>2026</span>
+        Cole McGregor
+      </p>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a
+          href="https://github.com/ColeMcGregor"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+
+        <a
+          href="https://www.linkedin.com/in/cole-mcgregor-dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn</a>
+
+        <a
+          href="https://mcgregorsystemsusa.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >McGregor Systems LLC</a>
+      </nav>
+    </div>
+  </footer>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const siteNav = document.querySelector(".site-nav");
 
-  <!-- scripts -->
-  <script src="assets/icon-bars.js"></script>
-  <script src="assets/certifications-footer.js"></script>
+    navToggle.addEventListener("click", () => {
+      const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      siteNav.classList.toggle("is-open", !isOpen);
+    });
+
+    const interestDescriptions = {
+      architecture:
+        "Software Architecture is the general structure of a software application, and ties into every facet of making an application, from business and user needs to security and accessibility. As the needs and desires for an application change, so too must the architecture to be able to meet the needs of the system. A game with 100,000 simulated creatures requires a system very different from a report generation tool used for a business by its employees and clients.",
+
+      games:
+        "I consider, design, and build games as both personal creative projects and specific technical challenges. My experience includes novel gameplay mechanics, complex and multi-faceted game-object interactions, high performance computing architectural experiments, and worldbuilding and systems design for original games. This includes the artistic creation of assets for said games and their implementation.",
+
+      apps:
+        "Phones are with us nearly if not all of a day. Thinking of and building phone applications meant to solve problems and help people has been a fascination of mine since the invention of the iPhone. I have designed and built educational math games, physics based games, and web apps to be used from phones and tablets. As most games and applications can have some form of mobile presence, being able to tie other applications into a mobile system is fascinating.",
+
+      tools:
+        "I enjoy building tools that solve a specific problem or set of problems. Clever UI admin tools, report generation algorithms, and custom AI-enabled phone bots used to work with patients on their scheduling issues and question needs, all have in common a need to be made as usable as possible for those it affects. Making usable, maintainable, and accessible tools right for the job today and tomorrow is a point of pride for me"
+    };
+
+    const interestInteractive = document.querySelector(
+      ".interest-interactive"
+    );
+
+    const interestButtons = [
+      ...interestInteractive.querySelectorAll("[data-interest]")
+    ];
+
+    const interestPanel = document.getElementById("interest-detail");
+    const interestTitle = document.getElementById("interest-detail-title");
+    const interestDescription = document.getElementById(
+      "interest-detail-description"
+    );
+
+    let selectedInterest = null;
+    let activeInput = null;
+
+    function positionInterestPointer() {
+      if (!selectedInterest || interestPanel.hidden) return;
+
+      const button = interestButtons.find(
+        item => item.dataset.interest === selectedInterest
+      );
+
+      if (!button) return;
+
+      const buttonBounds = button.getBoundingClientRect();
+      const panelBounds = interestPanel.getBoundingClientRect();
+
+      const pointerX =
+        buttonBounds.left +
+        buttonBounds.width / 2 -
+        panelBounds.left;
+
+      const clampedX = Math.max(
+        18,
+        Math.min(panelBounds.width - 18, pointerX)
+      );
+
+      interestPanel.style.setProperty(
+        "--pointer-x",
+        `${clampedX}px`
+      );
+    }
+
+    function openInterestPanel(button) {
+      const key = button.dataset.interest;
+
+      selectedInterest = key;
+
+      interestTitle.textContent = button.querySelector(
+        ".interest-card__title"
+      ).textContent.trim();
+
+      interestDescription.textContent = interestDescriptions[key];
+      interestPanel.hidden = false;
+
+      interestButtons.forEach(item => {
+        const isActive = item === button;
+
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute(
+          "aria-expanded",
+          String(isActive)
+        );
+      });
+
+      positionInterestPointer();
+    }
+
+    function closeInterestPanel() {
+      selectedInterest = null;
+      activeInput = null;
+      interestPanel.hidden = true;
+
+      interestButtons.forEach(button => {
+        button.classList.remove("is-active");
+        button.setAttribute("aria-expanded", "false");
+      });
+    }
+
+    // Desktop hover reveals the panel; mouse clicks have no effect.
+    interestButtons.forEach(button => {
+      button.addEventListener("pointerenter", event => {
+        if (event.pointerType !== "mouse") return;
+
+        activeInput = "mouse";
+        openInterestPanel(button);
+      });
+
+      // Keyboard users reveal descriptions by focusing each card.
+      button.addEventListener("focus", () => {
+        if (button.matches(":focus-visible")) {
+          activeInput = "keyboard";
+          openInterestPanel(button);
+        }
+      });
+
+      // Touchscreens and pens have no reliable hover interaction.
+      button.addEventListener("pointerdown", event => {
+        if (event.pointerType !== "touch" && event.pointerType !== "pen") {
+          return;
+        }
+
+        const wasSelected =
+          selectedInterest === button.dataset.interest;
+
+        activeInput = "touch";
+
+        if (wasSelected) {
+          closeInterestPanel();
+        } else {
+          openInterestPanel(button);
+        }
+      });
+    });
+
+    // Crossing from a card to its speech bubble does not close it.
+    interestInteractive.addEventListener("pointerleave", event => {
+      if (event.pointerType === "mouse") {
+        closeInterestPanel();
+      }
+    });
+
+    // Close when keyboard focus leaves the entire interactive section.
+    interestInteractive.addEventListener("focusout", event => {
+      if (
+        activeInput === "keyboard" &&
+        !interestInteractive.contains(event.relatedTarget)
+      ) {
+        closeInterestPanel();
+      }
+    });
+
+    // Tapping outside dismisses the touch panel.
+    document.addEventListener("pointerdown", event => {
+      if (
+        (event.pointerType === "touch" || event.pointerType === "pen") &&
+        activeInput === "touch" &&
+        !interestInteractive.contains(event.target)
+      ) {
+        closeInterestPanel();
+      }
+    });
+
+    // Each project screenshot gallery is independent; no autoplay.
+    document.querySelectorAll("[data-showcase]").forEach(showcase => {
+      const slides = [...showcase.querySelectorAll(".showcase__slide")];
+      const caption = showcase.querySelector(".showcase__caption");
+      let active = 0;
+
+      function render() {
+        slides.forEach((slide, index) => {
+          const forward =
+            (index - active + slides.length) % slides.length;
+
+          const backward =
+            (active - index + slides.length) % slides.length;
+
+          const position =
+            index === active ? "active" :
+            forward === 1 ? "right" :
+            backward === 1 ? "left" : "hidden";
+
+          slide.dataset.position = position;
+          slide.setAttribute(
+            "aria-pressed",
+            String(index === active)
+          );
+          slide.setAttribute(
+            "aria-hidden",
+            String(position === "hidden")
+          );
+          slide.tabIndex = position === "hidden" ? -1 : 0;
+
+          slide.setAttribute(
+            "aria-label",
+            `${slide.dataset.caption}${index === active ? ", selected" : ", select screenshot"}`
+          );
+        });
+
+        caption.textContent =
+          `${slides[active].dataset.caption} · ${active + 1} of ${slides.length}`;
+      }
+
+      function move(direction) {
+        active = (active + direction + slides.length) % slides.length;
+        render();
+      }
+
+      slides.forEach((slide, index) => {
+        slide.addEventListener("click", () => {
+          if (index !== active) {
+            active = index;
+            render();
+          }
+        });
+      });
+
+      showcase.querySelectorAll("[data-direction]").forEach(button => {
+        button.addEventListener("click", () => {
+          move(Number(button.dataset.direction));
+        });
+      });
+
+      showcase.addEventListener("keydown", event => {
+        if (
+          event.key !== "ArrowLeft" &&
+          event.key !== "ArrowRight"
+        ) {
+          return;
+        }
+
+        event.preventDefault();
+        move(event.key === "ArrowRight" ? 1 : -1);
+      });
+
+      render();
+    });
+
+    window.addEventListener("resize", positionInterestPointer);
+
+    document.querySelectorAll("[data-current-year]").forEach(element => {
+      element.textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>

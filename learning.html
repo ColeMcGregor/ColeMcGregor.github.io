@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Cole McGregor">
+<meta name="description" content="Cole McGregor’s learning journal: professional reading, personal development, fiction, courses, and independent study.">
+<title>Learning | Cole McGregor</title>
+<link rel="canonical" href="https://colemcgregor.com/learning.html">
+<link rel="stylesheet" href="assets/style.css">
+<!-- Demonstration entries and statuses: replace before publication. -->
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* The excerpt itself is also a button, so the entire text can be clicked or keyboard-activated. */
+.review__text { display: block; width: 100%; border: 0; padding: 0; background: none; font: inherit; text-align: left; cursor: pointer; }
+.review__text:hover { color: var(--accent); }
+.review:not(.is-expanded) .review__text { display: -webkit-box; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="site-header__inner">
+  <a class="site-brand" href="index.html"><span class="site-brand__name">Cole McGregor</span><span class="site-brand__role">Software Systems Engineer</span></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+  <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+    <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="learning.html" aria-current="page">Learning</a><a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<main id="main"><section class="page-hero"><div class="container page-hero__inner">
+  <p class="eyebrow">03 / Learning &amp; Exploration</p><h1>Always learning.</h1>
+  <p class="lead">Books, courses, and ideas I've explored. A place to record what I learned, what I questioned, and how my thinking changed.</p>
+</div></section>
+<section class="section"><div class="container">
+  <div class="learning-section" aria-labelledby="books-title">
+    <div class="learning-section__heading"><p class="eyebrow">The Bookshelf</p><h2 id="books-title">My bookshelf.</h2>
+      <p class="muted">Browse by category and select a reflection to read more.</p></div>
+    <div role="tablist" aria-label="Book categories" class="tabs" id="book-tabs">
+      <button class="tab is-active" role="tab" id="tab-professional" type="button" aria-selected="true" aria-controls="panel-professional" tabindex="0">Non-Fiction · Professional</button>
+      <button class="tab" role="tab" id="tab-self" type="button" aria-selected="false" aria-controls="panel-self" tabindex="-1">Non-Fiction · Self-Improvement</button>
+      <button class="tab" role="tab" id="tab-fiction" type="button" aria-selected="false" aria-controls="panel-fiction" tabindex="-1">Fiction</button>
+    </div>
+    <div id="panel-professional" class="tab-panel" role="tabpanel" aria-labelledby="tab-professional" tabindex="0"><div class="entry-list"><article class="learning-entry currently-reading"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">A Philosophy of Software Design</h3>
+        <p class="learning-entry__meta">John Ousterhout · Software design · 2018</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on A Philosophy of Software Design">An especially useful way to think about complexity is as the effort required to understand and change a system. I would want to revisit the sections on deep modules, information hiding, and whether an interface is genuinely simplifying its implementation. The distinction between tactical and strategic programming is a useful lens for discussing maintainability.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Designing Data-Intensive Applications</h3>
+        <p class="learning-entry__meta">Martin Kleppmann · Distributed systems · 2017</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Designing Data-Intensive Applications">Replication and consistency are easy to talk about in general terms and much harder to reason about under specific failure conditions. The book connects design choices to concrete guarantees, which makes it a useful reference when evaluating data-oriented architectures.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Pragmatic Programmer</h3>
+        <p class="learning-entry__meta">Andrew Hunt &amp; David Thomas · Software practice · 1999</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Pragmatic Programmer">A broad collection of advice about engineering judgment, communication, and responsibility. I would take the individual suggestions as prompts to evaluate rather than as universal rules, especially when project constraints demand compromises.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Refactoring (Second Edition)</h3>
+        <p class="learning-entry__meta">Martin Fowler · Code quality · 2018</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Refactoring (Second Edition)">A worthwhile reminder that the safest way to restructure existing code is through small, behavior-preserving changes with useful tests. The interesting part is recognizing when a codebase needs refactoring and when a seemingly cleaner abstraction would actually increase complexity.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Clean Architecture</h3>
+        <p class="learning-entry__meta">Robert C. Martin · Architecture · 2017</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Clean Architecture">Dependency direction and system boundaries are valuable concepts, but architectures should be evaluated against real change pressures. I would be particularly interested in discussing when the proposed structure helps and when it adds complexity to a small application.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Domain-Driven Design</h3>
+        <p class="learning-entry__meta">Eric Evans · Domain modeling · 2003</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Domain-Driven Design">The language used by a development team can shape the system they build. Bounded contexts and explicit domain models are appealing when business rules are intricate, though the investment in modeling should be justified by the domain.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Game Programming Patterns</h3>
+        <p class="learning-entry__meta">Robert Nystrom · Game engineering · 2014</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Game Programming Patterns">Patterns provide a vocabulary for recurring problems, but they do not eliminate tradeoffs. I would use this book as a way of comparing alternatives for game loops, state management, and component organization rather than trying to apply every pattern.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Working Effectively with Legacy Code</h3>
+        <p class="learning-entry__meta">Michael Feathers · Maintenance · 2004</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Working Effectively with Legacy Code">The strongest question in legacy work is often how to make a change safely before the system is fully understood. Techniques for finding seams and adding tests around brittle behavior offer a path between rewriting everything and avoiding improvements entirely.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article></div></div>
+    <div id="panel-self" class="tab-panel" role="tabpanel" aria-labelledby="tab-self" tabindex="0" hidden><div class="entry-list"><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Atomic Habits</h3>
+        <p class="learning-entry__meta">James Clear · Habits · 2018</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Atomic Habits">The focus on systems and environmental design gives habit formation a more concrete structure than relying on motivation alone. I would also want to question how well the framework adapts when time, resources, or life circumstances are outside a person’s control.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Deep Work</h3>
+        <p class="learning-entry__meta">Cal Newport · Focus · 2016</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Deep Work">Long periods of uninterrupted concentration are attractive for programming, but access to them depends heavily on one’s work and responsibilities. The most useful application may be protecting a few deliberate blocks of focused time rather than pursuing a completely distraction-free schedule.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Mindset</h3>
+        <p class="learning-entry__meta">Carol S. Dweck · Learning · 2006</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Mindset">The distinction between fixed and growth mindsets encourages a useful examination of how we react to difficulty. I would avoid treating mindset as a complete explanation for success or failure, since circumstances and support matter as well.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Essentialism</h3>
+        <p class="learning-entry__meta">Greg McKeown · Prioritization · 2014</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Essentialism">A useful challenge is recognizing that saying yes to something worthwhile still consumes resources that could be used elsewhere. I would like to connect this idea to deciding which projects deserve continued effort and which should be deferred.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The 7 Habits of Highly Effective People</h3>
+        <p class="learning-entry__meta">Stephen R. Covey · Personal effectiveness · 1989</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The 7 Habits of Highly Effective People">Its emphasis on deliberate priorities and interpersonal responsibility is worth considering. Some examples feel tied to their era, but the framework provides interesting questions about how short-term urgency influences long-term decisions.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Four Thousand Weeks</h3>
+        <p class="learning-entry__meta">Oliver Burkeman · Time and priorities · 2021</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Four Thousand Weeks">The central theme of finite time challenges the notion that personal organization should let us accomplish everything. I would be interested in contrasting this with more productivity-focused advice that assumes the problem can be solved by optimizing routines.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article></div></div>
+    <div id="panel-fiction" class="tab-panel" role="tabpanel" aria-labelledby="tab-fiction" tabindex="0" hidden><div class="entry-list"><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Hobbit</h3>
+        <p class="learning-entry__meta">J. R. R. Tolkien · Fantasy · 1937</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Hobbit">Bilbo’s courage is compelling because it develops without turning him into a conventional warrior. The story places comfort and curiosity in productive tension, and gives ordinary decisions surprising significance.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Fellowship of the Ring</h3>
+        <p class="learning-entry__meta">J. R. R. Tolkien · Fantasy · 1954</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Fellowship of the Ring">The deliberate pace makes the world feel inhabited long before the larger conflict takes over. Small communities and everyday loyalties matter to the story, which makes the journey feel like more than a contest between powerful forces.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">Dune</h3>
+        <p class="learning-entry__meta">Frank Herbert · Science fiction · 1965</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Dune">The way ecology, scarcity, religion, and political power shape one another is one of the novel’s most interesting qualities. The story also complicates familiar heroic narratives by questioning the consequences of charismatic leadership.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Left Hand of Darkness</h3>
+        <p class="learning-entry__meta">Ursula K. Le Guin · Science fiction · 1969</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Left Hand of Darkness">The book asks readers to examine their own cultural assumptions through an unfamiliar society. Its slower sections give space to misunderstanding, trust, and the difficulty of communicating across different experiences.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Name of the Wind</h3>
+        <p class="learning-entry__meta">Patrick Rothfuss · Fantasy · 2007</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Name of the Wind">A story told through a protagonist’s account of his own history naturally raises questions about what is remembered, exaggerated, and concealed. Its attention to learning and reputation gives the framing device much of its appeal.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article><article class="learning-entry"><div class="learning-entry__layout">
+      <div class="learning-entry__cover" aria-hidden="true"><span style="font-size:2rem">▤</span></div>
+      <div class="learning-entry__content"><h3 class="learning-entry__title">The Fifth Season</h3>
+        <p class="learning-entry__meta">N. K. Jemisin · Fantasy · 2015</p>
+        <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Fifth Season">The world is shaped by catastrophic forces that affect institutions as much as individual lives. I would want to consider how the book uses structure and perspective to reveal information and challenge earlier assumptions.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+      </div></div></article></div></div>
+  </div>
+  <div class="learning-section" aria-labelledby="courses-title">
+    <div class="learning-section__heading"><p class="eyebrow">Continuing Education</p><h2 id="courses-title">Courses &amp; other learning.</h2>
+    <p class="muted">Online courses, lectures, articles, and independent study.</p></div>
+    <div class="tabs" role="tablist" aria-label="Learning resources" id="resource-tabs">
+      <button class="tab is-active" role="tab" id="tab-courses" type="button" aria-selected="true" aria-controls="panel-courses" tabindex="0">Courses</button>
+      <button class="tab" role="tab" id="tab-other" type="button" aria-selected="false" aria-controls="panel-other" tabindex="-1">Other Resources</button>
+    </div>
+    <div id="panel-courses" role="tabpanel" class="tab-panel" aria-labelledby="tab-courses" tabindex="0"><div class="entry-list"><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">The Complete JavaScript Course</h3>
+      <p class="learning-entry__meta">Udemy · Jonas Schmedtmann · Web development</p>
+      <span class="learning-entry__status" data-status="completed">Completed</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on The Complete JavaScript Course">JavaScript fundamentals, asynchronous execution, browser APIs, and application structure. I would use the reflection to discuss which exercises were most useful and how the material relates to actual web-development work.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Docker &amp; Kubernetes: The Practical Guide</h3>
+      <p class="learning-entry__meta">Udemy · Maximilian Schwarzmüller · Containers and deployment</p>
+      <span class="learning-entry__status" data-status="completed">Completed</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Docker &amp; Kubernetes: The Practical Guide">A course exploring images, containers, network configuration, and orchestration. The useful comparison is between getting an application running in a container and operating it reliably over time.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Software Architecture &amp; Design of Modern Large Scale Systems</h3>
+      <p class="learning-entry__meta">Udemy · Michael Pogrebinsky · System architecture</p>
+      <span class="learning-entry__status" data-status="in-progress">In progress</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Software Architecture &amp; Design of Modern Large Scale Systems">Architecture exercises offer a chance to compare scalability, availability, and performance tradeoffs. I would focus my notes on which approaches remain appropriate when a project is relatively small.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Unreal Engine C++ Developer</h3>
+      <p class="learning-entry__meta">Udemy · GameDev.tv · Game development</p>
+      <span class="learning-entry__status" data-status="in-progress">In progress</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Unreal Engine C++ Developer">Unreal’s engine conventions create different constraints than a lightweight custom framework. I would use this entry to record the architectural lessons learned while implementing gameplay functionality.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Go: The Complete Developer’s Guide</h3>
+      <p class="learning-entry__meta">Example course · Sample instructor · Programming languages</p>
+      <span class="learning-entry__status" data-status="planned">Planned</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Go: The Complete Developer’s Guide">An illustrative future course covering packages, interfaces, concurrency, and testing. I would compare Go’s language design with experience in Kotlin and C++.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Accessible Web Interfaces</h3>
+      <p class="learning-entry__meta">Example course · Sample instructor · Accessibility</p>
+      <span class="learning-entry__status" data-status="planned">Planned</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Accessible Web Interfaces">An example of how I might document a course in semantic HTML, keyboard interactions, contrast, and accessible application behavior, with a link to a practical implementation.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article></div></div>
+    <div id="panel-other" role="tabpanel" class="tab-panel" aria-labelledby="tab-other" tabindex="0" hidden><div class="entry-list"><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">MIT OpenCourseWare — Introduction to Algorithms</h3>
+      <p class="learning-entry__meta">MIT OpenCourseWare · Algorithms</p>
+      <span class="learning-entry__status" data-status="in-progress">In progress</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on MIT OpenCourseWare — Introduction to Algorithms">A place to document individual lectures, algorithm-analysis exercises, and questions about how formal complexity results connect to everyday implementation decisions.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Site Reliability Engineering</h3>
+      <p class="learning-entry__meta">Google · Online book · Reliability engineering</p>
+      <span class="learning-entry__status" data-status="completed">Completed</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Site Reliability Engineering">Service-level objectives, incident response, and monitoring provide useful ways to reason about what reliability means from a user’s perspective.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Architecture Decision Records</h3>
+      <p class="learning-entry__meta">Independent study · Software architecture</p>
+      <span class="learning-entry__status" data-status="in-progress">In progress</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Architecture Decision Records">A running study of how to record a decision’s context, alternatives, tradeoffs, and consequences. Useful ADRs should explain why a choice made sense at the time, not merely what was chosen.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">CS229 — Machine Learning Lectures</h3>
+      <p class="learning-entry__meta">Stanford online lectures · Machine learning</p>
+      <span class="learning-entry__status" data-status="planned">Planned</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on CS229 — Machine Learning Lectures">A planned exploration of modeling, optimization, and mathematical foundations, emphasizing understanding assumptions rather than treating tools as black boxes.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article><article class="learning-entry"><div class="learning-entry__content">
+      <h3 class="learning-entry__title">Technical conference talks</h3>
+      <p class="learning-entry__meta">Conference recordings · Engineering practice</p>
+      <span class="learning-entry__status" data-status="planned">Planned</span>
+      <div class="review" data-review>
+      <button class="review__text" type="button" data-review-text aria-expanded="false" aria-label="Expand reflection on Technical conference talks">A flexible category for individual talks and lectures that produce a useful insight or technique worth capturing.</button>
+      <button class="review__toggle" type="button" data-review-toggle aria-expanded="false">Read my thoughts</button>
+    </div>
+    </div></article></div></div>
+  </div>
+</div></section></main>
+<footer class="site-footer"><div class="container site-footer__inner"><p>&copy; <span data-current-year>2026</span> Cole McGregor</p>
+<nav class="footer-links" aria-label="Footer links"><a href="https://github.com/ColeMcGregor" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/cole-mcgregor-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://mcgregorsystemsusa.com/" target="_blank" rel="noopener noreferrer">McGregor Systems LLC</a></nav></div></footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+  navToggle.addEventListener('click', () => {
+    const open = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!open));
+    siteNav.classList.toggle('is-open', !open);
+  });
+  document.querySelectorAll('[data-current-year]').forEach(el => el.textContent = new Date().getFullYear());
+</script>
+<script>
+(() => {
+  // Independent, keyboard-accessible tab groups.
+  document.querySelectorAll('[role="tablist"]').forEach(tablist => {
+    const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+    const activate = (chosen, focus = false) => {
+      tabs.forEach(tab => {
+        const active = tab === chosen;
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+        tab.classList.toggle('is-active', active);
+        document.getElementById(tab.getAttribute('aria-controls')).hidden = !active;
+      });
+      // Expanded reviews in the outgoing panel should not stay open invisibly.
+      document.querySelectorAll('.tab-panel[hidden] .review.is-expanded').forEach(collapse);
+      if (focus) chosen.focus();
+    };
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', e => {
+        let next;
+        if (e.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (e.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+        else if (e.key === 'Home') next = 0;
+        else if (e.key === 'End') next = tabs.length - 1;
+        else return;
+        e.preventDefault();
+        activate(tabs[next], true);
+      });
+    });
+  });
+
+  const observer = 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          // Extra 220px around the viewport prevents collapsing on small scrolls.
+          if (!entry.isIntersecting && entry.target.classList.contains('is-expanded')) {
+            collapse(entry.target);
+          }
+        });
+      }, { rootMargin: '220px 0px 220px 0px', threshold: 0 })
+    : null;
+
+  function collapse(review) {
+    review.classList.remove('is-expanded');
+    review.querySelectorAll('button').forEach(button => button.setAttribute('aria-expanded', 'false'));
+    const textButton = review.querySelector('[data-review-text]');
+    textButton.setAttribute('aria-label', textButton.getAttribute('aria-label').replace(/^Collapse/, 'Expand'));
+    review.querySelector('[data-review-toggle]').textContent = 'Read my thoughts';
+    observer?.unobserve(review);
+  }
+
+  function toggle(review) {
+    if (review.classList.contains('is-expanded')) return collapse(review);
+    review.classList.add('is-expanded');
+    review.querySelectorAll('button').forEach(button => button.setAttribute('aria-expanded', 'true'));
+    const textButton = review.querySelector('[data-review-text]');
+    textButton.setAttribute('aria-label', textButton.getAttribute('aria-label').replace(/^Expand/, 'Collapse'));
+    review.querySelector('[data-review-toggle]').textContent = 'Show less';
+    observer?.observe(review);
+  }
+  document.querySelectorAll('[data-review]').forEach(review => {
+    review.querySelectorAll('button').forEach(button => button.addEventListener('click', () => toggle(review)));
+  });
+})();
+</script>
+</body></html>
