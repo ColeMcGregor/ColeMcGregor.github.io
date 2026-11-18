@@ -422,7 +422,7 @@ small, .small { font-size: .875rem; }
 .field label { font-weight: 700; font-size: .87rem; }
 .field input, .field textarea, .field select { width: 100%; min-height: 46px; padding: 11px 13px; border: 1px solid #aabdc0; background: #fff; color: var(--ink); border-radius: var(--radius-sm); }
 .field textarea { min-height: 160px; resize: vertical; }
-.field input:focus, .field textarea:focus, .field select:focus { border-color: var(--accent); }
+.field input:focus, .field textarea:focus, .field select { border-color: var(--accent); }
 .field__hint { font-size: .79rem; color: var(--muted); }
 .contact-aside { display: grid; gap: 22px; }
 .contact-link { display: flex; gap: 14px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); font-weight: 700; text-decoration: none; }
@@ -868,4 +868,78 @@ small, .small { font-size: .875rem; }
   .learning-folder {
     transition: none;
   }
+}
+
+/* Project Explorer — full case studies with persistent desktop index. */
+.project-explorer {
+  overflow: hidden;
+  border: 1px solid var(--dark-line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.project-explorer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 20px;
+  background: var(--dark);
+  color: #f0f3f2;
+}
+.project-explorer__header h3 { font-size: 1rem; letter-spacing: 0; }
+.project-explorer__count { color: #b7c7ca; font-size: .75rem; letter-spacing: .06em; white-space: nowrap; }
+.project-explorer__layout { display: grid; grid-template-columns: minmax(210px, 28%) minmax(0, 1fr); height: min(700px, 75vh); min-height: 490px; }
+.project-explorer__index {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  overflow-y: auto;
+  background: #263d43;
+}
+.project-explorer__item {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  padding: 14px 13px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fff;
+  text-align: left;
+}
+.project-explorer__item:hover { background: #344f55; }
+.project-explorer__item.is-selected { background: #42666b; border-color: #719398; }
+.project-explorer__item-category { color: #b8d0d1; font-size: .71rem; line-height: 1.4; text-transform: uppercase; letter-spacing: .04em; }
+.project-explorer__item-title { font-weight: 700; font-family: var(--font-heading); line-height: 1.25; }
+.project-explorer__item:focus-visible { outline-color: #b5f0f1; outline-offset: -3px; }
+.project-explorer__detail { min-width: 0; overflow-y: auto; overscroll-behavior: contain; scroll-behavior: auto; background: #fff; }
+.project-explorer__article { max-width: 900px; padding: clamp(23px, 3.7vw, 44px); }
+.project-explorer__category { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.project-explorer__title { margin: 8px 0 16px; font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.project-explorer__summary { color: var(--ink-soft); font-size: 1.04rem; line-height: 1.75; }
+.project-explorer__tags { margin-top: 20px; }
+.project-explorer__section { margin-top: 28px; padding-top: 25px; border-top: 1px solid var(--line); }
+.project-explorer__section h4 { margin-bottom: 12px; color: var(--ink); }
+.project-explorer__section p, .project-explorer__section li { color: var(--ink-soft); line-height: 1.8; }
+.project-explorer__section p + p { margin-top: 14px; }
+.project-explorer__section ul { padding-left: 23px; }
+.project-explorer__links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.project-explorer__gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 14px; margin: 24px 0; }
+.project-explorer__figure { background: #e5eceb; border: 1px solid var(--line); }
+.project-explorer__figure img { width: 100%; max-height: 320px; object-fit: contain; }
+.project-explorer__figure figcaption { padding: 8px 12px; color: var(--muted); font-size: .78rem; }
+.project-explorer__loading { padding: 16px; color: var(--muted-light); }
+.project-explorer__detail > .learning-error { margin: 20px; }
+
+/* On phones, select a project horizontally and scroll the main page. */
+@media (max-width: 680px) {
+  .project-explorer__layout { display: block; height: auto; min-height: 0; }
+  .project-explorer__index { flex-direction: row; overflow-x: auto; overflow-y: hidden; gap: 7px; padding: 10px; }
+  .project-explorer__item { flex: 0 0 auto; width: auto; min-width: 130px; max-width: 200px; padding: 10px 13px; }
+  .project-explorer__item-category { font-size: .65rem; }
+  .project-explorer__detail { overflow: visible; }
+  .project-explorer__article { padding: 22px 18px 28px; }
+  .project-explorer__title { font-size: 1.9rem; }
 }

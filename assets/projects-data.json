@@ -1,0 +1,558 @@
+{
+  "projects": [
+    {
+      "id": "eldvatten",
+      "title": "EldVatten Community Web App",
+      "category": "Full-Stack Web Development",
+      "summary": "A self-hosted community management and communication platform for a nonprofit educational organization. The application brings together membership administration, discussion forums, messaging, events, voting, resources, and organizational governance.",
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Docker",
+        "Playwright"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "The application is designed to replace disconnected tools and manual processes with a unified system for managing community activity and organizational operations.",
+            "The organization has distinct membership classes, social ranks, leadership offices, chapters, households, and governance bodies. These structures must be represented accurately without treating every organizational relationship as an account permission."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The application uses a Django modular monolith with PostgreSQL for persistent data. Separate Django applications organize major domains, including accounts, organization, events, messaging, discussions, voting, resources, notifications, and administration.",
+            "The frontend uses Django templates, HTML, CSS, and vanilla JavaScript. Authentication, authorization, validation, and permission-sensitive operations are enforced by the backend rather than relying on interface controls."
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "The architecture favors maintainability, conventional frameworks, limited dependencies, and clear ownership of domain responsibilities.",
+            "Organizational records support permissions, eligibility, visibility, and governance workflows. Historical assignments and audit records provide accountability for administrative changes."
+          ],
+          "points": [
+            "Role-based access control and permission-sensitive operations",
+            "Server-rendered application interfaces",
+            "Member and organizational administration",
+            "Forum discussions, drafts, moderation, and reporting",
+            "Direct messaging and notifications",
+            "Event management and attendance",
+            "Voting and governance workflows",
+            "Private resources and authorized downloads"
+          ]
+        },
+        {
+          "heading": "Testing & Quality",
+          "paragraphs": [
+            "The project includes Django application tests and Playwright browser tests. Browser coverage exercises authentication and application workflows, including forum navigation, content management, and moderation.",
+            "Development testing, browser acceptance, production deployment, and production verification are treated as separate stages."
+          ]
+        },
+        {
+          "heading": "Current State",
+          "paragraphs": [
+            "The application remains under active development. Its repository includes the main application domains, development infrastructure, browser tests, and deployment-related configuration. Production readiness and full-system acceptance remain separate workstreams."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/EldvattenWebApp"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "ai-healthcare-scheduler",
+      "title": "AI Healthcare Scheduler",
+      "category": "Backend Development & Systems Integration",
+      "summary": "A service-oriented healthcare scheduling application developed as a Siena College Software Engineering Capstone for American Horizon Medical Clinic. The project used AI-assisted voice and conversational interactions to support appointment scheduling workflows, with an emphasis on backend services, external API integration, security, and maintainable architecture.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "AWS",
+        "Twilio",
+        "OpenAI API",
+        "REST APIs",
+        "Service-Oriented Architecture",
+        "Agile"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "American Horizon Medical Clinic needed a system capable of supporting patient appointment scheduling through conversational interactions. The project explored how voice, messaging, and AI services could reduce the need for manual coordination while supporting existing clinical workflows.",
+            "The system needed to interpret patient requests, coordinate scheduling-related operations, and communicate with external services while accounting for the security and reliability requirements associated with healthcare applications."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The team developed a distributed, service-oriented backend using Python and FastAPI. Docker provided containerized development and execution environments, while AWS resources supported the system's cloud infrastructure.",
+            "The architecture separated major responsibilities into services and integration boundaries, including authentication, logging, auditing, messaging, scheduling-related operations, and communication with external APIs.",
+            "Twilio supported communications integration, while OpenAI APIs provided language-model capabilities for interpreting conversational requests.",
+            "Service boundaries also accounted for differences in workload. AI processing and communication-related operations had different execution and scaling requirements, making their separation an important architectural consideration."
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "A major architectural concern was balancing the flexibility of distributed services against the additional complexity of managing communication, deployment, and shared responsibilities.",
+            "The team evaluated architectural alternatives and avoided unnecessary abstractions that did not support the actual system requirements.",
+            "Authentication, auditability, and logging were treated as core backend responsibilities because healthcare workflows require careful handling of sensitive information and traceable operations.",
+            "The architecture emphasized explicit service responsibilities, maintainable interfaces, and the ability to integrate third-party services without tightly coupling them to unrelated application logic."
+          ]
+        },
+        {
+          "heading": "My Responsibilities",
+          "paragraphs": [
+            "I served as Product Owner and Software Developer, combining technical development with requirements analysis and coordination of the development team.",
+            "I worked with stakeholder requirements to define workflows, organize the development backlog, prioritize work, and coordinate implementation through Agile practices.",
+            "My technical contributions included backend services associated with authentication, auditing, logging, messaging, and external API integration. I also contributed to architecture decisions, system integration, and technical documentation.",
+            "I helped produce architecture and project turnover documentation to communicate the system's structure, responsibilities, and development decisions."
+          ]
+        },
+        {
+          "heading": "Major Technical Areas",
+          "points": [
+            "Python backend development with FastAPI",
+            "Service-oriented architecture and API design",
+            "Docker-based development environments",
+            "AWS cloud infrastructure integration",
+            "Twilio voice and messaging integration",
+            "OpenAI API integration for conversational workflows",
+            "Authentication and access-control design",
+            "Application logging and auditing",
+            "Requirements analysis and backlog management",
+            "Agile team coordination",
+            "Architecture and technical documentation"
+          ]
+        },
+        {
+          "heading": "Project Context",
+          "paragraphs": [
+            "This was an academic capstone developed for an external healthcare stakeholder rather than an independently released commercial product.",
+            "The project ran from August 2024 through May 2025. My responsibilities combined product ownership, hands-on backend development, architecture coordination, and integration work.",
+            "The work provided experience designing software around real stakeholder needs, coordinating development across service boundaries, and addressing the engineering concerns of a healthcare-oriented application."
+          ]
+        }
+      ],
+      "links": [],
+      "media": []
+    },
+    {
+      "id": "townecodex",
+      "title": "TowneCodex",
+      "category": "Desktop Application & Database Engineering",
+      "summary": "A Python desktop application for browsing, managing, importing, generating, and organizing tabletop role-playing game items. The system combines a graphical interface, structured relational data, configurable generation rules, and import workflows.",
+      "technologies": [
+        "Python",
+        "PySide6",
+        "SQLAlchemy",
+        "SQLite",
+        "Qt",
+        "CSV",
+        "XLSX"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "Managing large collections of game items requires consistent data, efficient searches, and tools for generating collections that satisfy specific constraints.",
+            "The application addresses these needs through a centralized item catalog, inventory management, configurable generators, import tools, and administrative operations."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "TowneCodex uses a layered application architecture that separates its PySide6 interface, background workers, application backend, repository layer, data models, and generation engine.",
+            "The UI owns presentation state and communicates with the backend. SQLAlchemy provides database access, while data transfer objects keep application-facing data separate from persistence models.",
+            "Background operations use Qt workers and signals to perform potentially expensive tasks without directly modifying interface state from worker threads."
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "The generation engine evaluates explicit configuration rules rather than embedding selection logic inside the interface. This makes the rules easier to understand, test, and modify.",
+            "Generation constraints include item counts, rarity, type, value, attunement, and uniqueness. The engine supports deterministic behavior through optional random-number-generator seeding.",
+            "Import operations use batching and update rules designed to preserve existing nonempty data."
+          ]
+        },
+        {
+          "heading": "Major Systems",
+          "points": [
+            "Item catalog with searching, filtering, and editing",
+            "Relational data models and repository abstractions",
+            "Configurable rule-based item generation",
+            "Inventory creation and management",
+            "CSV and XLSX imports",
+            "Background processing through Qt workers",
+            "Data scraping and pricing utilities",
+            "Administrative tools and application logging"
+          ]
+        },
+        {
+          "heading": "Testing & Maintainability",
+          "paragraphs": [
+            "The repository contains tests covering database operations, models, repositories, imports, queries, parsers, and command-line functionality.",
+            "Separating the interface from the application backend and generation rules reduces coupling and supports independent testing."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/Magic-Item-Database"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "arith-matic",
+      "title": "Arith-Matic",
+      "category": "Android Development",
+      "summary": "A native Android educational application designed to help children develop arithmetic skills through configurable practice, classroom-inspired visuals, and accessible interactions.",
+      "technologies": [
+        "Kotlin",
+        "Android",
+        "Jetpack Compose",
+        "ViewModel",
+        "DataStore"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "Arith-Matic aims to make mathematics practice approachable for young learners while allowing different operations, question settings, and future practice modes.",
+            "The application must support changes to question-generation rules without requiring corresponding changes throughout its interface."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The project organizes application code into domain, navigation, platform, and user-interface areas.",
+            "The design separates question-generation logic, practice configuration, application state, and presentation. This allows mathematical rules to be developed and tested independently of the visual interface."
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "The interface uses a classroom and chalkboard visual theme, with reusable interface components and a focus on clear interactions for young users.",
+            "The application is designed for offline use, with local settings persistence and no requirement for user accounts or external backend services.",
+            "Accessibility is a continuing development concern, including readable interfaces, suitable touch targets, and support for assistive technologies."
+          ]
+        },
+        {
+          "heading": "Current State",
+          "paragraphs": [
+            "The repository documents an implemented application foundation that includes navigation, classroom-themed interface components, practice configuration models, and configuration validation.",
+            "Practice rounds, expanded results, statistics, audio feedback, and additional accessibility work remain part of the ongoing development plan."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/Arith-Matic"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "fox-and-rabbit",
+      "title": "Fox and Rabbit",
+      "category": "Java Client-Server Game Development",
+      "summary": "An original two-player game implemented in Java using a networked client-server architecture, custom Swing rendering, and a circular game board. Separate Fox and Rabbit clients interact through a central server that manages shared game state and validates player actions.",
+      "technologies": [
+        "Java",
+        "Java Swing",
+        "Java AWT",
+        "TCP Sockets",
+        "Client-Server Architecture",
+        "Object-Oriented Design"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "The game requires two players using separate clients to interact with the same board while receiving appropriate views of the game's state.",
+            "Player actions must be communicated over a network, evaluated against the game rules, and reflected consistently across connected clients."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The Java implementation separates the server, client connections, game state, actions, and graphical board representation into dedicated classes.",
+            "GameServer accepts TCP connections through a ServerSocket and creates a ClientHandler for each connected player. The implementation supports two player connections, with separate FoxClient and RabbitClient applications.",
+            "The server manages the authoritative game state and processes incoming actions. A synchronized game-state update method controls modifications to shared state."
+          ]
+        },
+        {
+          "heading": "Game Board & Rendering",
+          "paragraphs": [
+            "The board is rendered through Java Swing and AWT using circular regions rather than a conventional rectangular grid.",
+            "The implementation uses rings and annular sections, basically slices of a donut, to represent board spaces. The board calculates spatial relationships and adjacency between movement spaces.",
+            "Separate graphical elements represent the fox, rabbit, carrot, and other game objects."
+          ]
+        },
+        {
+          "heading": "Engineering Focus",
+          "points": [
+            "TCP socket communication",
+            "Multi-client connection handling",
+            "Server-managed game state",
+            "Synchronization of player actions",
+            "Custom two-dimensional board geometry",
+            "Swing and AWT graphics",
+            "Object-oriented separation of game responsibilities"
+          ]
+        },
+        {
+          "heading": "Project Context",
+          "paragraphs": [
+            "This was my first, large, sole-developer, Java game project. It demonstrates client-server communication, graphical application development, and shared-state management.",
+            "The source repository is private, so a public source link is not provided."
+          ]
+        }
+      ],
+      "links": [],
+      "media": []
+    },
+    {
+      "id": "foundry-boss-maze",
+      "title": "Boss Maze",
+      "category": "JavaScript & Interactive Systems",
+      "summary": "A Foundry Virtual Tabletop module that provides an interactive boss-arena editor, deterministic procedural maze patterns, turn-based transformations, and persistent scene updates for multiplayer tabletop sessions.",
+      "technologies": [
+        "JavaScript",
+        "Foundry VTT",
+        "PIXI",
+        "JSON",
+        "Procedural Generation",
+        "Event-Driven Programming"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "Dynamic tabletop encounters can require the game master to modify large portions of an arena during play.",
+            "The module provides tools to build and change maze layouts without manually creating and removing individual scene objects for every change."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The module separates its maze-generation logic from the Foundry runtime and graphical interface.",
+            "The core maze engine manages cell states, presets, procedural patterns, and transformations. The Foundry integration manages interface controls, visual overlays, and changes to the active scene.",
+            "Maze state uses a sparse representation that stores only cells that differ from the default open state."
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "Procedural strategies are deterministic for a given cell position and turn. This allows patterns to be recreated predictably as the encounter advances or reverses.",
+            "The editor uses a client-side PIXI overlay for interactive previews. Applying a layout commits it to persistent Foundry scene objects that can be shared with other players.",
+            "Created scene objects are identified through module-specific flags so that later updates can replace module-owned objects without removing unrelated scene content."
+          ]
+        },
+        {
+          "heading": "Major Features",
+          "points": [
+            "Interactive cell editing",
+            "Preset maze layouts",
+            "Rotating sunburst and expanding ripple patterns",
+            "Turn advancement and reversal",
+            "Bounded random modifications",
+            "Scene updates for multiplayer visibility",
+            "Separation of procedural logic and platform integration"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/FoundryMazeApp"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "minotaur",
+      "title": "Minotaur",
+      "category": "Game Engine Architecture",
+      "summary": "A C++ game project built around a shifting labyrinth, pursuing enemies, and reusable gameplay components. The project explores entity-component design, system boundaries, and the organization of game functionality.",
+      "technologies": [
+        "C++",
+        "Entity-Component",
+        "Object-Oriented Design",
+        "Game Systems"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "Minotaur explores the engineering requirements of a game in which a labyrinth changes over time while players and other entities interact with its environment.",
+            "The gameplay concept requires a changing maze, distinct player roles, movement, encounters, equipment, and visibility rules."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The project uses an entity-component architecture focused on composition and separation of responsibilities.",
+            "It is an entity-component design rather than a formal entity-component-system architecture. The project does not rely on an ECS-style systems-processing model.",
+            "The source is organized into areas including core game logic, entities, controllers, artificial intelligence, simulation, world representation, actions, rules, items, and visualization."
+          ]
+        },
+        {
+          "heading": "Engineering Focus",
+          "points": [
+            "Entity and component responsibilities",
+            "Composition versus inheritance",
+            "Modular gameplay functionality",
+            "Reusable C++ interfaces",
+            "Simulation and game-state management",
+            "Separation of logic and visualization"
+          ]
+        },
+        {
+          "heading": "Current State",
+          "paragraphs": [
+            "The repository contains C++ source code, diagrams, and examples of the current game state. Its README also documents the intended gameplay systems and rules."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/Minotaur"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "n-body",
+      "title": "N-Body Simulation",
+      "category": "High-Performance Computing",
+      "summary": "A C++ gravitational simulation developed to model interactions among celestial bodies using parallel-processing techniques and high-performance computing resources.",
+      "technologies": [
+        "C++",
+        "Parallel Processing",
+        "Numerical Simulation",
+        "HPC",
+        "Slurm"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "An N-body simulation calculates gravitational interactions among multiple bodies. As the number of bodies increases, the computational work required to evaluate their interactions grows substantially.",
+            "The project explores the use of parallel computation and high-performance computing infrastructure for this class of simulation."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The simulation is implemented in C++ with a focus on numerical computation and parallel processing.",
+            "The project was developed for execution using computing resources at the Texas Advanced Computing Center."
+          ]
+        },
+        {
+          "heading": "Computing Environment",
+          "paragraphs": [
+            "Slurm manages job submission and execution on remote computing infrastructure.",
+            "This work provides experience with batch-oriented workloads and developing software for environments beyond a local development machine."
+          ]
+        },
+        {
+          "heading": "Engineering Focus",
+          "points": [
+            "Gravitational interaction calculations",
+            "Numerical simulation",
+            "Parallel-processing concepts",
+            "C++ development",
+            "High-performance computing workflows",
+            "Slurm job management"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/N_Body_Simulation"
+        }
+      ],
+      "media": []
+    },
+    {
+      "id": "skydiver",
+      "title": "SkyDiver",
+      "category": "Mobile Game Development",
+      "summary": "A Kotlin Android arcade game featuring responsive player movement, dynamic difficulty, obstacles, collectibles, collision handling, and reusable gameplay systems.",
+      "technologies": [
+        "Kotlin",
+        "Android",
+        "Jetpack Compose",
+        "Object-Oriented Design",
+        "JUnit"
+      ],
+      "sections": [
+        {
+          "heading": "The Problem",
+          "paragraphs": [
+            "SkyDiver is designed around a falling player who must navigate obstacles and collectibles while the pace of gameplay increases.",
+            "The game requires collision handling, object spawning, difficulty management, player controls, and interface state transitions without tightly coupling these systems."
+          ]
+        },
+        {
+          "heading": "Architecture & Design",
+          "paragraphs": [
+            "The project separates game-loop control, gameplay coordination, object spawning, player behavior, interface overlays, and statistics management.",
+            "Common GameObject behavior provides a foundation for specialized objects. Collectibles and obstacles define their own interactions, while the player manages movement and gameplay state.",
+            "Platform services are abstracted through interfaces to reduce dependencies between game logic and Android-specific functionality."
+          ]
+        },
+        {
+          "heading": "Gameplay Systems",
+          "points": [
+            "Player movement and speed control",
+            "Dynamic gameplay pacing",
+            "Collision-driven obstacle effects",
+            "Timed obstacle and collectible spawning",
+            "Modular game objects",
+            "Start, pause, options, and game-over interfaces",
+            "Local score and statistics storage"
+          ]
+        },
+        {
+          "heading": "Engineering Decisions",
+          "paragraphs": [
+            "Game-loop timing and frame-based updates are separated from the specialized behavior of individual objects.",
+            "The architecture supports replacing or extending gameplay components without requiring direct changes to unrelated systems.",
+            "The project includes JUnit testing for mathematical and collision-related behavior."
+          ]
+        },
+        {
+          "heading": "Collaboration",
+          "paragraphs": [
+            "The repository credits Garrett \"Cole\" McGregor for architecture, systems, and gameplay, and Jardina Gomez for design, animation, and worldbuilding."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "View GitHub Repository",
+          "url": "https://github.com/ColeMcGregor/SkyDiver"
+        }
+      ],
+      "media": []
+    }
+  ]
+}
